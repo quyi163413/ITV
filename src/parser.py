@@ -1,5 +1,5 @@
 # src/parser.py
-# M3U / TXT 解析，并在解析后应用别名标准化
+# M3U/TXT 解析，并在解析后应用别名标准化
 
 import re
 from src.alias_matcher import get_alias_matcher
@@ -12,7 +12,6 @@ def parse_m3u(content: str) -> list:
     while i < len(lines):
         line = lines[i].strip()
         if line.startswith("#EXTINF"):
-            # 提取属性
             group_title = ""
             tvg_id = ""
             tvg_logo = ""
@@ -88,7 +87,7 @@ def parse_and_dedupe(raw_contents: dict) -> dict:
             channels = parse_m3u(content)
         else:
             channels = parse_txt(content)
-        # 应用别名标准化
+        # 应用别名标准化（关键步骤）
         channels = apply_alias_to_channels(channels)
         for ch in channels:
             key = f"{ch['name']}|{ch['url']}"

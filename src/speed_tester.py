@@ -1,5 +1,5 @@
 # src/speed_tester.py
-# 轻量级 HTTP 头探测（快速测速），支持缓存
+# 轻量级 HTTP 头探测（快速测速），支持数据库缓存
 
 import asyncio
 import aiohttp
@@ -20,7 +20,7 @@ async def probe_channel(session: aiohttp.ClientSession, channel: dict) -> tuple:
                 if ENABLE_IP_RESOLVE:
                     resolver = get_resolver()
                     if resolver.is_available:
-                        ip_info = resolver.resolve_channel_ip(channel)  # 需要实现接受 dict
+                        ip_info = resolver.resolve_channel_ip(channel)
                 return channel, latency, True, ip_info
             else:
                 return channel, latency, False, None
@@ -37,9 +37,8 @@ async def test_channels_concurrent(channels_dict: dict) -> list:
     to_probe = []
     for ch in channels:
         key = channel_key(ch["name"], ch["url"])
-        cached = await db.get_speed_result(key)
+        cached = await db.get_speed_result(key, max_age_hours=24*7)  # 缓存7天
         if cached and cached["latency"] < 9999:
-            # 缓存有效
             ch["latency"] = cached["latency"]
             ch["video_codec"] = cached.get("video_codec", "")
             ch["ip_info"] = cached.get("ip_info")

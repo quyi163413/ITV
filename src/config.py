@@ -83,4 +83,4 @@ ENABLE_ALIAS = os.getenv("ENABLE_ALIAS", "true").lower() == "true"
 ENABLE_BLACKLIST = os.getenv("ENABLE_BLACKLIST", "true").lower() == "true"
 
 # ==================== Demo 匹配模式 ====================
-DEMO_MATCH_MODE = "contains"   # 可选 "exact" 或 "contains"
+DEMO_MATCH_MODE = "exact"   # 可选 "exact" 或 "contains"

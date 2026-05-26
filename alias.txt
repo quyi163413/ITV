@@ -401,3 +401,16 @@ Now剧集,Now剧集
 温州新闻综合,温州新闻综合
 
 绍兴新闻综合,绍兴新闻综合
+
+TVB翡翠台=翡翠台
+TVB翡翠台 1080P=翡翠台
+TVB 翡翠台=翡翠台
+TVB明珠台=明珠台
+TVB 明珠台=明珠台
+VIUTV=ViuTV
+Viutv=ViuTV
+无线新闻=无线新闻台
+TVB 新闻台=无线新闻台
+TVB无线新闻=无线新闻台
+TVB 无线新闻=无线新闻台
+TVBS亚洲=TVBS-Asia

@@ -18,11 +18,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IPTVPlayer"
         android:banner="@drawable/ic_launcher"
-        android:usesCleartextTraffic="true">   <!-- 重要：允许 HTTP/HTTPS 混合内容 -->
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:configChanges="orientation|screenSize|keyboardHidden">
+            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout"
+            android:screenOrientation="unspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

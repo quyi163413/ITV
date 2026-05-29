@@ -40,13 +40,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: Create debug keystore
+      - name: Create debug keystore in app directory
         run: |
           mkdir -p ~/.android
           if [ ! -f ~/.android/debug.keystore ]; then
             keytool -genkey -v -keystore ~/.android/debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug, O=Android, C=US" -storepass android -keypass android
           fi
-          cp ~/.android/debug.keystore ./debug.keystore
+          cp ~/.android/debug.keystore ./app/debug.keystore
 
       - name: Build Debug APK
         run: gradle assembleDebug

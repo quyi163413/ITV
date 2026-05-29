@@ -6,5 +6,4 @@
             <corners android:radius="0dp" />
         </shape>
     </item>
-    <!-- 可选：添加模糊效果（需要 API 31+，这里仅做半透明） -->
 </layer-list>

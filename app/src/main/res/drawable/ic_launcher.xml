@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="rectangle">
-            <solid android:color="#1a237e" />
-            <corners android:radius="20dp" />
-        </shape>
-    </item>
-    <item
-        android:drawable="@android:drawable/ic_media_play"
-        android:gravity="center" />
-</layer-list>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FF6200EE"
+        android:pathData="M4,6h16v2H4V6zm0,4h16v2H4v-2zm0,4h16v2H4v-2zM3,3h18v2H3V3zm0,16h18v2H3v-2z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,8v8l4,-4z"/>
+</vector>

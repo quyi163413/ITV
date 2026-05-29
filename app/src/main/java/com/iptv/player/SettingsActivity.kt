@@ -1,6 +1,7 @@
 package com.iptv.player
 
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.EditTextPreference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceManager
@@ -14,13 +15,13 @@ class SettingsActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         title = "设置"
     }
-    
+
     class SettingsFragment : PreferenceFragmentCompat() {
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
             setPreferencesFromResource(R.xml.preferences, rootKey)
-            
+
             val editPref = findPreference<EditTextPreference>("m3u_url")
-            val prefs = PreferenceManager.getDefaultSharedPreferences(context)
+            val prefs = PreferenceManager.getDefaultSharedPreferences(requireContext())
             val currentUrl = prefs.getString("m3u_url", "https://itv.19860519.xyz/output/tv.m3u")
             editPref?.summary = currentUrl
             editPref?.setOnPreferenceChangeListener { _, newValue ->
@@ -29,7 +30,7 @@ class SettingsActivity : AppCompatActivity() {
             }
         }
     }
-    
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressedDispatcher.onBackPressed()
         return true

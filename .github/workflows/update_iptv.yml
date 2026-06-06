@@ -73,7 +73,7 @@ jobs:
         continue-on-error: true
 
       - name: 执行 IPTV 更新脚本
-        run: python run.py
+        run: python -m src.run
         env:
           MAX_WORKERS: 10
           TIMEOUT: 10

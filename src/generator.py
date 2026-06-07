@@ -1,5 +1,5 @@
 # src/generator.py
-# 输出 M3U 和 TXT 文件模块，保持与 demo.txt 完全相同的顺序
+# 输出 M3U 和 TXT 文件模块，严格保持与 demo.txt 相同的顺序
 
 from pathlib import Path
 from typing import List, Dict
@@ -7,7 +7,7 @@ from src.config import OUTPUT_DIR, M3U_FILE, TXT_FILE
 from src.logger import logger
 
 def generate_m3u(channels_by_category: Dict[str, List[dict]], output_path: Path) -> None:
-    """生成 M3U8 格式文件，按分类写入"""
+    """生成 M3U8 格式文件，保持传入的分类顺序"""
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         for cat, channels in channels_by_category.items():
@@ -26,11 +26,7 @@ def generate_m3u(channels_by_category: Dict[str, List[dict]], output_path: Path)
     logger.info(f"✅ M3U 文件已生成: {output_path}")
 
 def generate_txt(channels_by_category: Dict[str, List[dict]], output_path: Path) -> None:
-    """
-    生成 TXT 文件，格式与 demo.txt 兼容：
-    - 分类行：分类名,#genre#
-    - 频道行：频道名,URL
-    """
+    """生成 TXT 文件，格式与 demo.txt 兼容，保持传入的分类顺序"""
     with open(output_path, 'w', encoding='utf-8') as f:
         for cat, channels in channels_by_category.items():
             if not channels:
@@ -50,13 +46,12 @@ def generate_outputs_from_demo(ordered_channels: List[dict]) -> None:
         logger.warning("无频道数据，跳过输出生成")
         return
 
-    # 按 demo_category 分组，同时保持频道在 ordered_channels 中的原始顺序
+    # 按 demo_category 分组，保持插入顺序（即 ordered_channels 中首次出现各分类的顺序）
     groups = {}
     for ch in ordered_channels:
         cat = ch.get("demo_category", "其他")
         groups.setdefault(cat, []).append(ch)
 
-    # 不需要额外排序，因为 ordered_channels 已经是期望顺序，直接使用 groups
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     generate_m3u(groups, OUTPUT_DIR / M3U_FILE)
     generate_txt(groups, OUTPUT_DIR / TXT_FILE)

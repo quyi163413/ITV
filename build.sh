@@ -1,31 +1,18 @@
 #!/bin/bash
-set -e
+# 多架构构建并推送（可选）
+# 使用 buildx 构建支持 amd64 和 arm64 的镜像
 
-echo "=========================================="
-echo "IPTV 智能整理平台 Docker 镜像构建"
-echo "=========================================="
-
-# 检测架构
-ARCH=$(uname -m)
-echo "检测到架构: $ARCH"
-
-# 镜像名称和标签
+# 设置镜像名称和标签
 IMAGE_NAME="iptv-collector"
 TAG="latest"
 
-# 如果使用 buildx 支持多平台，可以设置 PLATFORMS
-# 单架构构建直接使用 docker build
-# 如需多平台（如同时构建 amd64/arm64），请取消注释下面的 buildx 命令
+# 启用 buildx
+docker buildx create --use --name multiarch-builder || true
+docker buildx inspect --bootstrap
 
-# 使用标准 docker build（当前架构）
-echo "正在构建 ${IMAGE_NAME}:${TAG} (${ARCH})..."
-docker build -t ${IMAGE_NAME}:${TAG} .
+# 构建多架构镜像（本地不推送时使用 --load 只支持单平台，要推送需使用 --push）
+# 仅构建当前架构（适用于本地测试）
+docker buildx build --platform linux/amd64,linux/arm64 -t ${IMAGE_NAME}:${TAG} --load . 2>&1 | tee build.log
 
-# 可选：同时打上架构标签
-docker tag ${IMAGE_NAME}:${TAG} ${IMAGE_NAME}:${ARCH}-${TAG}
-
-echo "✅ 构建完成！"
-echo "运行容器："
-echo "  docker-compose up -d"
-echo "或直接运行："
-echo "  docker run -d --name iptv-collector -v $(pwd)/data:/app/data -v $(pwd)/output:/app/output ${IMAGE_NAME}:${TAG}"
+# 如果想把镜像推送到仓库（如 Docker Hub），取消注释以下行：
+# docker buildx build --platform linux/amd64,linux/arm64 -t yourusername/${IMAGE_NAME}:${TAG} --push .

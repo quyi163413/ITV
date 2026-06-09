@@ -4,7 +4,7 @@ services:
     container_name: iptv-collector
     restart: unless-stopped
     ports:
-      - "8080:8000"
+      - "8080:8080"      # 映射主机端口，可修改左侧端口
     volumes:
       - ./data:/app/data
       - ./output:/app/output
@@ -12,8 +12,8 @@ services:
       - ./blacklist.txt:/app/blacklist.txt:ro
       - ./demo.txt:/app/demo.txt:ro
     environment:
-      - RUN_MODE=schedule
-      - SCHEDULE_INTERVAL=21600
+      - RUN_MODE=schedule          # once 或 schedule
+      - SCHEDULE_INTERVAL=21600    # 定时间隔(秒)，6小时
       - MAX_WORKERS=10
       - TIMEOUT=10
       - FFMPEG_ENABLE=true
@@ -28,9 +28,9 @@ services:
       - ENABLE_ALIAS=true
       - ENABLE_BLACKLIST=true
       - DATABASE_ENABLE=true
-      - WEB_SERVER_HOST=0.0.0.0
-      - WEB_SERVER_PORT=8000
-    deploy:
-      resources:
-        limits:
-          memory: 2G
+      # CDN加速配置
+      - CDN_PROXY_ENABLE=true
+      - CDN_PROXY_URL=https://gh-proxy.19860519.xyz/
+      - CDN_PROXY_DOMAINS=raw.githubusercontent.com,github.com
+    env_file:
+      - .env            # 可选，用于覆盖以上变量

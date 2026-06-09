@@ -78,7 +78,7 @@ DEMO_MATCH_MODE = os.getenv("DEMO_MATCH_MODE", "contains")
 
 # ==================== HTTP 服务配置 ====================
 WEB_SERVER_HOST = os.getenv("WEB_SERVER_HOST", "0.0.0.0")
-WEB_SERVER_PORT = int(os.getenv("WEB_SERVER_PORT", 8000))
+WEB_SERVER_PORT = int(os.getenv("WEB_SERVER_PORT", 8080))
 OUTPUT_DIR = ROOT_DIR / "output"   # 容器内为 /app/output
 
 # ==================== CDN 加速配置 ====================

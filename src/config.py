@@ -80,3 +80,16 @@ DEMO_MATCH_MODE = os.getenv("DEMO_MATCH_MODE", "contains")
 WEB_SERVER_HOST = os.getenv("WEB_SERVER_HOST", "0.0.0.0")
 WEB_SERVER_PORT = int(os.getenv("WEB_SERVER_PORT", 8000))
 OUTPUT_DIR = ROOT_DIR / "output"   # 容器内为 /app/output
+
+# ==================== GitHub 加速代理配置 ====================
+# 可用的 Raw 文件代理镜像地址（按优先级排序，优先使用第一个可用的）
+GITHUB_RAW_PROXIES = [
+    "https://raw.staticdn.net",           # Stable CDN，2026 年实测可用[reference:1]
+    "https://ghproxy.net/https://raw.githubusercontent.com",
+    "https://gh.api.99988866.xyz/https://raw.githubusercontent.com",
+    "https://raw.githubusercontents.com", # 备用镜像
+]
+
+# 启用 Raw 代理加速
+ENABLE_GITHUB_PROXY = os.getenv("ENABLE_GITHUB_PROXY", "true").lower() == "true"
+GITHUB_PROXY_TIMEOUT = int(os.getenv("GITHUB_PROXY_TIMEOUT", 15))  # 代理源超时稍长

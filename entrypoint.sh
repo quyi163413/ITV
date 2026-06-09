@@ -3,41 +3,47 @@ set -e
 
 echo "=========================================="
 echo "IPTV 智能整理平台 Docker 容器启动"
+echo "检测架构: $(uname -m)"
 echo "=========================================="
 
 mkdir -p /app/data /app/output
 cd /app
 
-# 启动 HTTP 文件服务器（后台运行，提供 /app/output 目录）
-echo "启动 HTTP 服务器，监听 0.0.0.0:8080，服务目录 /app/output"
-python -m http.server 8080 --directory /app/output &
-HTTP_PID=$!
-echo "HTTP 服务器进程 PID: $HTTP_PID"
-
-# 更新 IP 数据库（首次或文件无效时）
+# 更新 IP 数据库（如果不存在或无效）
 if [ ! -f /app/qqwry.dat ] || [ "$(stat -c %s /app/qqwry.dat 2>/dev/null || echo 0)" -lt 1048576 ]; then
     echo "正在更新 IP 数据库..."
     python -m src.update_ipdb || echo "⚠️ IP 数据库更新失败，将使用已有文件（如有）"
 fi
 
-RUN_MODE=${RUN_MODE:-once}
+# 启动 HTTP 文件服务器（后台）
+echo "启动 HTTP 服务器，监听 0.0.0.0:8000，目录 /app/output"
+python -m src.server &
+HTTP_PID=$!
 
-if [ "$RUN_MODE" = "once" ]; then
-    echo "执行一次性采集任务..."
-    python -m src.run
-    echo "任务完成，HTTP 服务器继续运行。按 Ctrl+C 停止容器。"
-    # 保持前台，让 HTTP 服务器持续
-    wait $HTTP_PID
-elif [ "$RUN_MODE" = "schedule" ]; then
-    INTERVAL=${SCHEDULE_INTERVAL:-21600}
-    echo "启动定时模式，每 ${INTERVAL} 秒执行一次"
-    while true; do
-        echo "$(date): 开始采集任务..."
+RUN_MODE=${RUN_MODE:-once}
+INTERVAL=${SCHEDULE_INTERVAL:-21600}
+
+# 采集任务函数
+run_collector() {
+    if [ "$RUN_MODE" = "once" ]; then
+        echo "执行一次性采集任务..."
         python -m src.run
-        echo "$(date): 任务完成，等待 ${INTERVAL} 秒后继续..."
-        sleep $INTERVAL
-    done
-else
-    echo "未知的运行模式: $RUN_MODE，请设置为 once 或 schedule"
-    exit 1
-fi
+        echo "✅ 一次性采集完成，HTTP 服务器继续运行"
+        # 保持 HTTP 服务器在前台
+        wait $HTTP_PID
+    elif [ "$RUN_MODE" = "schedule" ]; then
+        echo "启动定时模式，每 ${INTERVAL} 秒执行一次"
+        while true; do
+            echo "$(date): 开始采集任务..."
+            python -m src.run
+            echo "$(date): 采集完成，等待 ${INTERVAL} 秒后继续..."
+            sleep $INTERVAL
+        done
+    else
+        echo "未知运行模式: $RUN_MODE，请设置为 once 或 schedule"
+        exit 1
+    fi
+}
+
+# 运行采集（前台阻塞）
+run_collector

@@ -47,4 +47,5 @@ fi
 
 # 启动 HTTP 文件服务器（前台运行，提供输出文件）
 echo "启动 HTTP 文件服务器，监听 0.0.0.0:8080，服务目录 /app/output"
+export WEB_SERVER_PORT=8080
 exec python -m src.server

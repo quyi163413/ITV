@@ -3,19 +3,15 @@
 下载构建文件压缩包，解压后上传到指定位置，直接运行docker-compose即可
 
 最终项目结构（添加了 Docker 相关文件）
-iptv-smart-collector/
-├── .dockerignore
-├── .env.example
+iptv-collector/
 ├── Dockerfile
 ├── docker-compose.yml
-├── build.sh
 ├── entrypoint.sh
-├── README_DOCKER.md
-├── README.md (原有)
+├── .env.example
+├── requirements.txt
 ├── alias.txt
 ├── blacklist.txt
 ├── demo.txt
-├── requirements.txt
 ├── src/
 │   ├── __init__.py
 │   ├── alias_matcher.py
@@ -32,6 +28,8 @@ iptv-smart-collector/
 │   ├── merger.py
 │   ├── parser.py
 │   ├── run.py
+│   ├── server.py
 │   ├── speed_tester.py
 │   └── update_ipdb.py
-└── output/ (自动生成)
+├── data/          # 自动生成
+└── output/        # 自动生成

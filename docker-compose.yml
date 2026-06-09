@@ -4,7 +4,7 @@ services:
     container_name: iptv-collector
     restart: unless-stopped
     ports:
-      - "8080:8080"      # 映射主机端口，可修改左侧端口
+      - "8080:8080"
     volumes:
       - ./data:/app/data
       - ./output:/app/output
@@ -12,8 +12,6 @@ services:
       - ./blacklist.txt:/app/blacklist.txt:ro
       - ./demo.txt:/app/demo.txt:ro
     environment:
-      - RUN_MODE=schedule          # once 或 schedule
-      - SCHEDULE_INTERVAL=21600    # 定时间隔(秒)，6小时
       - MAX_WORKERS=10
       - TIMEOUT=10
       - FFMPEG_ENABLE=true
@@ -24,13 +22,10 @@ services:
       - CACHE_RAW_HOURS=24
       - MAX_SOURCES_PER_CHANNEL=5
       - DEMO_MATCH_MODE=contains
-      - ENABLE_DEMO_FILTER=true
-      - ENABLE_ALIAS=true
-      - ENABLE_BLACKLIST=true
-      - DATABASE_ENABLE=true
-      # CDN加速配置
-      - CDN_PROXY_ENABLE=true
-      - CDN_PROXY_URL=https://gh-proxy.19860519.xyz/
-      - CDN_PROXY_DOMAINS=raw.githubusercontent.com,github.com
-    env_file:
-      - .env            # 可选，用于覆盖以上变量
+      - RUN_MODE=schedule
+      - SCHEDULE_INTERVAL=21600
+      # 卡顿优化配置
+      - MIN_LATENCY_THRESHOLD=3000      # 过滤延迟超过 3 秒的源
+      - KEEP_BEST_SOURCES=3             # 每个频道保留 3 个最佳源
+      - SORT_M3U_BY_LATENCY=true        # M3U 按延迟排序
+      - ENABLE_MULTI_SOURCE=true        # 启用多源备用

@@ -1,4 +1,5 @@
-# src/config.py (补充缺失的配置项)
+# src/config.py
+# 配置文件：源地址、分类关键词、全局参数
 
 import os
 from pathlib import Path
@@ -28,13 +29,16 @@ IPTV_SOURCES = [
     GH_PROXY + "https://raw.githubusercontent.com/WeiZuoXu/IPTV/main/ipv6.m3u",
 ]
 
+# 性能配置
 MAX_WORKERS = int(os.getenv("MAX_WORKERS", 20))
 TIMEOUT = int(os.getenv("TIMEOUT", 8))
 
+# ffmpeg 配置
 FFMPEG_ENABLE = os.getenv("FFMPEG_ENABLE", "true").lower() == "true"
+FFMPEG_STRICT = os.getenv("FFMPEG_STRICT", "false").lower() == "true"
 FFMPEG_WORKERS = min(MAX_WORKERS, 5)
 
-# 重试配置（用于 fetcher）
+# 重试配置
 ENABLE_RETRY = os.getenv("ENABLE_RETRY", "true").lower() == "true"
 RETRY_MAX_ATTEMPTS = 3
 RETRY_BACKOFF_FACTOR = 2
@@ -44,8 +48,10 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 }
 
+# 输出分类顺序
 OUTPUT_CATEGORY_ORDER = ["央视", "卫视", "地方", "港澳台"]
 
+# 央视频道排序
 CCTV_ORDER = [
     "CCTV-1", "CCTV-2", "CCTV-3", "CCTV-4", "CCTV-5", "CCTV-5+", "CCTV-6",
     "CCTV-7", "CCTV-8", "CCTV-9", "CCTV-10", "CCTV-11", "CCTV-12", "CCTV-13",
@@ -55,13 +61,14 @@ CCTV_ORDER = [
     "CGTN法语", "CGTN纪录", "CGTN西语", "CGTN阿语"
 ]
 
+# 输出文件名
 M3U_FILE = "tv.m3u"
 TXT_FILE = "tv.txt"
 
 # 缓存时长（小时）
 CACHE_HOURS = int(os.getenv("CACHE_HOURS", 24))
 
-# 每个频道保留的源数量
+# 每个频道保留的源数量（用于自动切换）
 MAX_SOURCES_PER_CHANNEL = int(os.getenv("MAX_SOURCES_PER_CHANNEL", 3))
 
 # 功能开关

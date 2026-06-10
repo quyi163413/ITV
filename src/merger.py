@@ -13,42 +13,55 @@ def normalize_channel_name(name: str) -> str:
     标准化频道名用于合并分组。
     只去除清晰度标签和括号内容，不删除数字、连字符或加号。
     """
-    # 去除清晰度标签（保留数字，只删除纯标签词）
+    # 去除清晰度标签
     name = re.sub(r'\s*(?:1080[pi]|720[pi]|4K|8K|HD|高清|超清|标清|流畅|付费|备\d*|备用\d*|备播|备源)\s*', '', name, flags=re.IGNORECASE)
-    # 去除括号及其内容
+    # 去除括号内容
     name = re.sub(r'[（(][^）)]*[）)]', '', name)
-    # 去除“备用”等字眼（不删除数字）
+    # 去除"备用"等字眼
     name = re.sub(r'[备用备播备源]+', '', name)
     # 去除多余空格
     name = re.sub(r'\s+', ' ', name).strip()
-    # 保留字母、数字、连字符、加号
     return name
 
 
 def normalize_cctv_name(name: str) -> str:
     """
     专门处理央视频道名称，确保 CCTV-5 和 CCTV-5+ 正确区分
+    返回标准化的央视频道名，如果不是央视频道返回 None
     """
+    original = name
     name_lower = name.lower()
     
-    # 处理 CCTV-5+ / CCTV5+ / CCTV 5+
+    # 1. 优先检测 CCTV-5+ / CCTV5+ / CCTV 5+ / CCTV-5＋
+    # 必须包含 + 或 ＋ 符号
     if re.search(r'cctv[-\s]*5\s*[＋\+]', name_lower):
         return "CCTV-5+"
     
-    # 处理 CCTV-5 / CCTV5 / CCTV 5 (不包含加号)
-    if re.search(r'cctv[-\s]*5\b', name_lower) and '+' not in name_lower and '＋' not in name_lower:
-        return "CCTV-5"
+    # 2. 检测 CCTV-5 / CCTV5 / CCTV 5 (不包含加号)
+    # 使用单词边界 \b 确保匹配的是完整的 "5" 而不是 "5+" 的一部分
+    # 并且确保后面没有加号
+    if re.search(r'cctv[-\s]*5\b', name_lower):
+        # 双重确认：不包含加号
+        if '+' not in name and '＋' not in name:
+            return "CCTV-5"
     
-    # 处理其他 CCTV-数字
+    # 3. 处理其他 CCTV-数字 (2,3,4,6,7,8,9,10...)
     match = re.search(r'cctv[-\s]*(\d+)', name_lower)
     if match:
         num = match.group(1)
-        return f"CCTV-{num}"
+        # 排除已经处理过的 5
+        if num != '5':
+            return f"CCTV-{num}"
     
-    # 处理央视+数字
+    # 4. 处理央视+数字
     match = re.search(r'央视[-\s]*(\d+)', name)
     if match:
         num = match.group(1)
+        if num == '5':
+            # 检查是否为 CCTV-5+
+            if '+' in name or '＋' in name:
+                return "CCTV-5+"
+            return "CCTV-5"
         return f"CCTV-{num}"
     
     return None
@@ -71,6 +84,10 @@ def merge_channels_by_name(valid_channels: list) -> list:
             # 防止归一化后变成空字符串
             if not norm_name or norm_name.strip() == "":
                 norm_name = raw_name.strip()
+        
+        # 调试日志：查看 CCTV-5 相关的名称转换
+        if 'cctv-5' in raw_name.lower() or 'cctv5' in raw_name.lower():
+            logger.debug(f"名称转换: '{raw_name}' -> '{norm_name}'")
         
         groups[norm_name].append(ch)
 
@@ -95,7 +112,6 @@ def merge_channels_by_name(valid_channels: list) -> list:
         top = ch_list[:MAX_SOURCES_PER_CHANNEL]
         primary = top[0]
         
-        # 最终频道名：使用标准化名称
         channel_name = norm_name
         
         logo_url = primary.get("tvg_logo", "")
@@ -115,10 +131,10 @@ def merge_channels_by_name(valid_channels: list) -> list:
         }
         merged.append(merged_ch)
     
-    # 输出调试信息，检查是否有空名称
-    empty_names = [ch["name"] for ch in merged if not ch["name"] or len(ch["name"]) < 2]
-    if empty_names:
-        logger.warning(f"⚠️ 发现异常频道名: {empty_names[:5]}")
+    # 输出调试信息
+    cctv5_count = sum(1 for ch in merged if ch["name"] == "CCTV-5")
+    cctv5plus_count = sum(1 for ch in merged if ch["name"] == "CCTV-5+")
+    logger.info(f"📊 合并结果: CCTV-5={cctv5_count}, CCTV-5+={cctv5plus_count}")
     
     logger.info(f"🔄 频道合并完成：{len(valid_channels)} 个源 -> {len(merged)} 个频道")
     logger.info(f"🖼️ 图标匹配：为 {matched_logos} 个频道自动匹配了图标")

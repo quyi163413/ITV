@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 499
-# Demo匹配成功: 325
-# 丢弃数量: 174
+# 原始频道总数: 508
+# Demo匹配成功: 331
+# 丢弃数量: 177
 
 CH5,https://cdn6.163189.xyz/163189/ch5
 澳门体育,http://cdn6.163189.xyz/163189/amty
@@ -177,3 +177,6 @@ Arirang,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch
 春晚2024,https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
 余杭综合频道,http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed
 Hebei TV,https://event.pull.hebtv.com:443/live/live101.m3u8
+上虞經濟文化 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
+春晚2026,https://v.lzcdn28.com/20260217/8616_1de9f6e5/index.m3u8
+新昌新聞綜合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8

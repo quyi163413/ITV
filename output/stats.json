@@ -1,17 +1,17 @@
 {
-  "total_channels": 325,
-  "timestamp": "2026-06-13T04:28:56.962136",
+  "total_channels": 312,
+  "timestamp": "2026-06-13T12:05:16.870424",
   "category_stats": {
-    "📺央视频道,#genre#": 23,
-    "📡卫视频道,#genre#": 44,
-    "☘️北京频道,#genre#": 1,
+    "📺央视频道,#genre#": 25,
+    "📡卫视频道,#genre#": 41,
+    "☘️北京频道,#genre#": 2,
     "☘️上海频道,#genre#": 3,
     "☘️天津频道,#genre#": 2,
-    "☘️重庆频道,#genre#": 4,
-    "☘️广东频道,#genre#": 9,
-    "☘️浙江频道,#genre#": 60,
+    "☘️重庆频道,#genre#": 3,
+    "☘️广东频道,#genre#": 8,
+    "☘️浙江频道,#genre#": 57,
     "☘️江苏频道,#genre#": 20,
-    "☘️安徽频道,#genre#": 13,
+    "☘️安徽频道,#genre#": 11,
     "☘️福建频道,#genre#": 2,
     "☘️河南频道,#genre#": 6,
     "☘️湖北频道,#genre#": 3,
@@ -22,15 +22,20 @@
     "☘️贵州频道,#genre#": 1,
     "☘️云南频道,#genre#": 7,
     "☘️陕西频道,#genre#": 6,
-    "☘️甘肃频道,#genre#": 1,
     "☘️青海频道,#genre#": 1,
     "☘️宁夏频道,#genre#": 3,
-    "☘️新疆频道,#genre#": 9,
-    "☘️山西频道,#genre#": 5,
+    "☘️新疆频道,#genre#": 7,
+    "☘️山西频道,#genre#": 4,
     "☘️辽宁频道,#genre#": 5,
-    "☘️吉林频道,#genre#": 24,
+    "☘️吉林频道,#genre#": 23,
     "☘️黑龙江频道,#genre#": 11,
-    "☘️河北频道,#genre#": 16,
-    "🌊港·澳·台,#genre#": 16
+    "☘️河北频道,#genre#": 14,
+    "🌊港·澳·台,#genre#": 17
+  },
+  "features": {
+    "iptv_org_enabled": true,
+    "global_channels_enabled": false,
+    "epg_injection_enabled": true,
+    "incremental_mode": true
   }
 }

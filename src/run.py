@@ -16,7 +16,6 @@ from src.config import (
     ENABLE_ALIAS,
     ENABLE_BLACKLIST,
     DATABASE_ENABLE,
-    CACHE_HOURS,
     OUTPUT_DIR,
     MAX_WORKERS,
     TIMEOUT,
@@ -25,6 +24,9 @@ from src.config import (
     ENABLE_JSON_OUTPUT,
     ENABLE_LITE_VERSION,
     ENABLE_EPG_OUTPUT,
+    ENABLE_INCREMENTAL_FETCH,
+    CACHE_RAW_HOURS,
+    IPTV_ORG_ENABLE,
 )
 from src.fetcher import fetch_all_sources_incremental
 from src.parser import parse_and_dedupe
@@ -54,12 +56,13 @@ async def main():
         f"📋 增强过滤: demo={ENABLE_DEMO_FILTER}, alias={ENABLE_ALIAS}, blacklist={ENABLE_BLACKLIST}"
     )
     
-    # 新增：打印 iptv-org 状态
-    from src.config import IPTV_ORG_ENABLE
+    # 打印 iptv-org 状态
     if IPTV_ORG_ENABLE:
         logger.info("🌍 iptv-org 融合模式已启用")
         if ENABLE_GLOBAL_CHANNELS:
             logger.info("🌍 全球频道扩展已启用")
+        else:
+            logger.info("🌍 全球频道扩展已禁用（可通过 ENABLE_GLOBAL_CHANNELS=true 启用）")
 
     # 获取 demo 顺序（用于输出排序）
     demo_order = parse_demo_order_with_categories() if ENABLE_DEMO_FILTER else []
@@ -68,9 +71,30 @@ async def main():
     # 初始化数据库
     db = await get_db_cache()
 
-    # 拉取源
-    logger.info("\n📥 拉取 IPTV 源...")
-    raw_contents = await fetch_all_sources_incremental(IPTV_SOURCES, db)
+    # ========== 增量更新模式检查 ==========
+    raw_contents = {}
+    last_update = await db.get_last_update_time() if DATABASE_ENABLE else None
+    is_fresh = last_update and (datetime.datetime.now().timestamp() - last_update) < CACHE_RAW_HOURS * 3600
+    
+    if is_fresh and ENABLE_INCREMENTAL_FETCH:
+        logger.info("⚡ 启用增量更新模式（缓存有效，跳过重复拉取）")
+        # 从缓存加载已有内容
+        for url in IPTV_SOURCES:
+            cached = await db.get_raw_source(url)
+            if cached:
+                raw_contents[url] = cached
+                logger.debug(f"📦 从缓存加载: {url}")
+            else:
+                # 缓存未命中才拉取
+                logger.info(f"🔄 缓存未命中，拉取: {url}")
+                fetched = await fetch_all_sources_incremental([url], db)
+                raw_contents.update(fetched)
+    else:
+        if last_update:
+            logger.info(f"📊 缓存已过期（最后更新: {datetime.datetime.fromtimestamp(last_update)}），执行完整采集")
+        else:
+            logger.info("📊 首次运行，执行完整采集")
+        raw_contents = await fetch_all_sources_incremental(IPTV_SOURCES, db)
 
     # 解析并去重
     channels_dict = parse_and_dedupe(raw_contents)
@@ -124,7 +148,7 @@ async def main():
         logger.error("❌ 过滤后无有效频道")
         return 1
 
-    # ========== 新增：全球频道扩展 ==========
+    # ========== 全球频道扩展 ==========
     if ENABLE_GLOBAL_CHANNELS:
         logger.info("🌍 正在合并全球频道...")
         global_selector = get_global_selector()
@@ -136,7 +160,7 @@ async def main():
     for cat, cnt in cat_counter.items():
         logger.info(f"  {cat}: {cnt} 个频道")
 
-    # ========== 修改：使用增强版输出生成器 ==========
+    # ========== 增强版输出生成 ==========
     output_gen = EnhancedOutputGenerator()
     
     # 生成标准输出（保持原有兼容性）
@@ -162,7 +186,8 @@ async def main():
         "features": {
             "iptv_org_enabled": IPTV_ORG_ENABLE,
             "global_channels_enabled": ENABLE_GLOBAL_CHANNELS,
-            "epg_injection_enabled": ENABLE_EPG_OUTPUT
+            "epg_injection_enabled": ENABLE_EPG_OUTPUT,
+            "incremental_mode": is_fresh and ENABLE_INCREMENTAL_FETCH
         }
     }
     stats_path = OUTPUT_DIR / "stats.json"

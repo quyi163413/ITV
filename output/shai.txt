@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 492
-# Demo匹配成功: 319
-# 丢弃数量: 173
+# 原始频道总数: 502
+# Demo匹配成功: 325
+# 丢弃数量: 177
 
 NOW NEWS,http://cdn.163189.xyz/163189/now
 TVB星河,http://r.jdshipin.com/Voac4
@@ -24,6 +24,8 @@ TVB娱乐新闻台,http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
 新闻咨询,http://112.46.105.20:8009/hls/18/index.m3u8
 VOA美国之音,https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8
 CNA,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+浙江钱江都市,https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+浙江教科影视,https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
 新昌休闲影视 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
 安徽池州九华山风景区九华山,https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8
 Astro AOD,http://php.jdshipin.com/TVOD/iptv.php?id=aod
@@ -42,7 +44,6 @@ Astro AOD,http://php.jdshipin.com/TVOD/iptv.php?id=aod
 广西玉林大容山莲花山顶,https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
 乌镇全景,https://gcalic.v.myalicdn.com/gc/zjwzblt_1/index.m3u8
 云南丽江印象实景,https://gcalic.v.myalicdn.com/gc/hkylxs01_1/index.m3u8
-蕭山生活頻道 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
 贵州省兴义市万峰林,https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
 泰山望人松,https://gcalic.v.myalicdn.com/gc/taishan02_1/index.m3u8
 六盘山红军长征景区,https://gcalic.v.myalicdn.com/gc/lpsgmjng01_1/index.m3u8
@@ -72,12 +73,13 @@ Wild Earth,https://wildearth-plex.amagi.tv/masterR1080p.m3u8
 五彩池,https://gcalic.v.myalicdn.com/gc/hlwcc_1/index.m3u8
 八里沟风景区桃花湾瀑布,https://gcalic.v.myalicdn.com/gc/blg05_1/index.m3u8
 泰山主峰,https://gcalic.v.myalicdn.com/gc/taishan01_1/index.m3u8
-萧山新闻综合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8
 云南大理崇圣寺三塔中景,https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8
 乌镇龙形田,https://gcalic.v.myalicdn.com/gc/zjwzlxt_1/index.m3u8
 TVB Plus,http://r.jdshipin.com/Nr5jq
 四川峨眉山普贤菩萨铜像,https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8
 港台电视 32,http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32
+余杭未来E频道,http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
+舒兰新闻,http://stream8.jlntv.cn/shulan/sd/live.m3u8?zjild
 春晚2025,https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8
 黄果树六角亭瀑布,https://gcalic.v.myalicdn.com/gc/hgsspzxdpb_1/index.m3u8
 江苏南京牛首山,https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8
@@ -104,6 +106,7 @@ Good,https://live.streamingfast.net/osmflivech1.m3u8
 Beautiful Life TV,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
 倩女幽魂道道道,http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8
 1988年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5216575810935394655_hlsb.m3u8
+萧山生活频道,http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed
 1987年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5195746663405928031_hlsb.m3u8
 白山新闻综合 [Geo-blocked],https://stream2.jlntv.cn/baishan1/sd/live.m3u8
 兴隆综合,https://jwcdnqx.hebyun.com.cn/live/xlzh/1500k/tzwj_video.m3u8
@@ -123,6 +126,7 @@ Pet Club TV,https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern
 延边新闻综合 [Geo-blocked],https://stream2.jlntv.cn/jlyb/sd/live.m3u8
 泰山大观峰,https://gcalic.v.myalicdn.com/gc/taishan03_1/index.m3u8
 WionNews,https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
+上虞經濟文化 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
 韩国EBS少儿,http://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8
 Arirang,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
 春晚2024,https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
@@ -167,12 +171,12 @@ NewTV武搏世界,http://1.94.31.214/php/hntv.php?id=wspd
 RT DE,https://rt-ger.rttv.com/dvr/rtdeutsch/playlist_4500Kb.m3u8
 湖南张家界天门山西线玻璃栈道,https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8
 文物宝库,http://1.94.31.214/php/hntv.php?id=wwbk
+Hebei TV,https://event.pull.hebtv.com/live/live101.m3u8
 上虞1新闻综合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8
 2024年春晚,https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
 丽江古城万古楼遥望玉龙雪山,https://gcalic.v.myalicdn.com/gc/ljgcwglytylxs_1/index.m3u8
 兵团五师双河影,https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd
-浙江钱江都市,https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
-浙江教科影视,https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
-余杭未来E频道,http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
-Hebei TV,https://event.pull.hebtv.com/live/live101.m3u8
-上虞經濟文化 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
+上虞3新商都 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8
+新昌新聞綜合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8
+蕭山生活頻道 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
+Good 2,https://live.streamingfast.net/osmflivech2.m3u8

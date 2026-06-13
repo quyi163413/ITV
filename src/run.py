@@ -47,6 +47,7 @@ from src.logger import logger
 from src.iptv_org_adapter import get_iptv_org_adapter
 from src.global_channels import get_global_selector
 from src.generator_enhanced import EnhancedOutputGenerator
+from src.overseas_filter import process_overseas_channels
 
 
 async def main():
@@ -118,7 +119,7 @@ async def main():
         await db.save_speed_results(valid_channels)
         await db.set_last_update_time()
 
-    # 合并频道（H.264 优先 + 延迟排序，去除“备用”后缀）
+    # 合并频道（H.264 优先 + 延迟排序，固定源优先）
     merged_channels = merge_channels_by_name(valid_channels)
     logger.info(f"📊 合并后的频道数: {len(merged_channels)}")
 
@@ -130,6 +131,7 @@ async def main():
         logger.info(f"📊 黑名单过滤后: {len(merged_channels)} (减少 {before - len(merged_channels)})")
 
     # Demo 筛选（按 demo.txt 顺序匹配和归类）
+    unmatched_channels = []
     if ENABLE_DEMO_FILTER:
         before = len(merged_channels)
         ordered_channels, unmatched_channels = filter_and_order_by_demo(merged_channels)
@@ -173,6 +175,13 @@ async def main():
         enable_epg=ENABLE_EPG_OUTPUT
     )
 
+    # ========== 处理国外频道（从未匹配的频道中筛选） ==========
+    if ENABLE_DEMO_FILTER and unmatched_channels:
+        logger.info(f"🌍 正在处理 {len(unmatched_channels)} 个未匹配频道（国外频道）...")
+        process_overseas_channels(unmatched_channels, OUTPUT_DIR)
+    else:
+        logger.info("⏭️ 未启用 demo 筛选或无未匹配频道，跳过国外频道处理")
+
     total = len(ordered_channels)
     logger.info(f"🎉 完成！有效频道总数: {total}")
 
@@ -181,6 +190,7 @@ async def main():
         "total_channels": total,
         "timestamp": datetime.datetime.now().isoformat(),
         "category_stats": dict(cat_counter),
+        "unmatched_count": len(unmatched_channels) if unmatched_channels else 0,
         "features": {
             "iptv_org_enabled": IPTV_ORG_ENABLE,
             "global_channels_enabled": ENABLE_GLOBAL_CHANNELS,

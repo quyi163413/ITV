@@ -106,12 +106,12 @@ async def main():
 
     logger.info(f"📊 原始频道数（去重后）: {len(channels_dict)}")
 
-    # ========== HTTP 测速（使用简单日志，不用进度条） ==========
+    # ========== HTTP 测速 ==========
     logger.info("🔍 开始 HTTP 测速...")
     valid_channels = await test_channels_concurrent(channels_dict)
     logger.info(f"📊 通过HTTP测速的频道数: {len(valid_channels)}")
 
-    # ========== ffmpeg 深度验证（使用简单日志） ==========
+    # ========== ffmpeg 深度验证 ==========
     if FFMPEG_ENABLE and valid_channels:
         logger.info("🎬 开始 ffmpeg 深度验证...")
         valid_channels = await validate_batch(valid_channels)

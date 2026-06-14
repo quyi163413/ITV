@@ -4,8 +4,8 @@
 import asyncio
 import subprocess
 import json
+import time
 from concurrent.futures import ThreadPoolExecutor
-from tqdm.asyncio import tqdm
 from src.config import FFMPEG_ENABLE, TIMEOUT, FFMPEG_WORKERS
 from src.database import get_db_cache, channel_key
 from src.logger import logger
@@ -91,12 +91,28 @@ async def validate_batch(channels: list) -> list:
                 return None
         
         tasks = [validate_one(ch) for ch in need_validate]
-        results = []
-        for coro in tqdm.as_completed(tasks, desc="🎬 深度验证", unit="频道", total=len(tasks)):
-            res = await coro
-            results.append(res)
         
-        valid_need = [r for r in results if r is not None]
+        # 简单的进度输出，不刷新行
+        total = len(tasks)
+        completed = 0
+        last_log = 0
+        start_time = time.time()
+        valid_need = []
+        
+        for coro in asyncio.as_completed(tasks):
+            res = await coro
+            completed += 1
+            
+            # 每完成 20 个或每 5 秒输出一次进度
+            now = time.time()
+            if completed - last_log >= 20 or (now - start_time) >= 5:
+                percent = completed * 100 // total
+                logger.info(f"  🎬 验证进度: {completed}/{total} ({percent}%) - 通过: {len(valid_need)}")
+                last_log = completed
+            
+            if res is not None:
+                valid_need.append(res)
+        
         valid_channels.extend(valid_need)
     
     logger.info(f"✅ ffmpeg 验证完成: 通过 {len(valid_channels)}/{len(channels)} 个频道")

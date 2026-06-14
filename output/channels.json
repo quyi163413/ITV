@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 318,
-  "generated": "2026-06-14T10:14:24.968735",
+  "total": 322,
+  "generated": "2026-06-14T14:45:47.917994",
   "channels": [
     {
       "name": "CCTV-1",
@@ -1197,6 +1197,16 @@
       "category": "☘️浙江频道,#genre#"
     },
     {
+      "name": "诸暨新闻综合",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8"
+      ],
+      "latency": 814,
+      "codec": "h264",
+      "logo": "https://live.fanmingming.cn/tv/诸暨新闻综合.png",
+      "category": "☘️浙江频道,#genre#"
+    },
+    {
       "name": "龙游生活娱乐",
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8"
@@ -2309,6 +2319,16 @@
       "category": "☘️云南频道,#genre#"
     },
     {
+      "name": "西安新闻",
+      "urls": [
+        "http://112.46.105.20:8009/hls/28/index.m3u8"
+      ],
+      "latency": 2730,
+      "codec": "h264",
+      "logo": "https://live.fanmingming.cn/tv/西安新闻.png",
+      "category": "☘️陕西频道,#genre#"
+    },
+    {
       "name": "西安都市",
       "urls": [
         "http://112.46.105.20:8009/hls/29/index.m3u8"
@@ -2439,6 +2459,16 @@
       "category": "☘️新疆频道,#genre#"
     },
     {
+      "name": "兵团五师双河新闻综合",
+      "urls": [
+        "http://liveout.btzx.com.cn/62ds9e/4nxdih.m3u8?fbl="
+      ],
+      "latency": 4669,
+      "codec": "h264",
+      "logo": "https://live.fanmingming.cn/tv/兵团五师双河新闻综合.png",
+      "category": "☘️新疆频道,#genre#"
+    },
+    {
       "name": "可克达拉综合",
       "urls": [
         "http://file.loulannews.cn/nmip-media/channellive/channel103824/playlist.m3u8"
@@ -2516,6 +2546,16 @@
       "latency": 2250,
       "codec": "h264",
       "logo": "https://live.fanmingming.cn/tv/太谷新闻综合.png",
+      "category": "☘️山西频道,#genre#"
+    },
+    {
+      "name": "定襄综合",
+      "urls": [
+        "http://lbyzztfe.live.sxmty.com/live/hls/645ff4c60e0a49f0a203abbd73dd8be9/0720e665f10f48e98c9639f4f492fb4a-1.m3u8?zshanxd"
+      ],
+      "latency": 2676,
+      "codec": "h264",
+      "logo": "https://live.fanmingming.cn/tv/定襄综合.png",
       "category": "☘️山西频道,#genre#"
     },
     {

@@ -1,6 +1,6 @@
 #EXTM3U
 # 国外频道合集 (Overseas Channels)
-# 共 4667 个频道
+# 共 4818 个频道
 # 按国家/地区分类，频道名 A-Z 排序
 
 
@@ -31,6 +31,8 @@ http://45.63.116.205/hls3/stream1.m3u8
 # ========== 中国 (13个频道) ==========
 #EXTINF:-1 group-title="中国",ABN China
 https://mediaserver.abnvideos.com/streams/abnchina.m3u8
+#EXTINF:-1 group-title="中国",CGNTV Chinese
+https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CGNWebLiveCN.m3u8
 #EXTINF:-1 group-title="中国",CGTN Arabic [Not 24/7]
 https://arabic-livews.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
 #EXTINF:-1 group-title="中国",CGTN Documentary
@@ -47,8 +49,6 @@ https://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXM
 https://amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnchinatravel-distrotvus/playlist.m3u8
 #EXTINF:-1 group-title="中国",Discovering China
 https://amg01314-amg01314c8-distrotv-us-10218.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtndiscoveringchina-distrotvus/playlist.m3u8
-#EXTINF:-1 group-title="中国",God Stands TV Chinese
-https://online.godstands.tv:5443/WebRTCApp/streams/chineselive.m3u8
 #EXTINF:-1 group-title="中国",Lighting Lives Blessing Nations TV Chinese
 https://brightstar-chinese-pull-secure.akamaized.net/brightstarchinese/stream.m3u8
 #EXTINF:-1 group-title="中国",NTD TV China
@@ -64,9 +64,11 @@ https://d3gjnizphdm6xi.cloudfront.net/Dr_G_Medical_Examiner_SONO15.m3u8
 #EXTINF:-1 group-title="丹麦",Dr. Gene Scott
 https://wescottcc.piksel.tech/hls/live/2041478/adp/playlist.m3u8
 
-# ========== 俄罗斯 (8个频道) ==========
+# ========== 俄罗斯 (9个频道) ==========
 #EXTINF:-1 group-title="俄罗斯",RT Arabic
 https://rt-arb.rttv.com/dvr/rtarab/playlist_4500Kb.m3u8
+#EXTINF:-1 group-title="俄罗斯",RT Balkan
+https://rt-srb.rttv.com/dvr/rtbalkan/playlist_4500Kb.m3u8
 #EXTINF:-1 group-title="俄罗斯",RT Doc-Русский
 https://rt-doc.rttv.com/dvr/rtdru/rtdru1080.m3u8
 #EXTINF:-1 group-title="俄罗斯",RT Documentary
@@ -82,13 +84,15 @@ https://cdn140m.panaccess.com/HLS/RTVJA/index.m3u8
 #EXTINF:-1 group-title="俄罗斯",TV BRICS Russian
 https://rusbrics.mediacdn.ru/cdn/brics/russian/playlist.m3u8
 
-# ========== 其他地区 (4111个频道) ==========
+# ========== 其他地区 (4252个频道) ==========
 #EXTINF:-1 group-title="其他地区",10 Bold Adelaide
 https://dce3793146fef017.mediapackage.us-west-2.amazonaws.com/out/v1/55cdf73af7894775ba6de8f57482b66a/CMAF_HLS/index.m3u8
 #EXTINF:-1 group-title="其他地区",10 TV
 https://mumbai-edge.smartplaytv.in/10TV/index.m3u8
 #EXTINF:-1 group-title="其他地区",100% News
 http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8
+#EXTINF:-1 group-title="其他地区",1001 Noites [Not 24/7]
+https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",111 TV
 https://5db313b643fd8.streamlock.net/111/111/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",12 TV Parma [Not 24/7]
@@ -123,12 +127,22 @@ https://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/playlist.m3u8
 https://hls.247box.live/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",28 kanala
 https://streaming.28kanala.eus/hls/z.m3u8
+#EXTINF:-1 group-title="其他地区",2M
+https://stream-lb.livemediama.com/2m-tnt/hls/master.m3u8
+#EXTINF:-1 group-title="其他地区",2M Monde
+https://stream-lb.livemediama.com/2m/hls/master.m3u8
 #EXTINF:-1 group-title="其他地区",2STV
 http://69.64.57.208/2stv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",2TV
 https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8
+#EXTINF:-1 group-title="其他地区",30A Darcizzle Offshore
+https://30a-tv.com/darcizzle.m3u8
 #EXTINF:-1 group-title="其他地区",30A Georgia Hollywood Review TV
 https://30a-tv.com/gh.m3u8
+#EXTINF:-1 group-title="其他地区",30A Golf Kingdom
+https://30a-tv.com/feeds/vidaa/golf.m3u8
+#EXTINF:-1 group-title="其他地区",30A Investment Pitch
+https://30a-tv.com/feeds/xodglobal/30atv.m3u8
 #EXTINF:-1 group-title="其他地区",30A Luxe Life Discovered
 https://30a-tv.com/feeds/vidaa/luxelife.m3u8
 #EXTINF:-1 group-title="其他地区",30A Music
@@ -177,6 +191,8 @@ https://stream.4fun.tv:8888/hls/4f_high/index.m3u8
 https://4kuhls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",4DmásNoticias TV [Not 24/7]
 https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",4E
+http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",4ever Drama
 https://iptv.prosto.tv/ch49/index.m3u8
 #EXTINF:-1 group-title="其他地区",4ever Theater
@@ -191,6 +207,8 @@ https://soul-5mincrafteng-rakuten.amagi.tv/playlist.m3u8
 http://wms.shared.streamshow.it/canale51/canale51/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",5AAB TV [Not 24/7]
 http://158.69.124.9:1935/5aabtv/5aabtv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",5TV Corrientes [Not 24/7]
+http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",6 Wise Tv
 https://live.enhdtv.com:8081/8150/index.m3u8
 #EXTINF:-1 group-title="其他地区",7 RadioVisione
@@ -263,6 +281,8 @@ https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
 https://mediaserver.abnvideos.com/streams/abnsat.m3u8
 #EXTINF:-1 group-title="其他地区",ABP Ananda
 https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/ananda-livetv/master.m3u8
+#EXTINF:-1 group-title="其他地区",ABP Asmita
+https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/asmita-livetv/master.m3u8
 #EXTINF:-1 group-title="其他地区",ABP Ganga
 https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/ganga-livetv/master.m3u8
 #EXTINF:-1 group-title="其他地区",ABP News
@@ -351,6 +371,8 @@ https://video1.getstreamhosting.com:1936/8306/8306/playlist.m3u8
 https://streamtv.cmediahosthosting.net:3836/live/myafroculturelive.m3u8
 #EXTINF:-1 group-title="其他地区",AfroLandTV
 https://alt-al.otteravision.com/alt/al/al.m3u8
+#EXTINF:-1 group-title="其他地区",Afroturk TV
+https://edge.socialsmart.tv/naturaltv/bant1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",AFTV
 https://livestream.telvue.com/accframingham1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",AFV with Alfonso Ribeiro
@@ -401,6 +423,10 @@ https://install.akctvcontrol.com/speed/broadcast/140/desktop-playlist.m3u8
 https://live.legitpro.co.in/cnnnews/index.m3u8
 #EXTINF:-1 group-title="其他地区",Aksu TV
 https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Al Aoula
+https://stream-lb.livemediama.com/alaoula-tnt/hls/master.m3u8
+#EXTINF:-1 group-title="其他地区",Al Aoula Inter
+https://stream-lb.livemediama.com/alaoula/hls/master.m3u8
 #EXTINF:-1 group-title="其他地区",Al Arabiya
 https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Al Arabiya Business
@@ -415,8 +441,6 @@ https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8
 https://live.kwikmotion.com/alaraby2live/alaraby2.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Al Ekhbariya
 https://aloula-redirect.vercel.app/4/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",Al Ghad TV
-https://eazyvwqssi.erbvr.com/alghadtv/alghadtv.m3u8
 #EXTINF:-1 group-title="其他地区",Al Hadath
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-hadath/2ff87ec4c2f3ede35295a20637d9f8fd/index.m3u8
 #EXTINF:-1 group-title="其他地区",Al Hayat TV
@@ -587,8 +611,12 @@ https://ktvlive.online/stream/hls/ch1.m3u8
 https://s.emisoras.tv:8081/atv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Altaghier TV
 https://jmc-live.ercdn.net/altaghier/altaghier.m3u8
+#EXTINF:-1 group-title="其他地区",Altanto TV [Not 24/7]
+https://stream.haislin.com/ls_j3BOKxBbUJ/index.m3u8
 #EXTINF:-1 group-title="其他地区",Altas TV
 https://edge1.socialsmart.tv/altastv/bant1/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Altena TV
+https://dnx1f4sl30ba2.cloudfront.net/nlpo/clr-nlpo/altenatv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Althania
 https://live.kwikmotion.com/syriatv02live/syriatv02.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Althaqalayn TV
@@ -607,6 +635,8 @@ https://uni01rtmp.tulix.tv/amazingdtv/amazingdtv/playlist.m3u8
 https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
 #EXTINF:-1 group-title="其他地区",Ame 47
 https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Amedia Hit
+http://31.148.48.15/Amedia_HIT_HD/index.m3u8
 #EXTINF:-1 group-title="其他地区",Amedia Premium
 http://31.148.48.15/Amedia_Premium_HD/index.m3u8
 #EXTINF:-1 group-title="其他地区",Ameritrade [Not 24/7]
@@ -633,6 +663,8 @@ https://video.makrodigital.com/americaestereoquito/americaestereoquito/playlist.
 https://video.makrodigital.com/americaestereotulcan/americaestereotulcan/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",América TeVé
 https://live.gideo.video/americateve2/master.m3u8
+#EXTINF:-1 group-title="其他地区",Anadolu Net TV
+https://live.artidijitalmedya.com/artidijital_anadolunet/anadolunet/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Anand TV
 https://live.legitpro.co.in/anandtv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Anand TV [Not 24/7]
@@ -669,6 +701,8 @@ https://60efd7a2b4d02.streamlock.net/a_steiermark/ngrp:livestream_all/playlist.m
 https://amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Antofagasta TV
 https://unlimited6-cl.dps.live/atv/atv.smil/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Anzoátegui TV [Not 24/7]
+https://vcp2.myplaytv.com/anzoateguitv/anzoateguitv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",AP1 TV
 http://maxotts.maxdigitaltv.com/x-media/C22/master.m3u8
 #EXTINF:-1 group-title="其他地区",apart TV
@@ -703,6 +737,18 @@ https://amtv.tulixcdn.com/amtv3/am3abr/index.m3u8
 https://api-tv.ipnet.ua/api/v1/manifest/2118742632.m3u8
 #EXTINF:-1 group-title="其他地区",Arputhar Yesu TV
 https://arputharyesutv.arputharyesutv.com/live/md/index.m3u8
+#EXTINF:-1 group-title="其他地区",Arryadia
+https://stream-lb.livemediama.com/arryadia/hls/master.m3u8
+#EXTINF:-1 group-title="其他地区",Arryadia1
+https://stream-lb.livemediama.com/arryadia-hd-01/hls/master.m3u8
+#EXTINF:-1 group-title="其他地区",Arryadia2
+https://stream-lb.livemediama.com/arryadia-hd-02/hls/master.m3u8
+#EXTINF:-1 group-title="其他地区",Arryadia3
+https://stream-lb.livemediama.com/arryadia-hd-03/hls/master.m3u8
+#EXTINF:-1 group-title="其他地区",ArryadiaTNT
+https://stream-lb.livemediama.com/arryadia-tnt/hls/master.m3u8
+#EXTINF:-1 group-title="其他地区",ART Television
+https://mini.allinonereborn.fun/tata.php?id=11585
 #EXTINF:-1 group-title="其他地区",Artflix Movie Classics
 https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",ARTN TV [Not 24/7]
@@ -743,6 +789,8 @@ https://v2.tustreaming.cl/atacamanoticias/index.m3u8
 https://v2.tustreaming.cl/atacamatv/index.m3u8
 #EXTINF:-1 group-title="其他地区",ATB La Paz [Not 24/7]
 http://186.121.206.197/live/daniel/index.m3u8
+#EXTINF:-1 group-title="其他地区",Atfal & Mawaheb TV
+https://5aafcc5de91f1.streamlock.net/atfal1.com/atfal2/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",ATG Live
 https://kanal75xto-llhls.akamaized.net/live/Data/atg-kanal-15-02a-rr/HLS-Legacy-HL/atg-kanal-15-02a-rr.m3u8
 #EXTINF:-1 group-title="其他地区",Atlanta Channel
@@ -761,6 +809,12 @@ https://atomic.streamnet.ro/academia.m3u8
 https://atomic.streamnet.ro/atomictv.m3u8
 #EXTINF:-1 group-title="其他地区",ATVSat [Not 24/7]
 https://stream.atvsat.com/atvsatlive/smil:atvsatlive.smil/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",ATXN1
+https://cdn-atxn-01.vos360.video/Content/HLS/Live/channel(616d6f49-eaec-6f7e-7186-2bbaf66c69c0)/index.m3u8
+#EXTINF:-1 group-title="其他地区",ATXN2
+https://cdn-atxn-01.vos360.video/Content/HLS/Live/channel(f97b5ddc-b7e4-dff8-9f10-8c16d0833639)/index.m3u8
+#EXTINF:-1 group-title="其他地区",ATXN3
+https://cdn-atxn-01.vos360.video/Content/HLS/Live/channel(c55d1594-ad62-7434-aa17-4d71adb80f99)/index.m3u8
 #EXTINF:-1 group-title="其他地区",Audaz TV [Not 24/7]
 https://cloud2.streaminglivehd.com:1936/8264/8264/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Augsburg TV
@@ -787,6 +841,8 @@ https://avaserieshls.wns.live/hls/stream.m3u8
 https://hls.avang.live/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",Avar TV
 https://avr.host247.net/live/AvarTv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Avers
+https://avers.pp.ua/hls/efir.m3u8
 #EXTINF:-1 group-title="其他地区",Avivamiento TV [Not 24/7]
 https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",AWE
@@ -805,6 +861,10 @@ https://mdstrm.com/live-stream-playlist/65a1d2fd7e7f14355550d570.m3u8
 https://azt-mun.otteravision.com/azt/mun/mun.m3u8
 #EXTINF:-1 group-title="其他地区",Azzurra TV
 https://ed05.top-ix.org/avtvlive/azzurra/streaming/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",B15 Fresnillo
+https://s5.mexside.net:1936/lsac/lsac/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",B15 Zacatecas
+https://s5.mexside.net:1936/envio2/envio2/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",B4U Bhojpuri
 https://cdnb4u.wiseplayout.com/B4U_Bhojpuri/master.m3u8
 #EXTINF:-1 group-title="其他地区",B4U Movies [Geo-blocked]
@@ -891,6 +951,8 @@ http://media4.tripsmarter.com:1935/LiveTV/BTVHD/playlist.m3u8
 https://videostream.shockmedia.com.ar:19360/beatsradio/beatsradio.m3u8
 #EXTINF:-1 group-title="其他地区",Beautiful Life TV
 https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Bebeto TV
+https://mlb.essastream.com:8081/bebetotelevision/index.m3u8
 #EXTINF:-1 group-title="其他地区",BeitolAbbas TV Channel
 https://live.beitolabbas.tv/live/beitolabbastv.m3u8
 #EXTINF:-1 group-title="其他地区",BeJoy.kids
@@ -981,10 +1043,10 @@ https://dkaiai6digij6.cloudfront.net/Lights_Legends_Icons.m3u8
 https://fl.biztv.media/cinema_720_EMfSyXgoRdiIHgldXTZICucKTIeCKO/index.m3u8
 #EXTINF:-1 group-title="其他地区",BIZ Music
 https://fl.biztv.media/music_720_QAKpGmVUjaPApCNjpsgBxrdqNihAkl/index.m3u8
-#EXTINF:-1 group-title="其他地区",BIZ TV
-https://fl.biztv.media/biz_tv_720_uni8jhub4h8fub4idejswh8dh3j94finbu4nidj39inwsj92in3d/index.m3u8
 #EXTINF:-1 group-title="其他地区",Biz TV
 https://2-fss-1.streamhoster.com/pl_154/205722-2251224-1/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",BIZ TV
+https://fl.biztv.media/biz_tv_720_uni8jhub4h8fub4idejswh8dh3j94finbu4nidj39inwsj92in3d/index.m3u8
 #EXTINF:-1 group-title="其他地区",BizaarTV
 https://d3s08lnvd4zcd7.cloudfront.net/webvtt/v1/18584c3f3a2a4df8/88886061/master.m3u8
 #EXTINF:-1 group-title="其他地区",Biznet Adventure
@@ -1081,6 +1143,10 @@ https://cdn3.wowza.com/5/cXdyRHF0Z3kxN0k2/brevardfl/G2111_002/playlist.m3u8
 https://livefta.malimarcdn.com/ftaedge00/briantv.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Bride TV
 https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_013/Stream/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",BRIDGE Classic
+http://31.148.48.15/Bridge_TV_Classic/index.m3u8
+#EXTINF:-1 group-title="其他地区",BRIDGE Hits
+http://31.148.48.15/Bridge_TV_Dance/index.m3u8
 #EXTINF:-1 group-title="其他地区",Brionnais TV
 https://stream2.mandarine.media/brionnaistv/brionnaistv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Brit Asia TV
@@ -1097,6 +1163,8 @@ https://live.artidijitalmedya.com/artidijital_brtv/brtv/playlist.m3u8
 https://rds3.desdeparaguay.net/brunomasitv/brunomasitv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",BTA TV
 https://cloud.fastchannel.es/manifiest/hls/prog9/btatv.m3u8
+#EXTINF:-1 group-title="其他地区",BTB
+https://emisja.btb.j00r.us/iptv/session/1/hls.m3u8
 #EXTINF:-1 group-title="其他地区",BTB 3
 https://emisja3.btb.j00r.us/iptv/session/3/hls.m3u8
 #EXTINF:-1 group-title="其他地区",BTB Info
@@ -1187,6 +1255,12 @@ https://5e85d90130e77.streamlock.net/6052/6052/playlist.m3u8
 https://live20.bozztv.com/akamaissh101/ssh101/camutv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Can TV
 http://canbroadcast.com:7000/canlican/tv.m3u8
+#EXTINF:-1 group-title="其他地区",CAN TV19
+https://cantv.streamguys1.com/cantv/cantv19hls/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",CAN TV21
+https://cantv.streamguys1.com/cantv/cantv21hls/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Cana TV Digital [Not 24/7]
+https://stream.hostuis.com:19360/canatvdigital/canatvdigital.m3u8
 #EXTINF:-1 group-title="其他地区",Canaf54 TV
 https://5caf24a595d94.streamlock.net:1937/pvyugfkzkc/pvyugfkzkc/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Canal 1 [Not 24/7]
@@ -1209,6 +1283,8 @@ https://live20.bozztv.com/giatv/giatv-chinique100tvenvivo/chinique100tvenvivo/pl
 https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/canal11hn/canal11hn.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Canal 11 TuTV
 https://stream.giostreaming.app/canal11/canal11.m3u8
+#EXTINF:-1 group-title="其他地区",Canal 13 Esquipulas
+https://tv91.hostingnuclear.com:19360/intercable/intercable.m3u8
 #EXTINF:-1 group-title="其他地区",Canal 13 Jujuy TV
 https://genexservicios.com:19360/canal13jujuy/canal13jujuy.m3u8
 #EXTINF:-1 group-title="其他地区",Canal 13 La Rioja
@@ -1323,8 +1399,6 @@ https://videos.canal56.com/directe/stream/index.m3u8
 https://alba-cr-repretel-c6.stream.mediatiquestream.com/index.m3u8
 #EXTINF:-1 group-title="其他地区",Canal 6 Posadas
 https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",Canal 65 [Not 24/7]
-https://panel.streamingtv-mediacp.online:1936/tv65/tv65/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Canal 7 Jujuy
 https://stream.arcast.live/canal7jujuy/ngrp:canal7jujuy_all/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Canal 7 Neuquén
@@ -1457,6 +1531,8 @@ https://video.compuwebecuador.com:3783/live/caprichotvlive.m3u8
 https://edge13.vedge.infomaniak.com/livecast/ik:event/manifest.m3u8
 #EXTINF:-1 group-title="其他地区",Carac 2
 https://onefmhd.vedge.infomaniak.com/livecast/ik:onefmhd/manifest.m3u8
+#EXTINF:-1 group-title="其他地区",Carac 3
+https://lfmhd.vedge.infomaniak.com/livecast/lfmhd/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Caras TV
 https://unlimited1-us.dps.live/carastv/carastv.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Caribbean Advantage TV [Not 24/7]
@@ -1559,6 +1635,10 @@ https://d1k6kax80wecy5.cloudfront.net/WFqZJc/index.m3u8
 https://gra1.crystalweb.net:1936/channel8/channel8/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Channel 8 [Not 24/7]
 http://usa.login.in.th:1935/ch8/ch8/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Channel C
+https://mini.allinonereborn.fun/tata.php?id=11588
+#EXTINF:-1 group-title="其他地区",Channel One
+https://mini.allinonereborn.fun/tata.php?id=11589
 #EXTINF:-1 group-title="其他地区",Channel S
 https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/chsukoff.stream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Channel Y [Not 24/7]
@@ -1641,6 +1721,8 @@ https://cloud37.ecuatel.com/ciracutv/live/manifest.m3u8
 https://circle-roku.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Cirque du Soleil [Geo-blocked]
 https://amg01439-amg01439c1-amgplt0081.playout.now3.amagi.tv/playlist/amg01439-amg01439c1-amgplt0081/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Citi Hitz
+https://mini.allinonereborn.fun/tata.php?id=11590
 #EXTINF:-1 group-title="其他地区",Citrico TV [Not 24/7]
 https://edge.essastream.com/citricotv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",City of Monroe Government Channel
@@ -1697,8 +1779,6 @@ https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_gnz6
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 #EXTINF:-1 group-title="其他地区",CNA [Geo-blocked]
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
-#EXTINF:-1 group-title="其他地区",CNA [Not 24/7]
-https://live.creacast.com/cna/stream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",CNA Originals
 https://amg01082-cna-amg01082c1-rlaxx-us-11304.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",CNBC
@@ -1873,6 +1953,8 @@ https://amg01796-amg01796c13-rakuten-gb-6739.playouts.now.amagi.tv/playlist.m3u8
 http://media.smc-host.com:1935/csat.tv/smil:csat.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",CTNi [Not 24/7]
 https://video1.getstreamhosting.com:1936/8226/8226/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",CTV8
+https://server.dtvhd.com/memfs/92d5968d-1b58-486d-a1ba-7b5a3f21c16c.m3u8
 #EXTINF:-1 group-title="其他地区",Cubavision [Not 24/7]
 https://tv.picta.cu/cubavision/cubavision_0.m3u8
 #EXTINF:-1 group-title="其他地区",Cubavision Internacional
@@ -1913,6 +1995,8 @@ https://d1d726ny1vain2.cloudfront.net/playlist.m3u8
 https://livestream-us-east-edge-2.granicusops.com/live/cypressca/live-1-a/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Cáritas TV
 https://rds3.desdeparaguay.net/caritastv/caritastv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Cần Thơ TV1
+https://live.canthotv.vn/live/tv/chunklist.m3u8
 #EXTINF:-1 group-title="其他地区",D3 TV
 https://live20.bozztv.com/akamaissh101/ssh101/d3tvnet/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Da Vinci
@@ -1925,6 +2009,8 @@ https://hls.dabangasudan.org/hls/stream.m3u8
 http://www.dalitv.com.tw:4568/live/dali/index.m3u8
 #EXTINF:-1 group-title="其他地区",Damascus Radio
 https://radiodamascus.ortas.live/RDimshq/RDimshqLive/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Damsathara TV
+https://mini.allinonereborn.fun/tata.php?id=11591
 #EXTINF:-1 group-title="其他地区",Dance FM
 https://5eaccbab48461.streamlock.net:1936/dancefm_1/dancefm_1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Dance Moms
@@ -2021,10 +2107,14 @@ https://fox.hostlagarto.com:8081/deltatv50/tracks-v1a1/mono.m3u8
 https://59d7d6f47d7fc.streamlock.net/pierstyle/pierstyle/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Deluxe Music
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+#EXTINF:-1 group-title="其他地区",Deluxe Rap
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
 #EXTINF:-1 group-title="其他地区",Demais TV
 https://stmv1.samcast.com.br/demaistv6503/demaistv6503/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Demand Drama
 https://amg01487-amg01487c3-amgplt0002.playout.now3.amagi.tv/playlist/amg01487-amg01487c3-amgplt0002/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Deniz Postası TV [Not 24/7]
+https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Dennis and Gnasher
 https://d1upcw8nab85tc.cloudfront.net/dngn.m3u8
 #EXTINF:-1 group-title="其他地区",Denver 8 TV
@@ -2115,6 +2205,8 @@ https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95
 https://live.artidijitalmedya.com/artidijital_diyartv/diyartv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",DİM TV [Geo-blocked]
 https://live.artidijitalmedya.com/artidijital_dimtv/dimtv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",dlaCiebie.tv [Not 24/7]
+https://6034e09794f07.streamlock.net/tv/dlaCiebieTv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",DMF [Not 24/7]
 https://d-m-f.iptv-playoutcenter.de/dmf/dmf1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",DMI TV
@@ -2287,6 +2379,8 @@ https://9090video.mobtada.com/hls/stream.m3u8
 https://stream.elseis.do/canal6/live_1080.m3u8
 #EXTINF:-1 group-title="其他地区",El Sol Network TV
 https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8
+#EXTINF:-1 group-title="其他地区",El Sonorense [Not 24/7]
+https://s5.mexside.net:1936/elsonorense/elsonorense/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",El Toro TV
 https://streaming-1.eltorotv.com/lb0/eltorotv-streaming-web/index.m3u8
 #EXTINF:-1 group-title="其他地区",EL TV [Not 24/7]
@@ -2315,6 +2409,8 @@ https://cloud2.streaminglivehd.com:1936/8078/8078/playlist.m3u8
 https://59d7d6f47d7fc.streamlock.net/elivebresciatv/elivebresciatv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Elsharq TV [Not 24/7]
 https://mn-nl.mncdn.com/elsharq_live/live/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",ElyTV
+https://stmv1.srvsite.com/ely/ely/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",EmanTv
 https://avr.host247.net/live/emantv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Emeril Lagasse Channel
@@ -2331,6 +2427,8 @@ https://stream8.cinerama.uz/1442/tracks-v1a1/mono.m3u8
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/a5e9aebd-1df4-4e56-be4f-33a891756f9b/manifest.m3u8
 #EXTINF:-1 group-title="其他地区",Enlace
 https://livecdn.enlace.plus/enlace/smil:enlace-hd.smil/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Enntivision [Not 24/7]
+https://edge.essastream.com/enntivision/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",ENT Channel
 https://cdn.global.elektamedia.com/live/c7eds/ENT_Channel/SA_LIVE_hls_enc/master.m3u8
 #EXTINF:-1 group-title="其他地区",ENT Family
@@ -2347,6 +2445,8 @@ https://live-bangla.akamaized.net/liveabr/playlist.m3u8
 https://enterbcef94b.airspace-cdn.cbsivideo.com/master.m3u8
 #EXTINF:-1 group-title="其他地区",Entrepreneur TV [Geo-blocked]
 https://cineverse-entrepreneurtv-entrepreneurtv-1-us.ono.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Entuno TV [Not 24/7]
+https://soportedvb.click:3442/live/entunotvlive.m3u8
 #EXTINF:-1 group-title="其他地区",Envoy FAST [Geo-blocked]
 https://pb-5uxlaafha3oi7.akamaized.net/ABR.m3u8
 #EXTINF:-1 group-title="其他地区",Epic Gardening TV
@@ -2413,8 +2513,6 @@ http://181.119.93.83:8000/play/a1sr/index.m3u8
 https://cdn.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Everyday Refresh
 https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc6us/master.m3u8
-#EXTINF:-1 group-title="其他地区",EVI TV
-https://stream.berosat.live:19360/evi-tv/evi-tv.m3u8
 #EXTINF:-1 group-title="其他地区",Evolution Earth
 https://amg00276-amg00276c15-samsung-gb-3790.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",EWTN [Geo-blocked]
@@ -2497,14 +2595,22 @@ http://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
 https://reflect-fcpublicmedia.cablecast.tv/live-5/live/stream-1/live.m3u8
 #EXTINF:-1 group-title="其他地区",Fear Factor
 https://amg00627-banijaygroup-fearfactor-samsungau-9vdod.amagi.tv/playlist/amg00627-banijaygroup-fearfactor-samsungau/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Fernandina Beach City Meeting [Not 24/7]
+https://edge-f.swagit.com/live/fernandinabeachfl/live-1-a/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",FGTEEV [Geo-blocked]
 https://amg00285-amg00285c3-firetv-us-6596.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Ficom Channel
+https://v3.siar.us/ficomchannel/live/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Fight TV
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/70e45fc8-1f6c-4492-ac26-9868f70f4e02/manifest.m3u8
 #EXTINF:-1 group-title="其他地区",FightBox
 https://iptv.prosto.tv/ch118/index.m3u8
 #EXTINF:-1 group-title="其他地区",FilAmTV Network
 https://cdn.vegasplus.us/vegas/ftv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Filinfo TV
+https://d2iqjnqfr8pv3b.cloudfront.net/out/v1/d09d2fc718404cd8bccd3eba2444dd70/index.m3u8
+#EXTINF:-1 group-title="其他地区",Filmax
+https://s3.ideationtec.live/Filmax/Filmax.m3u8
 #EXTINF:-1 group-title="其他地区",Filmex [Geo-blocked]
 https://filmex-filmex-xumo.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Filmex Clásico [Geo-blocked]
@@ -2529,6 +2635,8 @@ https://amtvusdvr.tulix.tv/am3abr/index.m3u8
 https://uni01rtmp.tulix.tv/firstlight/firstlight.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Flame TV
 https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_010/Stream/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Flex Studio Radio TV [Not 24/7]
+https://live20.bozztv.com/akamaissh101/ssh101/fsradiotv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",FloHockey 24/7
 https://amg02278-amg02278c2-flosports-worldwide-9916.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",FloRacing 24/7
@@ -2577,6 +2685,8 @@ https://cors-proxy.cooks.fyi/http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m
 https://frankentv.iptv-playoutcenter.de/frankentv/frankentv.stream_1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",FrankenPlus
 https://stream01.welocal.stream/stream/fhd-frankenplus_119/ngrp:stream_all/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",FRATA TV [Not 24/7]
+https://vdopanel.jlahozconsulting.com:3706/hybrid/play.m3u8
 #EXTINF:-1 group-title="其他地区",Frecuencia Musical TV [Not 24/7]
 https://s2.tvdatta.com:3307/hybrid/play.m3u8
 #EXTINF:-1 group-title="其他地区",Free Speech TV
@@ -2641,10 +2751,10 @@ https://v2.azulstream.com:8081/gamtv/gamtv/index.m3u8
 https://media.parvizshahbazi.com/ganjehozour/Main_tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Garabito TV
 https://59ef525c24caa.streamlock.net/garabitoTV/garabitotv/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",Gardening With Monty Don
-https://aegis-cloudfront-1.tubi.video/b82a751c-18e0-417c-92c1-d476319da423/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Gardening with Monty Don
 https://all3media-gardening-with-monty-don-us.xumo.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Gardening With Monty Don
+https://aegis-cloudfront-1.tubi.video/b82a751c-18e0-417c-92c1-d476319da423/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Garshom TV [Not 24/7]
 https://og2qd3aal7an-hls-live.5centscdn.com/garshomtv/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Gaunda Punjab TV
@@ -2665,6 +2775,8 @@ https://lo3.gemporia.com/abrgemporiaukgfx/smil:livestream.smil/playlist.m3u8
 https://production-fastbpk.content.okast.tv/fa2e8c4385712f9aa35c5b79a2b4ac2d/channels/eec463a6-4364-473b-8d89-555acc5b8fb2/e36e4304-73ff-4f9f-8d38-e748576a1f51/media_.m3u8
 #EXTINF:-1 group-title="其他地区",Generations TV
 https://event.vedge.infomaniak.com/livecast/ik:generation-tv/manifest.m3u8
+#EXTINF:-1 group-title="其他地区",Geo Tez
+https://jk3lz82elw79-hls-live.5centscdn.com/newgeonews/07811dc6c422334ce36a09ff5cd6fe71.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Get.Factual
 https://d1nhni5l2n8hjt.cloudfront.net/gf.m3u8
 #EXTINF:-1 group-title="其他地区",GH Television [Not 24/7]
@@ -2707,6 +2819,18 @@ https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648
 https://go2thls.wns.live/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",Goal TV
 https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8
+#EXTINF:-1 group-title="其他地区",God Stands TV
+https://online.godstands.tv:5443/WebRTCApp/streams/mainlive.m3u8
+#EXTINF:-1 group-title="其他地区",God Stands TV Arabic
+https://online.godstands.tv:5443/WebRTCApp/streams/Arabic.m3u8
+#EXTINF:-1 group-title="其他地区",God Stands TV English
+https://online.godstands.tv:5443/WebRTCApp/streams/EnglishStreaming.m3u8
+#EXTINF:-1 group-title="其他地区",God Stands TV Punjabi
+https://online.godstands.tv:5443/WebRTCApp/streams/PunjabiStreaming.m3u8
+#EXTINF:-1 group-title="其他地区",God Stands TV Tagalog
+https://online.godstands.tv:5443/WebRTCApp/streams/Tagalog.m3u8
+#EXTINF:-1 group-title="其他地区",God Stands TV Urdu
+https://online.godstands.tv:5443/WebRTCApp/streams/UrduStreaming.m3u8
 #EXTINF:-1 group-title="其他地区",GOD TV
 https://ott.god.tv/live/us/master.m3u8
 #EXTINF:-1 group-title="其他地区",God's Learning Channel
@@ -2761,6 +2885,8 @@ https://d6dg3ebeih71x.cloudfront.net/Gravitas_Movies.m3u8
 https://amg01753-narrativeuk-amg01753c3-lg-gb-1833.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatmovies-lggb/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",GREAT! romance
 https://amg01753-narrativeuk-amg01753c2-lg-gb-1832.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatchristmas-lggb/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Green TV
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Greensboro TV
 https://lin12.isilive.ca/live/greensboro/GTN/index.m3u8
 #EXTINF:-1 group-title="其他地区",Grit Xtra
@@ -2835,6 +2961,8 @@ https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594
 https://stream.hrbtv.net/yspd/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Hardcore Pawn
 https://amg00627-amg00627c8-rakuten-uk-4801.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",HarPal Geo
+https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Harvest TV
 https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvesttvlive1/bbb19eae240ec100af921d511efc86a0.sdp/index.m3u8
 #EXTINF:-1 group-title="其他地区",Harvest TV Keralam
@@ -2849,6 +2977,12 @@ https://live.streamhch.com/live/streams/hch1.m3u8
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/74c455d4-625a-448a-8ba7-d086e6462245/manifest.m3u8
 #EXTINF:-1 group-title="其他地区",Heartland [Geo-blocked]
 https://pb-a0c87g3b3mtrw.akamaized.net/Heartland.m3u8
+#EXTINF:-1 group-title="其他地区",Hebei TV
+https://event.pull.hebtv.com/live/live101.m3u8
+#EXTINF:-1 group-title="其他地区",Hebron TV
+https://account20.livebox.co.in/charleshls/live.m3u8
+#EXTINF:-1 group-title="其他地区",Hechos Ecuador [Not 24/7]
+https://online.hechosecuador.com:5443/WebRTCApp/streams/hechosecuador.m3u8
 #EXTINF:-1 group-title="其他地区",Hell's Kitchen
 https://amg00654-itv-amg00654c1-samsung-au-1072.playouts.now.amagi.tv/itv-hellskitchen-samsung/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Hellenic TV [Not 24/7]
@@ -2865,6 +2999,8 @@ https://fox.hostlagarto.com:8081/hmtv/index.m3u8
 https://streamer20.multimedia.blue/Eltrona/HesperangeTV/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",HGPTV [Not 24/7]
 https://cdn-us-east-prod-ingest-infra-dacast-com.akamaized.net/8424fb7f-99a9-87ae-3861-f0620849d11c/source/index.m3u8
+#EXTINF:-1 group-title="其他地区",Hi TV
+https://mini.allinonereborn.fun/tata.php?id=11596
 #EXTINF:-1 group-title="其他地区",Hidabroot
 https://cdn.cybercdn.live/HidabrootIL/Live97/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",High News
@@ -2939,6 +3075,8 @@ https://qvc-amd-live.akamaized.net/hls/live/2034113/lshsn1uswest/master.m3u8
 https://qvc-amd-live.akamaized.net/hls/live/2034113/lshsn2us/master.m3u8
 #EXTINF:-1 group-title="其他地区",HTSpor TV
 https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
+#EXTINF:-1 group-title="其他地区",Huda TV [Not 24/7]
+https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8
 #EXTINF:-1 group-title="其他地区",Hunan TV
 http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 #EXTINF:-1 group-title="其他地区",Hunat TV [Geo-blocked]
@@ -3017,8 +3155,6 @@ https://rpn.bozztv.com/dvrfl03/iipctv/index.m3u8
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
 #EXTINF:-1 group-title="其他地区",Ilm va Tabiat
 https://live.teleradiocom.tj/15/3m.m3u8
-#EXTINF:-1 group-title="其他地区",ILTV
-https://live.creacast.com/iltv/smil:iltv.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Imagen Universal TV
 https://imagenuniversaltv.net:3771/live/iutvlive.m3u8
 #EXTINF:-1 group-title="其他地区",Imai TV
@@ -3051,6 +3187,8 @@ https://secure3.todostreaming.es/live/imastv-livestream.m3u8
 https://fast-rakuten.okast.tv/fa2e8c4385712f9af3e719ec904b3543/channels/34d82f76-b51f-4bf5-9b35-769fb5904e79/96f96405-90e7-489a-a1e6-8ede5d2b4933/media_.m3u8
 #EXTINF:-1 group-title="其他地区",INA Ardivision
 https://fast-rakuten.okast.tv/fa2e8c4385712f9a3b579747e448699c/channels/34d82f76-b51f-4bf5-9b35-769fb5904e79/a4226699-b685-4f5d-9cb6-2a6cac14c377/media_.m3u8
+#EXTINF:-1 group-title="其他地区",Ind 24
+https://mumt02.tangotv.in/IND24/index.m3u8
 #EXTINF:-1 group-title="其他地区",Indiyskoye Kino
 https://stream8.cinerama.uz/1060/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="其他地区",Indywood TV
@@ -3113,6 +3251,8 @@ https://live.presstv.ir/hls/presstv_5_482/index.m3u8
 https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_040/Stream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",IRT
 https://stream.irt.ua/memfs/8fac7cbb-3356-4a03-bb77-4439b727ebd2.m3u8
+#EXTINF:-1 group-title="其他地区",Isaac TV
+https://livecdn.live247stream.com/isaac/tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Isango TV [Not 24/7]
 http://80.241.215.175:1935/isangostar/isangostar/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Ishwar Bhakti TV
@@ -3141,6 +3281,8 @@ https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8
 http://wms.shared.streamshow.it/italia2/mp4:italia2/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Itel TV Canal 2
 https://proxystream.iteltv.com.ar/output/iteltv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",ITN
+https://mini.allinonereborn.fun/tata.php?id=11597
 #EXTINF:-1 group-title="其他地区",ITSF
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/20a0ac30-d157-4400-8f64-3c52b37c645c/manifest.m3u8
 #EXTINF:-1 group-title="其他地区",Iunior TV
@@ -3277,6 +3419,10 @@ http://server.applelive.in/kalikatv/kalikatv.m3u8
 https://tv.kaludecolombia.com/memfs/d71c0104-4752-4690-bdbf-19aa849da6c4.m3u8
 #EXTINF:-1 group-title="其他地区",Kanal 12
 https://live.artidijitalmedya.com/artidijital_kanal12/kanal12/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Kanal 15 [Not 24/7]
+https://live.artidijitalmedya.com/artidijital_kanal15/kanal15/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Kanal 23 [Not 24/7]
+https://live.artidijitalmedya.com/artidijital_kanal23/kanal23/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Kanal 26 [Not 24/7]
 https://live.artidijitalmedya.com/artidijital_kanal26/kanal26/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Kanal 3 [Not 24/7]
@@ -3353,6 +3499,8 @@ https://live.teleradiocom.tj/10/3m.m3u8
 https://amg07653-apmc-amg07653c9-samsung-us-8740.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Kids Pang TV
 https://newidco-kidspangtv-1-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Kids TV
+http://origin5.mediacdn.ru/live/kidstv/index.m3u8
 #EXTINF:-1 group-title="其他地区",KidsFlix [Not 24/7]
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 #EXTINF:-1 group-title="其他地区",King TV [Not 24/7]
@@ -3487,6 +3635,8 @@ https://kviedt2.lls.pbs.org/kviedt2-hls.m3u8
 https://api-tv.ipnet.ua/api/v1/manifest/1293296300.m3u8
 #EXTINF:-1 group-title="其他地区",KZTV-DT1
 https://content.uplynk.com/channel/d1f868588ae5476dadaeff450170a183.m3u8
+#EXTINF:-1 group-title="其他地区",L-TV
+https://live2.telvi.de/hls/l-tv_s1.m3u8
 #EXTINF:-1 group-title="其他地区",L1mburg TV [Not 24/7]
 https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8
 #EXTINF:-1 group-title="其他地区",La C TV
@@ -3605,6 +3755,8 @@ http://temp2.isilive.ca/live/nunavut/live-eng/index.m3u8
 https://leipzig.iptv-playoutcenter.de/leipzig/leipzigfernsehen.stream_1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Lena TV [Not 24/7]
 https://5790d294af2dc.streamlock.net/lenaratv/lenaratv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Lenca Television Canal 40 [Not 24/7]
+https://lencatelevision.com/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",LEO Middelsé TV
 https://ms7.mx-cd.net/tv/238-2061506/Omroep_LEO_TV.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Leomax 24
@@ -3701,6 +3853,8 @@ https://amg26277-amg26277c11-samsung-gb-11286.playouts.now.amagi.tv/playlist.m3u
 https://media.streambrothers.com:1936/8014/8014/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",LiveNOW from FOX [Geo-blocked]
 https://pb-k5p02dtnr2162.akamaized.net/LiveNOW_from_FOX.m3u8
+#EXTINF:-1 group-title="其他地区",LiveXLive
+https://livestream.liveone.com/lc1/p1.m3u8
 #EXTINF:-1 group-title="其他地区",Living Asia Channel
 https://cdn.vegasplus.us/vegas/lac/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",LN24SA
@@ -3753,6 +3907,8 @@ https://lstv.duckdns.org:449/hls/lstv.m3u8
 https://pchlslivesw.lotteimall.com/live/livestream/lotteimalllive_mp4.m3u8
 #EXTINF:-1 group-title="其他地区",Lotte OneTV
 https://onetvhlslive.lotteimall.com/lotteonetvlive/lotteonetvlive.mp4.m3u8
+#EXTINF:-1 group-title="其他地区",Louga TV
+https://stream.sen-gt.com/Mbacke/myStream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Love 2 Hate TV
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/4f3f3fb6-cec9-4a29-bc6c-90685947766e/manifest.m3u8
 #EXTINF:-1 group-title="其他地区",Love Nature
@@ -3805,6 +3961,8 @@ https://live.baolaocai.vn/channel2/stream.m3u8
 http://118.107.85.5:1935/live/smil:LTV.smil/chunklist.m3u8
 #EXTINF:-1 group-title="其他地区",Ländle TV [Not 24/7]
 https://streaming13.huberwebmedia.at/LiveApp/streams/985585225397790082777809.m3u8
+#EXTINF:-1 group-title="其他地区",M-1
+https://m-1.data.lt/m-1/smil:m-1.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",M2
 https://iptv.prosto.tv/ch123/index.m3u8
 #EXTINF:-1 group-title="其他地区",m2o TV
@@ -3841,8 +3999,12 @@ https://tele-stream.telecasa.net/live/st3/maimontv-hd/index.m3u8
 https://videoserver.tmcreativos.com:19360/majestadtv/majestadtv.m3u8
 #EXTINF:-1 group-title="其他地区",Majestad Televisión [Not 24/7]
 https://livetv.305streamhd.com:3667/live/majestadtvlive.m3u8
+#EXTINF:-1 group-title="其他地区",Majid Al Mohandis
+https://shd-amg-fast.edgenextcdn.net/tx019/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Makao TV
 https://live.obslivestream.com/makaomux/index.m3u8
+#EXTINF:-1 group-title="其他地区",Makina TV [Not 24/7]
+https://vdopanel.jlahozconsulting.com:3303/live/makinalive.m3u8
 #EXTINF:-1 group-title="其他地区",Makkal TV
 https://5k8q87azdy4v-hls-live.wmncdn.net/MAKKAL/271ddf829afeece44d8732757fba1a66.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Makon TV
@@ -3897,6 +4059,8 @@ https://movil.ejeserver.com/live/mas23tv.m3u8
 https://movil.ejeserver.com/live/masmusica.m3u8
 #EXTINF:-1 group-title="其他地区",Matched Married Meet [Geo-blocked]
 https://pb-zrn69przatyzi.akamaized.net/Matched_Married_Meet.m3u8
+#EXTINF:-1 group-title="其他地区",MaTele [Not 24/7]
+https://live.matele.be/hls/live.m3u8
 #EXTINF:-1 group-title="其他地区",Mattel Jr.
 https://dc6v647pwrp79.cloudfront.net/matjr.m3u8
 #EXTINF:-1 group-title="其他地区",Maverick Black Cinema
@@ -3961,6 +4125,8 @@ https://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_mercantv/mercantv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Mercurio Noticias
 https://videostream.shockmedia.com.ar/hls/mercuriotv/mercuriotv.m3u8
+#EXTINF:-1 group-title="其他地区",Mercy TV
+https://5dd3981940faa.streamlock.net/mercytv/mercytv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",MERU TV [Not 24/7]
 https://goliveafrica.media:9998/live/628e5c1991061/index.m3u8
 #EXTINF:-1 group-title="其他地区",Meta Film TV
@@ -4065,6 +4231,8 @@ https://cloudvideo.servers10.com:8081/8070/index.m3u8
 https://mohabathls.wns.live/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",Mohammed Abdo
 https://d2ow8h651gs7dx.cloudfront.net/out/v1/371fb663da604e659a2fb99bf89d92d4/index.m3u8
+#EXTINF:-1 group-title="其他地区",MOI TV
+http://202.62.56.22:8080/hls/MOITV.m3u8
 #EXTINF:-1 group-title="其他地区",Mojitv
 https://odmedia-mojitv-1-nl.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Moldova TV
@@ -4355,14 +4523,14 @@ https://livefta.malimarcdn.com/ftaedge00/ningtv.sdp/playlist.m3u8
 https://d3868b4ny0rgdf.cloudfront.net/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Ninja Warrior
 https://amg00654-itv-amg00654c27-rakuten-uk-5295.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Nitida TV [Not 24/7]
+https://vs20.live.opencaster.com/bznudxxdtppv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Nitro TV
 https://streams2.sofast.tv/sofastplayout/71960d71-216f-47f3-bfe5-5b1386c05760_0_HLS/master.m3u8
 #EXTINF:-1 group-title="其他地区",Noa 4 Hamburg
 https://hls1.wtnet.de/noa4hh/apple/wifi6500.m3u8
 #EXTINF:-1 group-title="其他地区",Noa 4 Norderstedt
 https://hls1.wtnet.de/noa4/apple/wifi6500.m3u8
-#EXTINF:-1 group-title="其他地区",NogoumFMTV [Not 24/7]
-https://nogoumtv.nrpstream.com/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",Nolan Nanton Productions [Not 24/7]
 https://cdn.mycloudstream.io/hls/live/broadcast/wbxpvv7l/index.m3u8
 #EXTINF:-1 group-title="其他地区",Nolly Africa
@@ -4387,8 +4555,6 @@ https://nosey-confessbynosey-1-us.xumo.wurl.tv/playlist.m3u8
 https://stream2.nostvbonaire.com/hls/0/stream.m3u8
 #EXTINF:-1 group-title="其他地区",Notele [Not 24/7]
 https://streaming01.divercom.be/notele_live/direct.stream/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",Noticias 16 [Not 24/7]
-https://edge.essastream.com/noticias16/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Noticias Telemundo Ahora [Geo-blocked]
 https://pb-21qh1uz4mmkrs.akamaized.net/master.m3u8
 #EXTINF:-1 group-title="其他地区",Noticiero 90 Minutos
@@ -4425,18 +4591,16 @@ https://r.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8
 https://lightningnow70-samsungau.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",NOW 70s
 https://lightning-now70s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now70s-rakuten/CDN/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",NOW 80s
-https://lightning-now80s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now80s-rakuten/CDN/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Now 80s
 https://lightningnow80-samsungau.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",NOW 80s
+https://lightning-now80s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now80s-rakuten/CDN/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",NOW 90s00s
 https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",NOW NEWS
 http://cdn.163189.xyz/163189/now
 #EXTINF:-1 group-title="其他地区",NOW Rock
 https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",NOW TV
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 #EXTINF:-1 group-title="其他地区",NowMedia Television
 https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a4243540d4b911f0b624bda5e9a32aa9/tracks-v1/index.fmp4.m3u8
 #EXTINF:-1 group-title="其他地区",NPC Rádio e TV
@@ -4485,6 +4649,12 @@ http://78.130.250.2:8023/play/a03r/index.m3u8
 https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_002/Stream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",NärTV
 https://streaming.nartv.fi/live/ngrp:NAR_TV.stream_all/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",O'zbekiston
+https://stream8.cinerama.uz/1001/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",O'zbekiston 24
+https://stream8.cinerama.uz/1011/tracks-v1a1/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",O'zbekiston Tarixi
+https://stream8.cinerama.uz/1209/tracks-v1a1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",OAN
 https://oneamericanews-roku-us.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",OAN Encore [Geo-blocked]
@@ -4493,6 +4663,8 @@ https://a-cdn.herringnetwork.com/affiliate/oane/playlist.m3u8
 https://oan-plus-tcl.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Oasis TV
 https://video.hostingcaaguazu.com:19360/oasistv/oasistv.m3u8
+#EXTINF:-1 group-title="其他地区",Oasis TV [Not 24/7]
+https://5e85d90130e77.streamlock.net/6020/6020/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Obedira TV
 https://video.hostingcaaguazu.com:19360/obediratv/obediratv.m3u8
 #EXTINF:-1 group-title="其他地区",Oberpfalz TV
@@ -4543,6 +4715,8 @@ https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/olelo/G0125_011/playlist.m3u8
 https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/olelo/G0125_012/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Olelo Community Media Channel 55
 https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/olelo/G0125_013/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Oli TV
+https://live.olidigital.in/olitv/olitv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Oman Althakafia
 https://partwota.cdn.mgmlcdn.com/omcultural/smil:omcultural.stream.smil/chunklist.m3u8
 #EXTINF:-1 group-title="其他地区",Oman Mubashir
@@ -4551,6 +4725,8 @@ https://partwota.cdn.mgmlcdn.com/omlive/smil:omlive.stream.smil/chunklist.m3u8
 https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8
 #EXTINF:-1 group-title="其他地区",Oman TV
 https://partneta.cdn.mgmlcdn.com/omantv/smil:omantv.stream.smil/chunklist.m3u8
+#EXTINF:-1 group-title="其他地区",Omega TV [Not 24/7]
+https://5caf24a595d94.streamlock.net:1937/8142/8142/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Omide Iran
 https://oitnhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",Omroep Brabant
@@ -4575,6 +4751,8 @@ https://d2ecwd3cgy6wo0.cloudfront.net/nlpo/clr-nlpo/omroepsudwest/index.m3u8
 https://ms7.mx-cd.net/tv/184-782326/Omroep_Tilburg_TV.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Omroep Venlo
 https://d2pqcu7r58rgg1.cloudfront.net/nlpo/clr-nlpo/omroepvenlo/index.m3u8
+#EXTINF:-1 group-title="其他地区",Omroep Venray
+https://d3j015sg8r68y.cloudfront.net/nlpo/clr-nlpo/omroepvenray/index.m3u8
 #EXTINF:-1 group-title="其他地区",Omroep West [Not 24/7]
 https://d1axml5ozykh3g.cloudfront.net/live/omroepwest/tv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Omroep Zeeland
@@ -4619,6 +4797,8 @@ https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en/playlist.m
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/ontarioca/G2446_002/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",ONTV4U
 https://cdn13.crtvnoc.com/ONTV4U-on-DistroTV/index.m3u8
+#EXTINF:-1 group-title="其他地区",OOG TV
+https://d1xcc1603wntzx.cloudfront.net/nlpo/clr-nlpo/oogtv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Open Rotterdam [Not 24/7]
 https://ms2.mx-cd.net/tv/141-573555/OPEN_Rotterdam.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Operation Repo
@@ -4645,6 +4825,8 @@ https://ms7.mx-cd.net/tv/200-1006554/ORTS_TV.smil/playlist.m3u8
 https://iptv.prosto.tv/ch237/index.m3u8
 #EXTINF:-1 group-title="其他地区",OTV
 https://5dcabf026b188.streamlock.net/OceansTV/livestream/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",OUN
+https://live.knou.ac.kr/knou1/live1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Outdoor Channel
 https://amg00718-outdoorchannela-outdoortv-samsungau-uc7mp.amagi.tv/playlist/amg00718-outdoorchannela-outdoortv-samsungau/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Outer Vision
@@ -4693,6 +4875,8 @@ https://live.feed.thepalmbeaches.tv/index.m3u8
 https://streamunoapp.com:3255/live/palmartvlive.m3u8
 #EXTINF:-1 group-title="其他地区",Pamir TV [Not 24/7]
 http://live.stream.cdn.pamirtv.com/ptv/d0dbe915091d400bd8ee7f27f0791303.sdp/index.m3u8
+#EXTINF:-1 group-title="其他地区",Pannon RTV
+https://stream.nmih.hu:4102/live.m3u8
 #EXTINF:-1 group-title="其他地区",Panorama FM
 https://d6izdil55uftn.cloudfront.net/out/v1/0a06d1d6377c47edbd48721ed724bd08/index.m3u8
 #EXTINF:-1 group-title="其他地区",Paraguay TV
@@ -4805,6 +4989,8 @@ https://euhls.persiana.live/hls/stream.m3u8
 https://onehls.persiana.live/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",Persiana Turkiye
 https://turkhls.persiana.live/hls/stream.m3u8
+#EXTINF:-1 group-title="其他地区",Pet Club TV
+https://petclub-samsungaus.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",PGA Tour
 https://d11k1mnrgfposz.cloudfront.net/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",PhillyCAM
@@ -4909,12 +5095,16 @@ https://livecdn.use1-0004.jwplive.com/live/sites/fGLyccP5/media/FoWynVnP/live.is
 https://vcp11.myplaytv.com/powerfm/powerfm/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Power Dance
 https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Power Love
+https://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Power Max Radio TV
 https://videostream.shockmedia.com.ar:19360/radio1045/radio1045.m3u8
 #EXTINF:-1 group-title="其他地区",Power Rangers [Geo-blocked]
 https://amg00461-eone-amg00461c2-firetv-us-5210.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Power TV
 https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Power Türk Akustik
+https://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Power Türk Slow
 https://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Power Türk Taptaze
@@ -4989,10 +5179,10 @@ https://fox.hostlagarto.com:8081/pulatv/index.m3u8
 http://91.246.72.88:8000/play/a00g/index.m3u8
 #EXTINF:-1 group-title="其他地区",Pulse
 https://amg01076-lightningintern-pulse-samsungau-4a45e.amagi.tv/playlist/amg01076-lightningintern-pulse-samsungau/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Pulse TV
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-pulse-samsungnz/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Pulse95 Radio
 https://svs.itworkscdn.net/pulse95live/pulse96/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",Punjabi Hits
-https://stream.ottlive.co.in/punjabihits/index.m3u8
 #EXTINF:-1 group-title="其他地区",PUNKTum Fernsehen [Not 24/7]
 http://58bd5b7a98e04.streamlock.net/medienasa-live/punktum_high/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Punt 3 Vall Uixó
@@ -5091,6 +5281,8 @@ http://178.32.140.155/canale51/canale51/playlist.m3u8
 https://radio538.prd1.talpatvcdn.nl/22e9bbf9616547d7bc162c993009c533/index.m3u8
 #EXTINF:-1 group-title="其他地区",Radio Aalsmeer TV [Not 24/7]
 https://radioaalsmeer.nl:4443/live/tv.m3u8
+#EXTINF:-1 group-title="其他地区",Radio Albalad TV
+http://streaming.zaytonatube.com:8080/radioalbalad/radioalbalad/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Radio Ancón
 https://www.streaming507.net:19360/anconvideo/anconvideo.m3u8
 #EXTINF:-1 group-title="其他地区",Radio Birikina TV [Not 24/7]
@@ -5143,6 +5335,8 @@ https://radiojnd.cdn.hostin.cc/radiojnd/playlist.m3u8
 https://videoserver.tmcreativos.com:19360/radiomaster/radiomaster.m3u8
 #EXTINF:-1 group-title="其他地区",Radio Monumental TV [Not 24/7]
 https://cloud37.ecuatel.com/monumentaltv/live/manifest.m3u8
+#EXTINF:-1 group-title="其他地区",Radio Nacional del Paraguay
+https://stream.paraguaytv.gov.py/memfs/ea8a90e9-10f7-4b00-8e88-42f4a838d74b.m3u8
 #EXTINF:-1 group-title="其他地区",Radio Norba TV
 https://stream12.xdevel.com/video0s975885-2349/stream/playlist_dvr.m3u8
 #EXTINF:-1 group-title="其他地区",Radio Number One [Not 24/7]
@@ -5165,6 +5359,8 @@ https://00ff00.latnet.media/edge/swh_tv.smil/playlist.m3u8
 https://stream2.xdevel.com/video1s3-7/stream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Radio Tele Evangile Sans Limite
 https://5790d294af2dc.streamlock.net/8124/8124/chunklist.m3u8
+#EXTINF:-1 group-title="其他地区",Radio Tele Full Gospel
+https://f-tx-edge-87.christianworldmedia.com/EJCFG/mp4:EJCFG/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Radio Tele Ginen
 http://teleginen.srfms.com:1935/teleginen/livestream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Radio Tele Planet Compas [Not 24/7]
@@ -5181,8 +5377,6 @@ https://videoserver.tmcreativos.com:19360/raditropical/raditropical.m3u8
 https://vdo.ssl-stream.com:3412/stream/play.m3u8
 #EXTINF:-1 group-title="其他地区",Radio TV El Arca del Pacto
 https://video.wilohosting.com:19360/radiotvelarcadelpacto/radiotvelarcadelpacto.m3u8
-#EXTINF:-1 group-title="其他地区",Radio TV Neuquén [Not 24/7]
-https://media.neuquen.gov.ar/rtn/television/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Radio TV Sal One
 https://lon.rtsp.me/r3ZnG6WN2HIRxPARhAirIQ/1713628621/hls/9QdykDAy.m3u8
 #EXTINF:-1 group-title="其他地区",Radio Télé 4VEH
@@ -5207,6 +5401,8 @@ https://eu1.servers10.com:8081/8230/index.m3u8
 https://server-67.stream-server.nl:1936/RadioToppers/RadioToppers/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RadioTV Oriente
 https://live.obslivestream.com/tvoriente/index.m3u8
+#EXTINF:-1 group-title="其他地区",Raftaar Media
+https://6n3yorwpy9ok-hls-live.5centscdn.com/raftaarmedia/243bd1ce0387f18005abfc43b001646a.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Rainbow Ruby
 https://dt9mwqwe98q7o.cloudfront.net/master.m3u8
 #EXTINF:-1 group-title="其他地区",Rainy Day Vibes
@@ -5285,6 +5481,8 @@ https://cs.ebmcdn.net/eastbay-live-hs-1/fcps/mp4:fcps/playlist.m3u8
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 group-title="其他地区",Red Digital [Not 24/7]
 https://video.hostingcaaguazu.com:19360/reddigitalsanpedro/reddigitalsanpedro.m3u8
+#EXTINF:-1 group-title="其他地区",Red Interior TV
+https://video.wilohosting.com:19360/redinteriortv/redinteriortv.m3u8
 #EXTINF:-1 group-title="其他地区",Red Social Codi TV [Not 24/7]
 https://mp.panelchs.com:1936/8040/8040/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Red TV Lebanon
@@ -5303,6 +5501,8 @@ https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8
 https://cdn.live.br1.jmvstream.com/webtv/AVJ-15235/playlist/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RedeTV! Parana
 https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",RedMusic
+https://fr.crystalweb.net:1936/redmusic/redmusic/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Redseat The First
 https://a-cdn.klowdtv.com/live2/thefirst_720p/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Reelz Famous & Infamous
@@ -5375,22 +5575,22 @@ https://edge12.vedge.infomaniak.com/livecast/ik:livehautetension/manifest.m3u8
 https://common01.todostreaming.es/live/ribera-livestream.m3u8
 #EXTINF:-1 group-title="其他地区",RiC
 https://rictv.iptv-playoutcenter.de/rictv/rictv-web/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Ridee TV
+https://mini.allinonereborn.fun/tata.php?id=11602
 #EXTINF:-1 group-title="其他地区",RiffTrax
 https://wurlrifftrax.global.transmit.live/hls/68222b9cbe836edbe6f39e74/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Rifle Community TV RCTV
 https://livestream.telvue.com/riflecmttv2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",Rig TV
-https://buzzr-rigtv-xumo.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RIG TV
 https://d3czphc6lk67kh.cloudfront.net/RIG_TV.m3u8
+#EXTINF:-1 group-title="其他地区",Rig TV
+https://buzzr-rigtv-xumo.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Risate Dal Sud
 https://ixmedia-srl-risatealsud-1-it.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RIT TV
 https://acesso.ecast.site:3648/live/ritlive.m3u8
 #EXTINF:-1 group-title="其他地区",River Monsters
 https://amg00654-itv-amg00654c24-samsung-gb-8890.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",RL PRO TV
-https://stream.berosat.live:19360/rlpro-tv/rlpro-tv.m3u8
 #EXTINF:-1 group-title="其他地区",Rlive TV
 https://realitatealive.md/tv/rlive.m3u8
 #EXTINF:-1 group-title="其他地区",RMTV
@@ -5447,18 +5647,10 @@ https://live.obslivestream.com/selvatv/index.m3u8
 https://stmv2.srvif.com/rsvhonduras/rsvhonduras/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RTB 3
 https://edge13.vedge.infomaniak.com/livecast/ik:rtb3-1/manifest.m3u8
-#EXTINF:-1 group-title="其他地区",RTB Aneka
-https://d1211whpimeups.cloudfront.net/smil:rtb2/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",RTB Go
-https://d1211whpimeups.cloudfront.net/smil:rtbgo/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",RTB Sukmaindera
-https://d1211whpimeups.cloudfront.net/smil:rtb1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RTG
 https://5e50264bd6766.streamlock.net/radtvguerrero/videoradtvguerrero/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RTG 1
 http://69.64.57.208/rtg/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",RTG TV
-http://31.148.48.15/RTG_HD/index.m3u8
 #EXTINF:-1 group-title="其他地区",RTH-TV1
 https://2-fss-2.streamhoster.com/pl_120/amlst:206708-4203440/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RTI 1 [Not 24/7]
@@ -5469,8 +5661,6 @@ http://69.64.57.208:8080/rti2/playlist.m3u8
 http://69.64.57.208/la3/index.m3u8
 #EXTINF:-1 group-title="其他地区",RTK 3
 https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/rtk3/index.m3u8
-#EXTINF:-1 group-title="其他地区",RTN [Not 24/7]
-https://media.neuquen.gov.ar/rtn/television/media.m3u8
 #EXTINF:-1 group-title="其他地区",RTNC
 http://69.64.57.208/rtnc/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RTP
@@ -5483,8 +5673,6 @@ https://tv3ecuador.site/hls/stream/index.m3u8
 https://5f204aff97bee.streamlock.net/RTTRlive/livestream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RTU [Not 24/7]
 https://video1.makrodigital.com/rtu/rtu/chunks.m3u8?nimblesessionid=
-#EXTINF:-1 group-title="其他地区",RTV 1
-https://dy7fxpkq4ggk8.cloudfront.net/nlpo/clr-nlpo/rtv1/index.m3u8
 #EXTINF:-1 group-title="其他地区",RTV [Not 24/7]
 http://iptv.rtv-ooe.at/stream.m3u8
 #EXTINF:-1 group-title="其他地区",RTV Canal 57
@@ -5493,6 +5681,8 @@ https://stream.giostreaming.app/rtvcanal57/rtvcanal57.m3u8
 https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8
 #EXTINF:-1 group-title="其他地区",RTV Herceg-Bosne [Not 24/7]
 https://prd-hometv-live-open.spectar.tv/ERO_1_083/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",RTV LOVE
+https://d2o8iss0ldenh4.cloudfront.net/nlpo/clr-nlpo/rtvlove/index.m3u8
 #EXTINF:-1 group-title="其他地区",RTV Maastricht [Not 24/7]
 http://stream.rtvmaastricht.nl:8081/rtvm_live/tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",RTV Meppel
@@ -5531,6 +5721,8 @@ https://media.rtvwesterwolde.nl/hls/live/index.m3u8
 https://stream.rtvze.ba/live/123/123.m3u8
 #EXTINF:-1 group-title="其他地区",RTV Zulthe
 http://ms7.mx-cd.net/tv/212-1299944/RTV-Zulthe.smil/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",RTV21
+https://gjirafa-video-live.gjirafa.net/gjvideo-live/2cz-npl-jfn-9he/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="其他地区",RTV38
 https://845d8509d2cb4f249dd0b2ae5755b6c2.msvdn.net/rtv38/rtv38_live_main/mainabr/rtv38_live_main/main_576/chunks_dvr.m3u8
 #EXTINF:-1 group-title="其他地区",RTVC
@@ -5539,6 +5731,8 @@ https://cdn140m.panaccess.com/HLS/RTVC/index.m3u8
 https://live.rudaw.net/hls/rudaw-tv/master.m3u8
 #EXTINF:-1 group-title="其他地区",Runtime Espanol
 https://run-rt-uh-roku.otteravision.com/run/rt_uh/rt_uh.m3u8
+#EXTINF:-1 group-title="其他地区",Rupavahini
+https://mini.allinonereborn.fun/tata.php?id=11611
 #EXTINF:-1 group-title="其他地区",Ruta66 TV
 https://cnn.livestreaminggroup.info:3796/live/ruta66tvlive.m3u8
 #EXTINF:-1 group-title="其他地区",RUTC TV
@@ -5557,6 +5751,8 @@ https://ryanandfriends-samsungau.amagi.tv/playlist.m3u8
 https://stream8.cinerama.uz/1407/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="其他地区",Ràdio Bocairent TV [Not 24/7]
 http://185.81.77.4/BocairentTV/index.m3u8
+#EXTINF:-1 group-title="其他地区",Rádio Sines [Geo-blocked]
+https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Régió TV
 http://tv.geniusnet.sk:8081/regiotv/pl.m3u8
 #EXTINF:-1 group-title="其他地区",RÚV
@@ -5591,6 +5787,8 @@ https://amg00732-amg00732c2-stirr-us-8938.playouts.now.amagi.tv/playlist.m3u8
 https://amg00732-salemnewsfast-amg00732c2-xumo-us-1316.playouts.now.amagi.tv/snc-xm/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Salira TV
 https://live.salira.tv/p/3870/hybrid/play.m3u8
+#EXTINF:-1 group-title="其他地区",Salto 1
+https://d11lnfpmek70tc.cloudfront.net/nlpo/clr-nlpo/2103d417/index.m3u8
 #EXTINF:-1 group-title="其他地区",Salto 2
 https://d11lnfpmek70tc.cloudfront.net/nlpo/clr-nlpo/bad78523/index.m3u8
 #EXTINF:-1 group-title="其他地区",Salvación TV
@@ -5649,6 +5847,8 @@ https://edge.essastream.com/telemilenio/playlist.m3u8
 http://tiquiciatv.com:1935/stv/web/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Sardari TV [Not 24/7]
 http://158.69.124.9:1935/sardaritv/sardaritv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",SAS TV
+https://cdn.streamhispanatv.net:3390/live/sastvgtlive.m3u8
 #EXTINF:-1 group-title="其他地区",Sat 7 Arabic
 https://svs.itworkscdn.net/sat7arabiclive/sat7arabic.smil/playlist_dvr.m3u8
 #EXTINF:-1 group-title="其他地区",Sat 7 Kids
@@ -5719,8 +5919,6 @@ https://video1.getstreamhosting.com:1936/8330/8330/playlist.m3u8
 https://d3mznj2vub522l.cloudfront.net/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Series K Heart
 https://d28efmnqar6ea8.cloudfront.net/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",Series K Legacy
-https://d2uvezlpjwbhrx.cloudfront.net/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",SET Televisión Canal 26.1 [Not 24/7]
 https://5d0d1d7a6be9e.streamlock.net/sicom/canal1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",SET Televisión Canal 26.2 [Not 24/7]
@@ -5733,6 +5931,8 @@ https://stream8.cinerama.uz/1017/tracks-v1a1/playlist.m3u8
 https://5ff3d9babae13.streamlock.net/fzkqsdfray/fzkqsdfray/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Señal España
 https://tv91.hostingnuclear.com:19360/xhunestv/xhunestv.m3u8
+#EXTINF:-1 group-title="其他地区",Señal Perú TV [Not 24/7]
+https://livestream.perucast.com/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",Señal Positiva TV
 https://eu1.servers10.com:8081/8108/index.m3u8
 #EXTINF:-1 group-title="其他地区",SF Commons Channel 29
@@ -5753,10 +5953,14 @@ https://streaming.zaytonatube.com:8081/ShababFM/shabab/index.m3u8
 https://sh7hls.wns.live/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",Shades of Black [Geo-blocked]
 https://xumo-fusebeats.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Shakthi TV
+https://mini.allinonereborn.fun/tata.php?id=11612
 #EXTINF:-1 group-title="其他地区",Shalom
 https://d2c4zqo2rb5uf1.cloudfront.net/master.m3u8
 #EXTINF:-1 group-title="其他地区",Shams TV
 https://stream.shams.tv/hls/stream.m3u8
+#EXTINF:-1 group-title="其他地区",Shamshad TV [Not 24/7]
+https://5a1178b42cc03.streamlock.net/shamshadtelevision/shamshadtelevision/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Sharjah 2
 https://svs.itworkscdn.net/smc2live/smc2tv.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Sharjah Radio Quran
@@ -5783,6 +5987,8 @@ https://live.shoppingntmall.com/live/10011.m3u8
 https://d1s1wrpgemt9re.cloudfront.net/Shout_TV.m3u8
 #EXTINF:-1 group-title="其他地区",Shubh Cinema TV
 https://d393sxaxig6bax.cloudfront.net/out/v1/589cf2cf44bf42bb941e817a2240d62e/index.m3u8
+#EXTINF:-1 group-title="其他地区",Shubh TV
+https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/index.m3u8
 #EXTINF:-1 group-title="其他地区",Shubhsandesh TV [Not 24/7]
 https://6284rn2xr7xv-hls-live.wmncdn.net/shubhsandeshtv1/live123.stream/index.m3u8
 #EXTINF:-1 group-title="其他地区",SIC Alta Definição
@@ -5813,6 +6019,8 @@ http://stream2.jlntv.cn/sptv/sd/live.m3u8?_upt=f27750421743154598
 https://webprod.sipse.com.mx:8080/show/merida.m3u8
 #EXTINF:-1 group-title="其他地区",SIPSE TVCUN 8.1 [Not 24/7]
 https://webprod.sipse.com.mx:8080/show/tvcun.m3u8
+#EXTINF:-1 group-title="其他地区",Sirasa TV
+https://mini.allinonereborn.fun/tata.php?id=11614
 #EXTINF:-1 group-title="其他地区",Sistesur Canal 49 [Not 24/7]
 https://5790d294af2dc.streamlock.net/SISTESUR/SISTESUR/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Sivan TV
@@ -5839,6 +6047,8 @@ https://sltwohls.wns.live/hls/stream.m3u8
 https://samson.streamerr.co:8081/sleutelstad/index.m3u8
 #EXTINF:-1 group-title="其他地区",SLO County Channel 21
 https://agp-nimble.streamguys1.com/SLOC/SLOC/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Slotstad TV
+https://d3eq9mufmyqgh4.cloudfront.net/nlpo/clr-nlpo/slotstadtv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Slugterra
 https://d19m5s4kmtxvps.cloudfront.net/master.m3u8
 #EXTINF:-1 group-title="其他地区",SLVR
@@ -5921,6 +6131,8 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/ee
 https://edge-001.streamup.eu/sportitalia/sihd_abr/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Sportoutdoor.tv
 https://gto2000-sportoutdoortv-1-it.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",SPOTV
+http://primestreams.tv:826/live/mookie22/49aV7nBsK4/119515.m3u8
 #EXTINF:-1 group-title="其他地区",SPOTV 2
 http://primestreams.tv:826/live/mookie22/49aV7nBsK4/119516.m3u8
 #EXTINF:-1 group-title="其他地区",SQCS Canal 4
@@ -6049,6 +6261,8 @@ https://cdn.live.br1.jmvstream.com/webtv/AVJ-12952/playlist/playlist.m3u8
 https://2mk9qae4rwyb-hls-live.wmncdn.net/shubhavartha/live.stream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Subin TV
 https://stream.galaxyott.live/live/subintv/index.m3u8
+#EXTINF:-1 group-title="其他地区",Suceso TV [Not 24/7]
+https://live.enhdtv.com:8081/8060/index.m3u8
 #EXTINF:-1 group-title="其他地区",Such TV
 https://video.primexsports.com/suchnews/live/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Sudan TV
@@ -6099,6 +6313,8 @@ https://ss2.tvrdomi.com:1936/supremateve/supremateve/playlist.m3u8
 https://lbs-us1.suprememastertv.com/720p.m3u8
 #EXTINF:-1 group-title="其他地区",SUR TV
 https://redirector.rudo.video/hls-video/ey6283je82983je9823je8jowowiekldk9838274/surtv/surtv.smil/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Sur TV
+https://ss2.tvrdomi.com:1936/eradiofonicas/eradiofonicas/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Surabaya TV
 https://e.siar.us/live/surabayatv.m3u8
 #EXTINF:-1 group-title="其他地区",Suram TV
@@ -6107,6 +6323,8 @@ https://livetv.305streamhd.com:3111/live/suramtvlive.m3u8
 https://amg13231-actve-amg13231c4-samsung-nz-3093.playouts.now.amagi.tv/playlist/amg13231-actvefast-surfer-samsungnz/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",SURFER TV
 https://dgwfm675921lp.cloudfront.net/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Suriya TV
+https://stream.ottlive.co.in/suryatvtamil/index.m3u8
 #EXTINF:-1 group-title="其他地区",Suriyan TV
 https://stream.sscloud7.com/live/suriyantv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Survivor
@@ -6295,6 +6513,8 @@ https://mediaserver1.castpin.com/hls/telesahel/index.m3u8
 https://servilive.com:3879/live/telesaltillolive.m3u8
 #EXTINF:-1 group-title="其他地区",Tele Uno [Not 24/7]
 http://tv.teleunotv.cr:1935/TVUNO/TVUNO/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Tele UV [Not 24/7]
+https://58fe359775f31.streamlock.net/tvuv/myStream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Tele Zoukla
 https://vdo.pro-fhi.net:3228/stream/play.m3u8
 #EXTINF:-1 group-title="其他地区",Tele5
@@ -6379,8 +6599,6 @@ https://live.mariatvcdn.com/telemistretta/8fbcd205ada81b295ee6c211c3a80dde.sdp/p
 http://185.202.128.1:1935/TelemoliseStream/telemoliseTV.stream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Telemontecarlo
 https://stream10.xdevel.com/video17s975955-2173/stream/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",Telemotril [Not 24/7]
-https://5940924978228.streamlock.net/8431/8431/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Telemundo Accion
 https://xumo-drct-ch835-ekq0p.fast.nbcuni.com/live/master.m3u8
 #EXTINF:-1 group-title="其他地区",Telemundo Al Día
@@ -6429,8 +6647,6 @@ https://player.tvstream.mx/livestream/teleplay/livehd/playlist.m3u8
 http://iptv.telepremier.video.makrodigital.com:8081/telepremier/iptv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Telequince
 https://video.hostingcaaguazu.com:19360/telequince/telequince.m3u8
-#EXTINF:-1 group-title="其他地区",TeleRadioNorte
-https://angelistic.live:3785/live/tvoficiallive.m3u8
 #EXTINF:-1 group-title="其他地区",TeleRama
 https://58d921499d3d3.streamlock.net/TeleRama/livestream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Telerama [Not 24/7]
@@ -6605,6 +6821,8 @@ https://zns-edge1.streamcomedia.cloud/abr_parliamentarychannel/abr-parliament_st
 https://the-pet-collective-international-it.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",The Pet Collective [Geo-blocked]
 https://pb-jc9emctsujawo.akamaized.net/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",The Price Is Right: The Barker Era [Geo-blocked]
+https://amg00145-buzzr-bigballs-tpir-8min-rokuus-otcre.amagi.tv/playlist/amg00145-buzzr-bigballs-tpir-8min-rokuus/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",The Reuters 60
 https://amg00453-amg00453c1-distrotv-us-7691.playouts.now.amagi.tv/playlist/amg00453-reuters-reuters-distrotvus/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",The Ringer from Spotify
@@ -6659,6 +6877,8 @@ https://cdn10.live-tv.cloud/riood/tisod-abr/riood/tisod720/playlist.m3u8
 https://cloud.tvomix.com/TITOTV/index.m3u8
 #EXTINF:-1 group-title="其他地区",TIV Television
 https://videohd.live:19360/8008/8008.m3u8
+#EXTINF:-1 group-title="其他地区",Tivi 6
+https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TJC
 https://cdn-shop-lc-01.akamaized.net/Content/HLS_HLS/Live/channel(TJCOTT)/index.m3u8
 #EXTINF:-1 group-title="其他地区",Tlaxcala Televisión [Not 24/7]
@@ -6679,6 +6899,8 @@ https://streamingcws30.com/tn8/videotn8/chunks.m3u8
 https://dpltey7dr5q2g.cloudfront.net/TNA_Wrestling.m3u8
 #EXTINF:-1 group-title="其他地区",TNA Wrestling Channel [Geo-blocked]
 https://amg00966-amg00966c1-distrotv-us-7706.playouts.now.amagi.tv/playlist/amg00966-anthem-tnawrestling-distrotvus/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",TNE [Not 24/7]
+https://v2.tustreaming.cl/tnetv/index.m3u8
 #EXTINF:-1 group-title="其他地区",TNH
 https://bozztv.com/dvrfl03/hdirect/hdirect-telecaraibes/index.m3u8
 #EXTINF:-1 group-title="其他地区",TNO Radio
@@ -6697,6 +6919,8 @@ https://aegis-cloudfront-1.tubi.video/be9224ff-0bff-440d-aa84-40afcb2150b5/playl
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/13b5735d-52c3-4be0-853d-e0ec0127e708/manifest.m3u8
 #EXTINF:-1 group-title="其他地区",Tom And Jerry
 https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Ton TV [Not 24/7]
+https://live.artidijitalmedya.com/artidijital_tontv/tontv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Tonghua TV
 http://lsfb.avap.jilintv.cn/zqvk7vpj/channel/43ea5771aa44421591f9dfd2b71f1b9b/index.m3u8
 #EXTINF:-1 group-title="其他地区",Tony Robbins [Geo-blocked]
@@ -6829,6 +7053,8 @@ https://livecdn.euw1-0005.jwplive.com/live/sites/J42OBHtp/media/vvNWt4O9/live.is
 https://hls-live-tv2000.akamaized.net/hls/live/2028510/tv2000/master.m3u8
 #EXTINF:-1 group-title="其他地区",TV 8
 https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 group-title="其他地区",TV A Critica
+https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV A Folha
 https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Aire
@@ -6869,6 +7095,8 @@ https://stream.polar.cz/tvbrno1/tvbrno1live-1/playlist.m3u8
 https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Campane 1
 https://eu1.servers10.com:8081/8032/index.m3u8
+#EXTINF:-1 group-title="其他地区",TV Canal Sur
+https://streamtvs.tvcanalsur.com.do/hls/stream/index.m3u8
 #EXTINF:-1 group-title="其他地区",TV Cancao Nova
 https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Canindeyu
@@ -6879,6 +7107,8 @@ https://arenasportslovakia.ddns.net/hls/cetv2.m3u8
 https://cloud2.streaminglivehd.com:1936/8032/8032/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Centro 27.2
 https://cloud2.streaminglivehd.com:1936/8004/8004/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",TV Cisne
+https://video2.lhdserver.es/tvcisne/live.m3u8
 #EXTINF:-1 group-title="其他地区",TV Clube
 https://5c483b9d1019c.streamlock.net/8186/8186/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Color Canal 36
@@ -6887,10 +7117,14 @@ https://video.compuwebecuador.com:3067/live/tvcolorlive.m3u8
 https://s.emisoras.tv:8081/tvcopan/index.m3u8
 #EXTINF:-1 group-title="其他地区",TV Curuça
 https://stmv1.srvif.com/tvcurucasp/tvcurucasp/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",TV Câmara
+https://stream3.camara.gov.br/tv1/manifest.m3u8
 #EXTINF:-1 group-title="其他地区",TV Daja [Not 24/7]
 https://edge.essastream.com/dajatv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Den [Not 24/7]
 http://canli.tvden.com.tr/hls/live.m3u8
+#EXTINF:-1 group-title="其他地区",TV Derana
+https://mini.allinonereborn.fun/tata.php?id=11607
 #EXTINF:-1 group-title="其他地区",TV Direct 13 [Not 24/7]
 https://oqgdrog4d4rm-hls-live.5centscdn.com/tvdirect/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Eger
@@ -6901,6 +7135,8 @@ http://cdn22.streampartner.nl/tvellef/livestream/playlist.m3u8
 https://stmv7.samcast.com.br/sistemaencontrodasaguas/sistemaencontrodasaguas/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Estrella
 https://s.emisoras.tv:8081/tve/index.m3u8
+#EXTINF:-1 group-title="其他地区",TV Famille
+https://streamer1.streamhost.org/salive/GMItvfh/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Florencia
 https://cdn.streamhispanatv.net:3819/live/tvflorecialive.m3u8
 #EXTINF:-1 group-title="其他地区",TV Futuro
@@ -6921,6 +7157,8 @@ https://vod1.laki.eu/live/hram/index.m3u8
 https://stream01.welocal.stream/stream/fhd-tvingolstadt_44349/ngrp:stream_all/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV ITN
 https://itnhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 group-title="其他地区",TV Jadran [Not 24/7]
+https://tvjadran.stream.agatin.hr:3412/live/tvjadranlive.m3u8
 #EXTINF:-1 group-title="其他地区",TV Keszthely
 https://cloudfront44.lexanetwork.com:1344/freerelay/keszthelyivtv.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Kujawy [Not 24/7]
@@ -6955,6 +7193,8 @@ https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
 https://w1.manasat.com/tvmana-leste/smil:tvmana-leste.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Mar La Paz
 https://5fc584f3f19c9.streamlock.net/tvmarlapaz/smil:tvmarlapaz.smil/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",TV Mar Los Cabos
+https://5fc584f3f19c9.streamlock.net/tvmarloscabos/smil:tvmarloscabos.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Mar Puerto Vallarta
 https://5ca9af4645e15.streamlock.net/tvmarvallarta/videotvmarvallarta/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Marajoara
@@ -6963,6 +7203,8 @@ https://tv02.zas.media:1936/tvmarajoara/tvmarajoara/playlist.m3u8
 https://5cf4a2c2512a2.streamlock.net/tvmax/tvmax/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Maya
 https://5ca9af4645e15.streamlock.net/mayas/videomayas/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",TV Metropole [Not 24/7]
+https://cdn-fundacao-2110.ciclano.io:1443/fundacao-2110/fundacao-2110/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Monaco
 https://production-fast-mcrtv.content.okast.tv/channels/2116dc08-1959-465d-857f-3619daefb66b/b702b2b9-aebd-436c-be69-2118f56f3d86/master.m3u8
 #EXTINF:-1 group-title="其他地区",TV Montana Canal 10 [Not 24/7]
@@ -7049,6 +7291,8 @@ https://canadaremar2.todostreaming.es/live/argentina-web.m3u8
 https://live.teleradiocom.tj/14/3m.m3u8
 #EXTINF:-1 group-title="其他地区",TV Sul Bahia
 https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",TV Sur Canal 14
+https://k20.usastreams.com:8081/tvsur/index.m3u8
 #EXTINF:-1 group-title="其他地区",TV Sur Canal 9 [Not 24/7]
 http://tv.ticosmedia.com:1935/TVSUR/TVSUR/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Syri
@@ -7083,10 +7327,14 @@ https://cdn.jmvstream.com/w/LVW-10841/LVW10841_mT77z9o2cP/playlist.m3u8
 https://stmv1.srvif.com/tvvitoriamz/tvvitoriamz/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Viçosa
 http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",TV Yes Italia
+https://stream1.aswifi.it/radioyes/live/index.m3u8
 #EXTINF:-1 group-title="其他地区",TV Zdravkin
 http://zdravkin.hugo.mk:1935/live/zdravkin/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TV Zoom
 https://cdn.jmvstream.com/w/LVW-9730/LVW9730_LmUwslM8jt/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",TV Éxitos
+https://streaming.grupomediosdelnorte.com:19360/tvexitos/tvexitos.m3u8
 #EXTINF:-1 group-title="其他地区",TV Østfold
 https://streamnorge.com:8088/hls/tvo.m3u8
 #EXTINF:-1 group-title="其他地区",TV-Nord
@@ -7193,6 +7441,8 @@ https://videoserver.tmcreativos.com:19360/gkemzxrrmr/gkemzxrrmr.m3u8
 https://cloud.tvomix.com/TVOJESUS/index.m3u8
 #EXTINF:-1 group-title="其他地区",TVOMIX
 https://cloud.tvomix.com/TVOMIX/index.m3u8
+#EXTINF:-1 group-title="其他地区",TVR 1
+https://tvr-1.lg.mncdn.com/tvr1/smil:tvr1.smil/chunklist_b5160000.m3u8
 #EXTINF:-1 group-title="其他地区",TVR 2
 https://tvr-2.lg.mncdn.com/tvr2/smil:tvr2.smil/chunklist_b5160000.m3u8
 #EXTINF:-1 group-title="其他地区",TVR 3
@@ -7293,12 +7543,12 @@ https://5ca49f2417d90.streamlock.net/live/turzovka/playlist.m3u8
 http://69.64.57.208/tvt/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TVT Zgorzelec
 https://lowa8026-cmyk.github.io/Poland/TVTZGORHD.m3u8
+#EXTINF:-1 group-title="其他地区",TVU Concepción
+https://unlimited1-cl-isp.dps.live/tvu/tvu.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TVUNO
 https://streamtv.onliv3.online:1936/karibtv/karibtv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",TVídeoNews [Not 24/7]
 https://video01.logicahost.com.br/tvideonews/tvideonews/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",Tweede Kamer: Aletta Jacobszaal [Not 24/7]
-https://livestreaming.b67buv2.tweedekamer.nl/live/alettajacobszaal/index.m3u8?hd=1&keyframes=1&subtitles=live
 #EXTINF:-1 group-title="其他地区",TyC Sports
 https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Tây Ninh TV
@@ -7389,6 +7639,8 @@ https://xumo-xumoent-ch824-d4q5c.fast.nbcuni.com/live/master.m3u8
 https://xumo-xumoent-ch834-iwtka.fast.nbcuni.com/live/master.m3u8
 #EXTINF:-1 group-title="其他地区",Universe Mysteries Solved [Geo-blocked]
 https://pb-frhhb6b56246j.akamaized.net/The_Universe.m3u8
+#EXTINF:-1 group-title="其他地区",Universidad Autónoma Temuco [Not 24/7]
+https://unlimited1-us.dps.live/uatv/uatv.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Unleashed by DOGTV
 https://amg26269-dogtv-amg26269c2-stirr-us-8504.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Unsion TV
@@ -7413,6 +7665,8 @@ https://live.artidijitalmedya.com/artidijital_urfanatiktv/urfanatiktv/playlist.m
 https://5940924978228.streamlock.net/j_Directo2/mp4:j_Directo2/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",UStad
 http://media.rtvutrecht.nl/live/rtvutrecht/ustad/index.m3u8
+#EXTINF:-1 group-title="其他地区",Utsav Bharat
+https://mini.allinonereborn.fun/tata.php?id=11779
 #EXTINF:-1 group-title="其他地区",UTV Anandam
 https://mumt02.tangotv.in/UTVANANDAM/index.m3u8
 #EXTINF:-1 group-title="其他地区",UzReport TV
@@ -7433,6 +7687,8 @@ https://5f22d76e220e1.streamlock.net/canale1/canale1/playlist.m3u8
 https://videoelephant-limited-valuetainment-1-us.ohlscdn.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Van Helsing
 https://dfis0p7athkt.cloudfront.net/Van_Helsing.m3u8
+#EXTINF:-1 group-title="其他地区",Vasantham TV
+https://mini.allinonereborn.fun/tata.php?id=11610
 #EXTINF:-1 group-title="其他地区",Vati Lao TV
 https://livefta.malimarcdn.com/ftaedge00/vatilaotv.stream/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",VB Media TV
@@ -7463,6 +7719,8 @@ https://tigocloud.desdeparaguay.net/venusmedia/venusmedia/playlist.m3u8
 https://cloud.fastchannel.es/manifiest/hls/prog9/vepacotv.m3u8
 #EXTINF:-1 group-title="其他地区",Vergina TV
 https://verginanews.gr:8443/hls_live/stream1.m3u8
+#EXTINF:-1 group-title="其他地区",VerTV [Not 24/7]
+https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Vevo '70s & '80s
 https://d38e11bvtr8xdq.cloudfront.net/Vevo70sand80s_GB.m3u8
 #EXTINF:-1 group-title="其他地区",Vevo '90s & '00s
@@ -7521,6 +7779,8 @@ https://stream.inliveserver.com:19360/8004/8004.m3u8
 https://copacogen.desdeparaguay.net/villaelisatv/villaelisatv/playlist.m3u8?admin=nacion
 #EXTINF:-1 group-title="其他地区",Villa Mantero TV
 https://micanal.ovh/livestreams/515.AUTOOAAZ721F.m3u8
+#EXTINF:-1 group-title="其他地区",Village of Hastings-On-Hudson NY
+https://stream.swagit.com/live-edge/hastingsonhudsonny/smil:std-4x3-1-a/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Village TV
 https://villagetv.applelive.in/villagetv/villagetv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Vintage Music
@@ -7607,10 +7867,10 @@ https://5caf24a595d94.streamlock.net:1937/8132/8132/playlist.m3u8
 https://svs.itworkscdn.net/smcwatarlive/smcwatar/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Watar TV [Not 24/7]
 http://htvint.mada.ps:8889/orient/index.m3u8
-#EXTINF:-1 group-title="其他地区",WaterBear
-https://amg01415-waterbearnetwor-waterbear-samsunguk-1h0y8.amagi.tv/playlist/amg01415-waterbearnetwor-waterbear-samsunguk/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Waterbear
 https://waterbear-waterbear-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",WaterBear
+https://amg01415-waterbearnetwor-waterbear-samsunguk-1h0y8.amagi.tv/playlist/amg01415-waterbearnetwor-waterbear-samsunguk/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Waypoint TV
 https://waypoint-waypointtv-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",WBRZ Weather Channel Baton Rouge LA
@@ -7629,10 +7889,10 @@ https://townnews.g-mana.live/media/a54a6409-5e91-46f0-9fee-06904c1fd094/main.m3u
 https://67acccf130420.streamlock.net/enlacepr1/enlacepr1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",WeatherNation Charlotte
 https://d16xlk626t29pt.cloudfront.net/ABR.m3u8
-#EXTINF:-1 group-title="其他地区",Weatherspy
-https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",WeatherSpy
 https://jukin-weatherspy-2-mx.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Weatherspy
+https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",wedo movies [Geo-blocked]
 https://videosolu-w4freemovies-samsunguk-jpmp3.amagi.tv/playlist/videosolu-w4freemovies-samsunguk/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",wedotv Auta
@@ -7837,6 +8097,8 @@ https://janus.xpbroadcasting.com:8443/hls/xptv2.m3u8
 https://edge.essastream.com/xtratv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Xtrem Sports
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0b81a5c-6ab5-48cd-aaa9-f82de4ab5bf9/manifest.m3u8
+#EXTINF:-1 group-title="其他地区",Xtremo Channel [Geo-blocked]
+https://ss2.tvrdomi.com:1936/xtremochannel/xtremochannel/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",XV TV
 https://cloudfront44.lexanetwork.com:1344/relay01/HDE051.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Y'a Que La Vérité Qui Compte La Chaîne
@@ -7847,6 +8109,8 @@ https://d1ewctnvcwvvvu.cloudfront.net/playlist.m3u8
 https://d7vulbd7rxo7j.cloudfront.net/Yahoo_Sports_Network.m3u8
 #EXTINF:-1 group-title="其他地区",Yemen Today TV
 https://video.yementdy.tv/hls/yementoday.m3u8
+#EXTINF:-1 group-title="其他地区",Yemen TV
+https://live.yementv.tv/memfs/c8fe49a3-b1ca-4d14-9d78-498e8bad4f76_fast_output_0.m3u8
 #EXTINF:-1 group-title="其他地区",Yoshlar
 https://stream8.cinerama.uz/1002/tracks-v1a1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",YouDotGov
@@ -7885,6 +8149,8 @@ https://zindikurmanci.zaroktv.com.tr/hls/stream.m3u8
 https://zindisorani.zaroktv.com.tr/hls/stream.m3u8
 #EXTINF:-1 group-title="其他地区",ZB Bhakti
 https://server.zillarbarta.com/zbbhakti/index.m3u8
+#EXTINF:-1 group-title="其他地区",ZB Cartoon
+https://server.zillarbarta.com/zbcatun/video.m3u8
 #EXTINF:-1 group-title="其他地区",ZB Cinema
 https://server.zillarbarta.com/ZBCINEMA/index.m3u8
 #EXTINF:-1 group-title="其他地区",ZB Music
@@ -7953,6 +8219,8 @@ https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist.m3u8
 https://edge1.socialsmart.tv/oncurtv/bant1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",ÚTV
 https://vysilani.zaktv.cz/broadcast/hls/utv/index.m3u8
+#EXTINF:-1 group-title="其他地区",Điện Biên TV
+https://truyenhinh.vnptvas.vn/live.m3u8?c=vstv362&deviceId=&deviceType=&gcId=1532&location=NA&pkg=pkg11.hni&q=high&requestTime=1586309420781&time=1586395820&token=LX-ibJYRUq9pflRtYAxfYQ&type=tv&userId=
 #EXTINF:-1 group-title="其他地区",Đà Nẵng TV1 [Not 24/7]
 https://live.mediatech.vn/live/285b59a111d76974225a8e3004bfc31a509/chunklist.m3u8
 #EXTINF:-1 group-title="其他地区",Đắk Lắk TV
@@ -7963,8 +8231,6 @@ http://118.107.85.4:1935/live/smil:DNTV1.smil/chunklist.m3u8
 http://118.107.85.4:1935/live/smil:DNTV2.smil/chunklist.m3u8
 #EXTINF:-1 group-title="其他地区",АБАЗА-ТВ
 https://public.apsny.camera/tv_abaza_tv_to_site/index.m3u8
-#EXTINF:-1 group-title="其他地区",Авто Плюс
-http://31.148.48.15/Avto_Plus/index.m3u8
 #EXTINF:-1 group-title="其他地区",Аист ТВ
 http://live2-aisttv.cdnvideo.ru/aisttv2/aisttv.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Арктика 24
@@ -7975,6 +8241,8 @@ https://live.mediacdn.ru/sr1/arhis24/playlist.m3u8
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/ufa/bashkortostan24-hd/index.m3u8
 #EXTINF:-1 group-title="其他地区",Беларусь 24
 https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus24.smil/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Беларусь 3 [Not 24/7]
+https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus3.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Беларусь 5 [Not 24/7]
 https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus5.smil/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Белгород 24
@@ -8003,24 +8271,24 @@ https://dagestan.mediacdn.ru/cdn/dagestan/playlist.m3u8
 https://wl.tvrain.tv/transcode/ngrp:ses_all/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Евразия
 https://infochh.trkeurasia.ru/hlsinfoch/infochhd.m3u8
-#EXTINF:-1 group-title="其他地区",Еврокино
-http://31.148.48.15/Evrokino/index.m3u8
 #EXTINF:-1 group-title="其他地区",Енисей [Not 24/7]
 https://hls-eniseytv.cdnvideo.ru/eniseytv/stream1/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Жара TV
+http://31.148.48.15/Zhara/index.m3u8
 #EXTINF:-1 group-title="其他地区",За!ТВ
 https://streaming.televizor-24-tochka.ru/live/25.m3u8
 #EXTINF:-1 group-title="其他地区",Запад 24
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/kaliningrad/zapad24-hd/index.m3u8
 #EXTINF:-1 group-title="其他地区",Звезда Плюс
 http://tvzvezda.bonus-tv.ru/cdn/zvezdaplus/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Здоровое ТВ
+http://31.148.48.15/Zdorovoe_TV/index.m3u8
 #EXTINF:-1 group-title="其他地区",Известия
 http://igi-hls.cdnvideo.ru/igi/igi_tcode/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Ингушетия ТВ
 https://ingushetia.mediacdn.ru/cdn/ingushetia/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Кавказ 24
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/stavropol/kavkaz24-hd/index.m3u8
-#EXTINF:-1 group-title="其他地区",КИНОСАТ
-http://31.148.48.15/Kineko/index.m3u8
 #EXTINF:-1 group-title="其他地区",Красная линия
 http://s55766.cdn.ngenix.net/s55766-media-origin/rline_high/index.m3u8
 #EXTINF:-1 group-title="其他地区",КРИК-ТВ
@@ -8033,6 +8301,8 @@ http://31.148.48.15/Kuhnya_TV/index.m3u8
 https://kiev1-cdn.lanet.tv/live/1008.m3u8
 #EXTINF:-1 group-title="其他地区",ЛДПР ТВ
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Луганск 24
+https://streaming.televizor-24-tochka.ru/live/29.m3u8
 #EXTINF:-1 group-title="其他地区",Магнат ТВ
 https://s1.tv-nano.com/Magnat_HD_5119705/video.m3u8
 #EXTINF:-1 group-title="其他地区",Матур ТВ
@@ -8053,6 +8323,8 @@ http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3
 https://tvcdn01.oktv.kz/tv/mtrk/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Муз союз
 https://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Мультиландия
+http://31.148.48.15/Multilandiya/index.m3u8
 #EXTINF:-1 group-title="其他地区",Мультимания
 https://sirius.greenhosting.ru/MultimaniaRu/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="其他地区",Надежда
@@ -8061,6 +8333,8 @@ https://live-tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8
 http://s1.tv-nano.com/Nano_rec/index.m3u8
 #EXTINF:-1 group-title="其他地区",НВК Саха [Not 24/7]
 https://live-saha.cdnvideo.ru/saha/saha/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Нижний Новгород 24
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/nigniynovgorod/nigniynovgorod24-hd/index.m3u8
 #EXTINF:-1 group-title="其他地区",Ника ТВ [Not 24/7]
 https://live-nikatv.cdnvideo.ru/nikatv/nikatv.sdp/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Новое телевидение [Not 24/7]
@@ -8107,6 +8381,8 @@ https://vgtrkregion-reg.cdnvideo.ru/vgtrk/arhangelsk/russia1-hd/index.m3u8
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/habarovsk/russia24-sd/index.m3u8
 #EXTINF:-1 group-title="其他地区",Россия К
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/kultura-hd/index.m3u8
+#EXTINF:-1 group-title="其他地区",Русский Детектив
+http://31.148.48.15/Russkiy_Detektiv/index.m3u8
 #EXTINF:-1 group-title="其他地区",Русский Иллюзион
 http://31.148.48.15/Russkiy_illusion/index.m3u8
 #EXTINF:-1 group-title="其他地区",С1 [Not 24/7]
@@ -8123,6 +8399,10 @@ http://31.148.48.15/Sankt_Peterburg/index.m3u8
 https://svoetv.mediacdn.ru/cdn/svoetv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Сибирь 24
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/krasnoyarsk/sibir24-hd/index.m3u8
+#EXTINF:-1 group-title="其他地区",Смотрим Честный Детектив
+https://live-vgtrksmotrim.cdnvideo.ru/vgtrksmotrim/smotrim-live-01.smil/playlist.m3u8
+#EXTINF:-1 group-title="其他地区",Солнце
+http://tv.mediacdn.ru/live/solntse/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Сочи 24
 http://serv30.vintera.tv:8081/sochi/sochi24_tv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Союз
@@ -8155,14 +8435,10 @@ https://planeta.mediacdn.ru/cdn/tnvplanet/playlist.m3u8
 http://31.148.48.15/TNT4/index.m3u8
 #EXTINF:-1 group-title="其他地区",Толк
 http://live-tolknews.cdnvideo.ru/tolknews/stream/playlist.m3u8
-#EXTINF:-1 group-title="其他地区",Тонус
-http://31.148.48.15/Zdorovie/index.m3u8
 #EXTINF:-1 group-title="其他地区",Точка ТВ
 http://31.148.48.15/Tochka_TV/index.m3u8
 #EXTINF:-1 group-title="其他地区",Урал 24
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/chelyabinsk/ural24-hd/index.m3u8
-#EXTINF:-1 group-title="其他地区",Феникс плюс Кино
-http://31.148.48.15/Feniks_plus_kino/index.m3u8
 #EXTINF:-1 group-title="其他地区",Хузур ТВ [Not 24/7]
 https://hls-mycdn08724960135.cdnvideo.ru/mycdn08724960135/stream1/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",Ювелирочка ТВ
@@ -8171,6 +8447,8 @@ https://live-uvelirochka.cdnvideo.ru/uvelirochka/uvelirochka_720p3/playlist.m3u8
 https://live-ugratv.cdnvideo.ru/ugratv/ugratv/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",上虞3新商都 [Not 24/7]
 https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8
+#EXTINF:-1 group-title="其他地区",上虞經濟文化 [Not 24/7]
+https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
 #EXTINF:-1 group-title="其他地区",丽江古城万古楼遥望玉龙雪山
 https://gcalic.v.myalicdn.com/gc/ljgcwglytylxs_1/index.m3u8
 #EXTINF:-1 group-title="其他地区",丽江古城大水车
@@ -8273,8 +8551,12 @@ http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/81a1ad3a661748bfb85
 http://stream8.jlntv.cn/shulan/sd/live.m3u8?zjild
 #EXTINF:-1 group-title="其他地区",象视界
 http://1.94.31.214/php/hntv.php?id=xsj
+#EXTINF:-1 group-title="其他地区",赣州公共
+https://pili-live-hls-sjxgz2024.sobeylive.com/jxgz2024/396_q_live172526334096251.m3u8
 #EXTINF:-1 group-title="其他地区",赣州新闻
 https://pili-live-hls-sjxgz2024.sobeylive.com/jxgz2024/396_q_live172526329228525.m3u8
+#EXTINF:-1 group-title="其他地区",辉南新闻
+http://stream5.jlntv.cn/hn/sd/live.m3u8?zjild
 #EXTINF:-1 group-title="其他地区",雪乡大石碑
 https://gcalic.v.myalicdn.com/gc/mdjxxdsb_1/index.m3u8
 #EXTINF:-1 group-title="其他地区",雪乡梦幻家园
@@ -8283,14 +8565,16 @@ https://gcalic.v.myalicdn.com/gc/mdjxxmhjyxj_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/qdls02_1/index.m3u8
 #EXTINF:-1 group-title="其他地区",青岛崂山双福
 https://gcalic.v.myalicdn.com/gc/qdls03_1/index.m3u8
+#EXTINF:-1 group-title="其他地区",靖江新闻綜合 [Not 24/7]
+http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",韩国EBS少儿
 http://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8
 #EXTINF:-1 group-title="其他地区",音乐欣赏
 http://61.221.215.25:8800/hls/49/index.m3u8
+#EXTINF:-1 group-title="其他地区",飞碟之谜01
+https://hls.cntv.lxdns.com/asp/hls/2000/0303000a/3/default/f0a47e155d32450daa1d36a04fd7d262/2000.m3u8
 #EXTINF:-1 group-title="其他地区",鸣沙山
 https://gcalic.v.myalicdn.com/gc/dhyyqst_1/index.m3u8
-#EXTINF:-1 group-title="其他地区",黄山
-https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
 #EXTINF:-1 group-title="其他地区",黄山始信新道
 https://gcalic.v.myalicdn.com/gc/hsyg_1/index.m3u8
 #EXTINF:-1 group-title="其他地区",黄山排云亭
@@ -8306,7 +8590,7 @@ http://gctxyc.liveplay.myqcloud.com/gc/wgw02_1/index.m3u8
 #EXTINF:-1 group-title="其他地区",黄花城水长城03
 https://gcalic.v.myalicdn.com/gc/wgw03_1/index.m3u8
 
-# ========== 加拿大 (18个频道) ==========
+# ========== 加拿大 (19个频道) ==========
 #EXTINF:-1 group-title="加拿大",3ABN Canada
 https://3abn.bozztv.com/3abncanada/3ABN/master.m3u8
 #EXTINF:-1 group-title="加拿大",Canada One [Not 24/7]
@@ -8319,6 +8603,8 @@ https://flu.systemnet.tv/CBCDrama/index.m3u8
 https://d2ny9lo79ujali.cloudfront.net/CBC_News_International.m3u8
 #EXTINF:-1 group-title="加拿大",CBC Sofra
 https://flu.systemnet.tv/CBCSofra/index.m3u8
+#EXTINF:-1 group-title="加拿大",CBC TV8 [Not 24/7]
+https://1740288887.rsc.cdn77.org/1740288887/index.m3u8
 #EXTINF:-1 group-title="加拿大",CityTV San Diego
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/sandiego/G1826_005/playlist.m3u8
 #EXTINF:-1 group-title="加拿大",Collier Television CTV
@@ -8348,9 +8634,11 @@ https://whittier.cablecast.tv/live/stream-1/live.m3u8
 #EXTINF:-1 group-title="匈牙利",M1
 https://iptv.prosto.tv/ch122/index.m3u8
 
-# ========== 南非 (6个频道) ==========
+# ========== 南非 (7个频道) ==========
 #EXTINF:-1 group-title="南非",DSTV [Not 24/7]
 http://46.249.95.140:8081/hls/data.m3u8
+#EXTINF:-1 group-title="南非",ETV Comedy
+https://cc-wie8j8y69d2uy.akamaized.net/WWBI/Amagi/ETV_Comedy_IN/playlist.m3u8
 #EXTINF:-1 group-title="南非",ETV Josh
 https://cc-uyh1ow5zouoio.akamaized.net/WWBI/Amagi/ETV_Josh_IN/playlist.m3u8
 #EXTINF:-1 group-title="南非",ETV Kayseri
@@ -8362,7 +8650,7 @@ https://cc-szivnms4rlah6.akamaized.net/WWBI/Amagi/ETV_Music_IN/playlist.m3u8
 #EXTINF:-1 group-title="南非",Nashua ETV Channel 22 Nashua NH
 https://livestream.telvue.com/nashuanh2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
 
-# ========== 印度 (28个频道) ==========
+# ========== 印度 (29个频道) ==========
 #EXTINF:-1 group-title="印度",A New Life In The Sun
 https://d36zu8tswi4fqu.cloudfront.net/playlist.m3u8
 #EXTINF:-1 group-title="印度",ABN TV India
@@ -8389,6 +8677,8 @@ https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc4us/master.m3u8
 https://pl-indiatvnews.akamaized.net/out/v1/db79179b608641ceaa5a4d0dd0dca8da/index.m3u8
 #EXTINF:-1 group-title="印度",Made in Hollywood
 https://connection3-ent-nz.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="印度",NDTV Good Times
+https://amg01448-samsungin-ndtvgoodtimes-samsungin-ad-gp.amagi.tv/playlist/amg01448-samsungin-ndtvgoodtimes-samsungin/playlist.m3u8
 #EXTINF:-1 group-title="印度",NDTV LANKA
 https://g4wlkqqwl23a-hls-live.5centscdn.com/NDTVLANKA/1ff5fa54d14c3ff6c6bd3918bbb7db5d.sdp/playlist.m3u8
 #EXTINF:-1 group-title="印度",NDTV Profit
@@ -8420,7 +8710,7 @@ https://d116gfrn8orazi.cloudfront.net/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOi
 #EXTINF:-1 group-title="印度",Zee Uttar Pradesh/Uttarakhand
 https://duw35ict5q7th.cloudfront.net/index_3.m3u8
 
-# ========== 印度尼西亚 (23个频道) ==========
+# ========== 印度尼西亚 (20个频道) ==========
 #EXTINF:-1 group-title="印度尼西亚",Metro TV
 https://s.emisoras.tv:8081/metrotv/index.m3u8
 #EXTINF:-1 group-title="印度尼西亚",Olam Metro TV
@@ -8429,44 +8719,38 @@ https://netzerstreaming.com:4433/hls/olammetro/index.m3u8
 https://restreamer.indonusa.id:8443/d5f4ad43-1b5a-4b0f-8bef-5b37224ed221.m3u8
 #EXTINF:-1 group-title="印度尼西亚",TVRI Aceh
 https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8
+#EXTINF:-1 group-title="印度尼西亚",TVRI Bali
+https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali.m3u8
+#EXTINF:-1 group-title="印度尼西亚",TVRI Bangka Belitung
+https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8
 #EXTINF:-1 group-title="印度尼西亚",TVRI Bengkulu
 https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu.m3u8
+#EXTINF:-1 group-title="印度尼西亚",TVRI Gorontalo
+https://ott-balancer.tvri.go.id/live/eds/Gorontalo/hls/Gorontalo.m3u8
 #EXTINF:-1 group-title="印度尼西亚",TVRI Jakarta [Not 24/7]
 https://ott-balancer.tvri.go.id/live/eds/DKI/hls/DKI.m3u8
+#EXTINF:-1 group-title="印度尼西亚",TVRI Jambi [Not 24/7]
+https://ott-balancer.tvri.go.id/live/eds/Jambi/hls/Jambi.m3u8
+#EXTINF:-1 group-title="印度尼西亚",TVRI Jawa Barat
+https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar.m3u8
 #EXTINF:-1 group-title="印度尼西亚",TVRI Jawa Tengah
 https://ott-balancer.tvri.go.id/live/eds/Jateng/hls/Jateng.m3u8
 #EXTINF:-1 group-title="印度尼西亚",TVRI Jawa Timur
 https://ott-balancer.tvri.go.id/live/eds/Jatim/hls/Jatim.m3u8
 #EXTINF:-1 group-title="印度尼西亚",TVRI Kalimantan Barat
 https://ott-balancer.tvri.go.id/live/eds/Kalbar/hls/Kalbar.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI Kalimantan Selatan
-https://ott-balancer.tvri.go.id/live/eds/Kalsel/hls/Kalsel.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI Kalimantan Tengah
-https://ott-balancer.tvri.go.id/live/eds/Kalteng/hls/Kalteng.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI Lampung
-https://ott-balancer.tvri.go.id/live/eds/Lampung/hls/Lampung.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI Maluku
-https://ott-balancer.tvri.go.id/live/eds/Ambon/hls/Ambon.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI North Sulawesi
-https://ott-balancer.tvri.go.id/live/eds/Sulut/hls/Sulut.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI North Sumatra
-https://ott-balancer.tvri.go.id/live/eds/Sumut/hls/Sumut.m3u8
 #EXTINF:-1 group-title="印度尼西亚",TVRI Nusa Tenggara Barat
 https://ott-balancer.tvri.go.id/live/eds/NTB/hls/NTB.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI Nusa Tenggara Timur
-https://ott-balancer.tvri.go.id/live/eds/NTT/hls/NTT.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI Papua
-https://ott-balancer.tvri.go.id/live/eds/Papua/hls/Papua.m3u8
+#EXTINF:-1 group-title="印度尼西亚",TVRI Riau [Not 24/7]
+https://ott-balancer.tvri.go.id/live/eds/Riau/hls/Riau.m3u8
 #EXTINF:-1 group-title="印度尼西亚",TVRI Sulawesi Barat
 https://ott-balancer.tvri.go.id/live/eds/Sulbar/hls/Sulbar.m3u8
 #EXTINF:-1 group-title="印度尼西亚",TVRI Sulawesi Selatan
 https://ott-balancer.tvri.go.id/live/eds/Sulsel/hls/Sulsel.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI Sulawesi Tengah
-https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI West Papua
-https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar.m3u8
-#EXTINF:-1 group-title="印度尼西亚",TVRI Yogyakarta
-https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8
+#EXTINF:-1 group-title="印度尼西亚",TVRI Sulawesi Tenggara
+https://ott-balancer.tvri.go.id/live/eds/Sultra/hls/Sultra.m3u8
+#EXTINF:-1 group-title="印度尼西亚",TVRI Sumatera Barat
+https://ott-balancer.tvri.go.id/live/eds/Sumbar/hls/Sumbar.m3u8
 
 # ========== 哥伦比亚 (2个频道) ==========
 #EXTINF:-1 group-title="哥伦比亚",RCN Más
@@ -8474,13 +8758,15 @@ https://rcntv-rcnmas-1-us.plex.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="哥伦比亚",Vive TV Colombia
 http://192.144.113.132:1935/live/ViveTV/playlist.m3u8
 
-# ========== 国际 (31个频道) ==========
+# ========== 国际 (32个频道) ==========
 #EXTINF:-1 group-title="国际",3ABN International Network
 https://3abn.bozztv.com/3abn2/Int_live/smil:Int_live.smil/playlist.m3u8
 #EXTINF:-1 group-title="国际",Afghanistan International
 https://hls.afintl.com/hls/stream.m3u8
 #EXTINF:-1 group-title="国际",AWE International
 https://a-cdn.klowdtv.com/live1/aweint/playlist.m3u8
+#EXTINF:-1 group-title="国际",BTB International
+https://emisja.btb.j00r.us/iptv/session/2/hls.m3u8
 #EXTINF:-1 group-title="国际",Canal 2 International
 http://69.64.57.208/canal2international/playlist.m3u8
 #EXTINF:-1 group-title="国际",Channel 8 International
@@ -8610,7 +8896,7 @@ http://live.greektv.ca/hls1/greektv.m3u8
 #EXTINF:-1 group-title="希腊",Skai TV
 http://skai-live-back.siliconweb.com/media/cambria4/index.m3u8
 
-# ========== 德国 (50个频道) ==========
+# ========== 德国 (51个频道) ==========
 #EXTINF:-1 group-title="德国",24/7 Canal de Noticias
 https://panel.host-live.com:19360/cn247tv/cn247tv.m3u8
 #EXTINF:-1 group-title="德国",Aire de Santa Fe
@@ -8663,6 +8949,8 @@ https://amg02393-awpg-amg02393c1-rakuten-uk-2461.playouts.now.amagi.tv/playlist/
 https://qvcde-live.akamaized.net/hls/live/2097104/qvc/master.m3u8
 #EXTINF:-1 group-title="德国",Radio Fiesta de Milagros TV
 https://tv.webmedialive.com/fiestatv/live/playlist.m3u8
+#EXTINF:-1 group-title="德国",Regio TV De Bilt
+https://d3ud9qm9b5yby9.cloudfront.net/nlpo/clr-nlpo/76ecd122/index.m3u8
 #EXTINF:-1 group-title="德国",Royalworld Germany
 https://amogonetworx-royalworld-2-de.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="德国",RT DE
@@ -8910,7 +9198,7 @@ https://livestream.telvue.com/yumaaz1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playl
 #EXTINF:-1 group-title="瑞士",Yuma AZ CH 73
 https://livestream.telvue.com/yumaaz2/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
 
-# ========== 美国 (129个频道) ==========
+# ========== 美国 (132个频道) ==========
 #EXTINF:-1 group-title="美国",ABC
 http://41.205.93.154/ABC/index.m3u8
 #EXTINF:-1 group-title="美国",ABC 10 Duluth MN
@@ -8971,6 +9259,10 @@ https://aegis-cloudfront-1.tubi.video/a53514a7-f2aa-4d34-802e-c2b5594fc0d7/playl
 https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
 #EXTINF:-1 group-title="美国",ABC News Live [Geo-blocked]
 https://pb-0n3n2ej0w8pl9.akamaized.net/ABCNewsLive_Disney.m3u8
+#EXTINF:-1 group-title="美国",ABC TV ACT
+https://c.mjh.nz/abc-act.m3u8
+#EXTINF:-1 group-title="美国",ABC TV QLD
+https://c.mjh.nz/abc-qld.m3u8
 #EXTINF:-1 group-title="美国",ABC WWAY 3
 https://townnews.g-mana.live/media/027a05c7-43b6-49eb-ad10-a0c0f10a0754/main.m3u8
 #EXTINF:-1 group-title="美国",Alkarma TV North America & Canada [Not 24/7]
@@ -9061,6 +9353,8 @@ https://stream1.sersat.com/hls/garagetv.m3u8
 http://liveen24-manminglobal3.ktcdn.co.kr/liveen24/gcnus_1300k.stream/playlist.m3u8
 #EXTINF:-1 group-title="美国",Go USA TV
 https://brandusa-gousa-1-be.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="美国",Harvest USA
+https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvestusa/d57ffba6564caea2fee3f4085f19a098.sdp/playlist.m3u8
 #EXTINF:-1 group-title="美国",History & Warfare Now
 https://d1nzda2a2b3swt.cloudfront.net/History_Warfare_Now.m3u8
 #EXTINF:-1 group-title="美国",History 365 [Geo-blocked]
@@ -9181,8 +9475,6 @@ https://amg00609-amg00609c5-rakuten-uk-3764.playouts.now.amagi.tv/master.m3u8
 # ========== 英国 (45个频道) ==========
 #EXTINF:-1 group-title="英国",Antiques Roadshow UK
 https://bbc-antiquesroadshowuk-1-us.roku.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="英国",ATN Bangla UK
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8
 #EXTINF:-1 group-title="英国",BBC Comedy
 https://d1em2hga7sgumq.cloudfront.net/playlist.m3u8
 #EXTINF:-1 group-title="英国",BBC Doctor Who Classic
@@ -9269,6 +9561,8 @@ https://hls.vantagetv.co.uk/vmusicuk_stream/index.m3u8
 https://d2n3779oy6efpi.cloudfront.net/playlist.m3u8
 #EXTINF:-1 group-title="英国",XITE Hits UK
 https://amg01243-xitenetworksint-hitsuk-samsunguk-mvovq.amagi.tv/playlist/amg01243-xitenetworksint-hitsuk-samsunguk/playlist.m3u8
+#EXTINF:-1 group-title="英国",Zee TV UK
+https://mini.allinonereborn.fun/tata.php?id=11783
 
 # ========== 西班牙 (22个频道) ==========
 #EXTINF:-1 group-title="西班牙",Antena 3 Internacional
@@ -9332,9 +9626,15 @@ https://d3q93l5bumjyoq.cloudfront.net/index.m3u8
 #EXTINF:-1 group-title="越南",VTV Canal 32
 https://cnn.livestreaminggroup.info:3507/live/vtv32live.m3u8
 
-# ========== 韩国 (31个频道) ==========
+# ========== 阿根廷 (1个频道) ==========
+#EXTINF:-1 group-title="阿根廷",TV Maná Argentina [Not 24/7]
+https://w2.manasat.com/tvmana-ar/smil:tvmana-ar.smil/playlist.m3u8
+
+# ========== 韩国 (33个频道) ==========
 #EXTINF:-1 group-title="韩国",Arirang
 https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
+#EXTINF:-1 group-title="韩国",GCN24 Korean
+http://liveko24-manminglobal3.ktcdn.co.kr/liveko24/gcnko_1300k.stream/playlist.m3u8
 #EXTINF:-1 group-title="韩国",Korea TV
 https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
 #EXTINF:-1 group-title="韩国",Korean Central Television
@@ -9373,6 +9673,8 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-iraq/e38c44b1b43474e1c39c
 https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
 #EXTINF:-1 group-title="韩国",MBC Masr
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr/956eac069c78a35d47245db6cdbb1575/index.m3u8
+#EXTINF:-1 group-title="韩国",MBC Masr 2
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-2/754931856515075b0aabf0e583495c68/index.m3u8
 #EXTINF:-1 group-title="韩国",MBC Masr USA
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-usa/cd8d40acdab28aac0582faa3bd3983f1/index.m3u8
 #EXTINF:-1 group-title="韩国",MBC Mokpo [Not 24/7]
@@ -9396,7 +9698,7 @@ https://vod.ikbc.co.kr/KBCTV/tv/playlist.m3u8
 #EXTINF:-1 group-title="韩国",SBS UBC [Not 24/7]
 https://stream.ubc.co.kr/hls/ubctvstream/index.m3u8
 
-# ========== 马来西亚 (9个频道) ==========
+# ========== 马来西亚 (10个频道) ==========
 #EXTINF:-1 group-title="马来西亚",Astro AOD
 http://php.jdshipin.com/TVOD/iptv.php?id=aod
 #EXTINF:-1 group-title="马来西亚",Canal TV3 [Not 24/7]
@@ -9405,6 +9707,8 @@ https://streaming.telenetdigital.net.co:8086/canal3tv/stream.m3u8
 https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/cerritos/G0010_002/playlist.m3u8
 #EXTINF:-1 group-title="马来西亚",GS My Shop
 https://gstv-myshop.gsshop.com/myshop_hd/myshop_hd.stream/playlist.m3u8
+#EXTINF:-1 group-title="马来西亚",My Cinema Europe
+https://op-group1-densxvisionhd-1.dens.tv/h/h18/index.m3u8
 #EXTINF:-1 group-title="马来西亚",My Gospel TV
 https://streamtv.cmediahosthosting.net:3046/live/mygospeltvlive.m3u8
 #EXTINF:-1 group-title="马来西亚",My TV Channel [Not 24/7]

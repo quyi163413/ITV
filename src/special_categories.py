@@ -14,7 +14,8 @@ KOREAN_GIRL_KEYWORDS = [
     "韩国女团", "女团", "kpop", "K-pop", "KPOP",
     "BLACKPINK", "TWICE", "IVE", "NewJeans", "LESSERAFIM", 
     "aespa", "Red Velvet", "ITZY", "(G)I-DLE", "少女时代",
-    "女团社", "颜老师"  # 从实际数据中发现的
+    "女团社", "颜老师", "歌团",  # 添加"歌团"关键词
+    "歌团★",  # 添加带星号的格式
 ]
 
 # 电影类关键词
@@ -25,30 +26,31 @@ MOVIE_KEYWORDS = [
     "抗战经典影片", "经典香港电影", "CHC影迷电影", "CHC动作电影", "CHC家庭影院"
 ]
 
-# 戏曲类关键词（必须明确是戏曲内容）
+# 戏曲类关键词
 OPERA_KEYWORDS = [
     "戏曲", "京剧", "越剧", "黄梅戏", "豫剧", "评剧", "秦腔", "昆曲",
     "粤剧", "河北梆子", "梨园", "梨园春", "移动戏曲", "岭南戏曲",
     "陕西戏曲", "河南戏曲", "安徽戏曲", "戏曲广播"
 ]
 
-# 音乐类关键词（歌曲、音乐、舞曲）
+# 音乐类关键词
 MUSIC_KEYWORDS = [
     "音乐", "歌曲", "老歌", "金曲", "流行", "经典老歌", "香香音乐",
     "好听", "DJ", "舞曲", "动感", "节奏", "音悦", "经典歌曲",
     "热门歌曲", "动感舞曲"
 ]
 
-# 电台类关键词（纯音频）
+# 电台类关键词
 RADIO_KEYWORDS = [
     "电台", "广播", "FM", "AM", "网络电台", "音频", "听书", "有声"
 ]
 
-# ========== 需要排除的关键词（内容不纯正或不适合分类）==========
+# ========== 需要排除的关键词 ==========
 EXCLUDE_KEYWORDS = [
     "广场舞", "健身", "教学", "讲座", "访谈", "天气预报",
     "CCTV", "卫视", "电视台", "新闻", "财经", "体育", "少儿", "卡通",
-    "直播", "回放", "全场", "世界杯", "NBA", "英超", "中超", "村超"
+    "直播", "回放", "全场", "世界杯", "NBA", "英超", "中超", "村超",
+    "穿越", "专区", "全折", "片段", "剧院", "演出"  # 排除戏曲相关的非戏曲内容
 ]
 
 
@@ -113,7 +115,7 @@ def parse_and_classify_special_categories(content: str) -> Dict[str, List[Tuple[
         if not line:
             continue
         
-        # 跳过注释和分类行（不依赖源的分类标签）
+        # 跳过注释和分类行
         if line.startswith('#') or line.endswith(',#genre#'):
             continue
         
@@ -136,15 +138,14 @@ def parse_and_classify_special_categories(content: str) -> Dict[str, List[Tuple[
                     existing_urls = [u for _, u in result[category]]
                     if url not in existing_urls:
                         result[category].append((name, url))
-                        logger.debug(f"分类: {category} -> {name}")
     
     # 统计结果
     for cat in result:
         if result[cat]:
             logger.info(f"📁 {cat}: {len(result[cat])} 个频道")
-            # 打印前3个样例
-            for name, url in result[cat][:3]:
-                logger.debug(f"    - {name}")
+            # 打印前3个样例用于调试
+            sample_names = [name for name, _ in result[cat][:3]]
+            logger.debug(f"    样例: {', '.join(sample_names)}")
     
     return {k: v for k, v in result.items() if v}
 
@@ -224,7 +225,6 @@ def append_special_categories_to_txt(
     with open(output_path, 'a', encoding='utf-8') as f:
         f.write(f"\n# ========== 特色分类内容 ==========\n")
         
-        # 按照固定顺序输出
         order = ["韩国女团", "戏曲频道", "每日电影/经典电影", "热门歌曲/动感舞曲", "网络电台"]
         
         for cat in order:

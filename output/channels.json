@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 316,
-  "generated": "2026-06-15T21:44:23.505630",
+  "total": 322,
+  "generated": "2026-06-16T05:40:51.463737",
   "channels": [
     {
       "name": "CCTV-1",
@@ -199,8 +199,8 @@
       "name": "CCTV-15",
       "urls": [
         "http://45.192.97.170:8880/play/16.m3u8",
-        "http://74.91.26.218:82/live/cctv15hd.m3u8",
-        "http://112.27.235.94:8000/hls/16/index.m3u8"
+        "https://xykt-fix.github.io/play/a02e/index.m3u8",
+        "http://74.91.26.218:82/live/cctv15hd.m3u8"
       ],
       "latency": 50,
       "codec": "h264",
@@ -638,6 +638,16 @@
       "category": "📡卫视频道,#genre#"
     },
     {
+      "name": "兵团卫视",
+      "urls": [
+        "http://218.13.170.98:9901/tsfile/live/0115_1.m3u8"
+      ],
+      "latency": 9284,
+      "codec": "h264",
+      "logo": "https://live.fanmingming.cn/tv/兵团卫视.png",
+      "category": "📡卫视频道,#genre#"
+    },
+    {
       "name": "凤凰卫视台",
       "urls": [
         "http://php.jdshipin.com/TVOD/iptv.php?id=fhzw"
@@ -853,13 +863,13 @@
       "category": "☘️天津频道,#genre#"
     },
     {
-      "name": "江津新闻综合",
+      "name": "江津新闻",
       "urls": [
-        "http://222.179.155.21:1935/ch1.m3u8"
+        "http://222.179.155.21:1935/ch1.m3u8?zzhongqd"
       ],
-      "latency": 1111,
+      "latency": 1073,
       "codec": "h264",
-      "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/resources/%E6%B1%9F%E6%B4%A5%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png",
+      "logo": "https://live.fanmingming.cn/tv/江津新闻.png",
       "category": "☘️重庆频道,#genre#"
     },
     {
@@ -880,6 +890,16 @@
       "latency": 2252,
       "codec": "h264",
       "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/resources/%E8%8D%A3%E6%98%8C%E7%BB%BC%E5%90%88%20%5BNot%2024/7%5D.png",
+      "category": "☘️重庆频道,#genre#"
+    },
+    {
+      "name": "江津新闻综合",
+      "urls": [
+        "http://222.179.155.21:1935/ch1.m3u8"
+      ],
+      "latency": 1111,
+      "codec": "h264",
+      "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/resources/%E6%B1%9F%E6%B4%A5%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png",
       "category": "☘️重庆频道,#genre#"
     },
     {
@@ -1799,6 +1819,16 @@
       "category": "☘️江苏频道,#genre#"
     },
     {
+      "name": "镇江新闻综合",
+      "urls": [
+        "http://cm-wshls.homecdn.com/live/2aa50.m3u8"
+      ],
+      "latency": 2496,
+      "codec": "h264",
+      "logo": "https://live.fanmingming.cn/tv/镇江新闻综合.png",
+      "category": "☘️江苏频道,#genre#"
+    },
+    {
       "name": "安徽导视",
       "urls": [
         "http://dspdhls.appcoo.com:8888/live/dspd/index.m3u8"
@@ -1876,6 +1906,36 @@
       "latency": 2527,
       "codec": "h264",
       "logo": "https://live.fanmingming.cn/tv/广德生活.png",
+      "category": "☘️安徽频道,#genre#"
+    },
+    {
+      "name": "宿州科教 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-kxjy/index.m3u8"
+      ],
+      "latency": 807,
+      "codec": "h264",
+      "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/resources/%E5%AE%BF%E5%B7%9E%E7%A7%91%E6%95%99%20%5BNot%2024/7%5D.png",
+      "category": "☘️安徽频道,#genre#"
+    },
+    {
+      "name": "宿州新闻综合 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-szzh/index.m3u8"
+      ],
+      "latency": 943,
+      "codec": "h264",
+      "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/resources/%E5%AE%BF%E5%B7%9E%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88%20%5BNot%2024/7%5D.png",
+      "category": "☘️安徽频道,#genre#"
+    },
+    {
+      "name": "宿州公共 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-ggpd/index.m3u8"
+      ],
+      "latency": 1367,
+      "codec": "h264",
+      "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/resources/%E5%AE%BF%E5%B7%9E%E5%85%AC%E5%85%B1%20%5BNot%2024/7%5D.png",
       "category": "☘️安徽频道,#genre#"
     },
     {

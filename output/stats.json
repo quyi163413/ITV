@@ -1,17 +1,17 @@
 {
-  "total_channels": 316,
-  "timestamp": "2026-06-15T21:46:26.477795",
+  "total_channels": 322,
+  "timestamp": "2026-06-16T05:42:07.585618",
   "category_stats": {
     "📺央视频道,#genre#": 25,
-    "📡卫视频道,#genre#": 45,
+    "📡卫视频道,#genre#": 46,
     "☘️北京频道,#genre#": 1,
     "☘️上海频道,#genre#": 4,
     "☘️天津频道,#genre#": 1,
-    "☘️重庆频道,#genre#": 3,
+    "☘️重庆频道,#genre#": 4,
     "☘️广东频道,#genre#": 12,
     "☘️浙江频道,#genre#": 61,
-    "☘️江苏频道,#genre#": 18,
-    "☘️安徽频道,#genre#": 10,
+    "☘️江苏频道,#genre#": 19,
+    "☘️安徽频道,#genre#": 13,
     "☘️福建频道,#genre#": 2,
     "☘️河南频道,#genre#": 6,
     "☘️湖北频道,#genre#": 3,
@@ -33,7 +33,7 @@
     "☘️河北频道,#genre#": 16,
     "🌊港·澳·台,#genre#": 16
   },
-  "unmatched_count": 4869,
+  "unmatched_count": 4934,
   "features": {
     "iptv_org_enabled": true,
     "global_channels_enabled": false,

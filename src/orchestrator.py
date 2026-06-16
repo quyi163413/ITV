@@ -69,8 +69,12 @@ class IPTVOrchestrator:
         logger.info("=" * 50)
         
         try:
-            db = await get_db_cache()
-            new_sources = await self.discoverer.discover(db)
+            # 设置更短的超时
+            db = await asyncio.wait_for(get_db_cache(), timeout=10)
+            new_sources = await asyncio.wait_for(
+                self.discoverer.discover(db), 
+                timeout=45
+            )
             
             total_new = sum(len(s) for s in new_sources.values())
             self.stats["new_sources_count"] = total_new
@@ -102,7 +106,7 @@ class IPTVOrchestrator:
             return new_sources
             
         except asyncio.TimeoutError:
-            logger.warning("⚠️ 发现新源阶段超时")
+            logger.warning("⚠️ 发现新源阶段超时（45秒），跳过")
             return {}
         except Exception as e:
             logger.error(f"❌ 发现新源阶段失败: {e}")
@@ -123,9 +127,12 @@ class IPTVOrchestrator:
             stable_count = len(self.candidate_observer.get_stable_candidates())
             logger.info(f"📊 候选池状态: {observing_count} 个正在观察，{stable_count} 个已稳定")
             
-            # 从缓存观察（快速）
-            stable_candidates = await self.candidate_observer.observe_batch_from_cache(
-                batch_size=self.MAX_OBSERVE_PER_RUN
+            # 从缓存观察（快速），设置超时
+            stable_candidates = await asyncio.wait_for(
+                self.candidate_observer.observe_batch_from_cache(
+                    batch_size=self.MAX_OBSERVE_PER_RUN
+                ),
+                timeout=30
             )
             
             self.stats["last_observe"] = datetime.now()
@@ -135,7 +142,7 @@ class IPTVOrchestrator:
             return stable_candidates
             
         except asyncio.TimeoutError:
-            logger.warning("⚠️ 观察候选源阶段超时")
+            logger.warning("⚠️ 观察候选源阶段超时（30秒），跳过")
             return []
         except Exception as e:
             logger.error(f"❌ 观察候选源阶段失败: {e}")
@@ -156,7 +163,7 @@ class IPTVOrchestrator:
                 return 0
             
             promoted_count = 0
-            for obs in stable_candidates:
+            for obs in stable_candidates[:50]:  # 最多提升50个
                 # 检查稳定版是否已有该频道
                 existing = self.stable_manager.stable_sources.get(obs.channel_name)
                 
@@ -234,35 +241,34 @@ class IPTVOrchestrator:
             logger.error(f"❌ 生成输出阶段失败: {e}")
     
     async def run_once(self) -> Dict:
-        """完整执行一次自治流程（带超时控制）"""
+        """完整执行一次自治流程（带全局超时）"""
         logger.info("🚀 IPTV 自治系统启动")
         logger.info(f"📊 配置: 每批观察 {self.MAX_OBSERVE_PER_RUN} 个")
         
+        # 全局超时：整个自治流程最多运行120秒
         try:
-            # 1. 发现新源（带超时）
-            try:
-                await asyncio.wait_for(self.discover_phase(), timeout=60)
-            except asyncio.TimeoutError:
-                logger.warning("⚠️ 发现新源阶段超时，跳过")
-            except Exception as e:
-                logger.error(f"❌ 发现新源阶段异常: {e}")
+            result = await asyncio.wait_for(self._run_internal(), timeout=120)
+            return result
+        except asyncio.TimeoutError:
+            logger.warning("⚠️ 自治流程全局超时（120秒），强制退出")
+            # 尝试生成输出（即使部分完成）
+            await self.generate_output_phase()
+            return self.stats
+        except Exception as e:
+            logger.exception(f"❌ 自治流程执行失败: {e}")
+            return self.stats
+    
+    async def _run_internal(self) -> Dict:
+        """内部执行逻辑"""
+        try:
+            # 1. 发现新源
+            await self.discover_phase()
             
-            # 2. 从缓存观察候选源（带超时）
-            stable_candidates = []
-            try:
-                stable_candidates = await asyncio.wait_for(self.observe_phase(), timeout=30)
-            except asyncio.TimeoutError:
-                logger.warning("⚠️ 观察候选源阶段超时，跳过")
-            except Exception as e:
-                logger.error(f"❌ 观察候选源阶段异常: {e}")
+            # 2. 从缓存观察候选源
+            stable_candidates = await self.observe_phase()
             
-            # 3. 提升稳定源（带超时）
-            try:
-                await asyncio.wait_for(self.promote_phase(stable_candidates), timeout=30)
-            except asyncio.TimeoutError:
-                logger.warning("⚠️ 提升稳定源阶段超时，跳过")
-            except Exception as e:
-                logger.error(f"❌ 提升稳定源阶段异常: {e}")
+            # 3. 提升稳定源
+            await self.promote_phase(stable_candidates)
             
             # 4. 生成输出
             await self.generate_output_phase()
@@ -279,7 +285,7 @@ class IPTVOrchestrator:
             logger.info(f"  累计提升: {self.stats['total_promoted']}")
             
         except Exception as e:
-            logger.exception(f"❌ 自治流程执行失败: {e}")
+            logger.exception(f"❌ 自治流程执行异常: {e}")
         
         return self.stats
 

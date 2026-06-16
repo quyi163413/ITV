@@ -26,7 +26,7 @@ from src.generator import generate_outputs_from_demo
 
 class IPTVOrchestrator:
     """
-    IPTV 自治系统协调器 - 优化版
+    IPTV 自治系统协调器 - 自治模式只负责发现和提升新源
     """
     
     MAX_NEW_SOURCES_PER_RUN = 500
@@ -47,7 +47,8 @@ class IPTVOrchestrator:
             "total_promoted": 0,
             "new_sources_count": 0,
             "observed_count": 0,
-            "stable_count_after": 0  # 新增：记录最终稳定源数量
+            "stable_count_after": 0,
+            "new_stable_count": 0  # 新增：本次新提升的数量
         }
         
         CandidateObserver.MIN_SUCCESS_COUNT = CANDIDATE_MIN_SUCCESS
@@ -150,6 +151,9 @@ class IPTVOrchestrator:
                 logger.info("📭 没有稳定的候选源需要提升")
                 return 0
             
+            # 记录提升前的稳定源数量
+            before_count = len(self.stable_manager.get_active_sources())
+            
             promoted_count = 0
             for obs in stable_candidates[:50]:
                 existing = self.stable_manager.stable_sources.get(obs.channel_name)
@@ -168,68 +172,25 @@ class IPTVOrchestrator:
                     logger.info(f"📌 已提升: {obs.channel_name}")
             
             self.stats["total_promoted"] += promoted_count
+            self.stats["new_stable_count"] = promoted_count
+            
+            # 记录提升后的稳定源数量
+            after_count = len(self.stable_manager.get_active_sources())
+            self.stats["stable_count_after"] = after_count
+            
             logger.info(f"✅ 提升阶段完成: {promoted_count} 个源被提升到稳定版")
+            logger.info(f"📊 稳定源变化: {before_count} -> {after_count}")
             return promoted_count
             
         except Exception as e:
             logger.error(f"❌ 提升稳定源阶段失败: {e}")
             return 0
     
-    async def generate_output_phase(self) -> int:
-        """阶段4: 生成输出，返回最终稳定源数量"""
-        logger.info("=" * 50)
-        logger.info("阶段4: 生成输出")
-        logger.info("=" * 50)
-        
-        try:
-            # 先检查现有稳定源
-            channels = self.stable_manager.get_output_channels()
-            
-            if not channels:
-                # 尝试加载固定源
-                logger.warning("⚠️ 没有可输出的稳定源，尝试加载固定源...")
-                try:
-                    from src.fixed_sources import CCTV_FIXED_SOURCES
-                    loaded_count = 0
-                    for name, url in CCTV_FIXED_SOURCES.items():
-                        if url:
-                            self.stable_manager.set_fixed_source(name, url)
-                            loaded_count += 1
-                    logger.info(f"📌 已加载 {loaded_count} 个固定源")
-                    channels = self.stable_manager.get_output_channels()
-                except ImportError:
-                    logger.warning("⚠️ fixed_sources.py 未找到")
-            
-            if not channels:
-                logger.warning("⚠️ 仍然没有可输出的源")
-                return 0
-            
-            # 获取 demo 顺序并生成输出
-            demo_order = parse_demo_order_with_categories() if ENABLE_DEMO_FILTER else []
-            
-            if demo_order:
-                generate_outputs_from_demo(channels, demo_order)
-            else:
-                from src.generator_enhanced import EnhancedOutputGenerator
-                output_gen = EnhancedOutputGenerator()
-                output_gen.generate_all_outputs(
-                    channels, [], 
-                    enable_json=True, 
-                    enable_lite=True, 
-                    enable_epg=True
-                )
-            
-            logger.info(f"✅ 输出生成完成: {len(channels)} 个稳定源")
-            return len(channels)
-            
-        except Exception as e:
-            logger.error(f"❌ 生成输出阶段失败: {e}")
-            return 0
-    
     async def run_once(self) -> Dict:
         """完整执行一次自治流程"""
         logger.info("🚀 IPTV 自治系统启动")
         logger.info(f"📊 配置: 每批观察 {self.MAX_OBSERVE_PER_RUN} 个")
+        logger.info("⚠️ 注意: 自治模式不加载固定源，只负责发现和提升新源")
         
         try:
             # 1. 发现新源
@@ -241,9 +202,16 @@ class IPTVOrchestrator:
             # 3. 提升稳定源
             await self.promote_phase(stable_candidates)
             
-            # 4. 生成输出，获取最终稳定源数量
-            stable_count = await self.generate_output_phase()
-            self.stats["stable_count_after"] = stable_count
+            # 4. 如果有新提升的稳定源，生成输出
+            if self.stats.get("new_stable_count", 0) > 0:
+                channels = self.stable_manager.get_output_channels()
+                if channels:
+                    demo_order = parse_demo_order_with_categories() if ENABLE_DEMO_FILTER else []
+                    if demo_order:
+                        generate_outputs_from_demo(channels, demo_order)
+                    logger.info(f"✅ 输出生成完成: {len(channels)} 个稳定源")
+            else:
+                logger.info("📭 没有新提升的稳定源，跳过输出生成")
             
             # 打印统计
             logger.info("=" * 50)
@@ -252,8 +220,7 @@ class IPTVOrchestrator:
             logger.info(f"  源池总数: {self.discoverer.get_statistics()['total']}")
             logger.info(f"  候选池总数: {self.candidate_observer.get_statistics()['total']}")
             logger.info(f"  候选池观察中: {self.candidate_observer.get_statistics()['observing']}")
-            logger.info(f"  稳定源数量: {stable_count}")
-            logger.info(f"  固定源数量: {sum(1 for s in self.stable_manager.stable_sources.values() if s.is_fixed)}")
+            logger.info(f"  本次新提升: {self.stats.get('new_stable_count', 0)}")
             logger.info(f"  累计提升: {self.stats['total_promoted']}")
             
         except Exception as e:

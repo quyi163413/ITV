@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 321,
-  "generated": "2026-06-16T11:22:41.929002",
+  "total": 325,
+  "generated": "2026-06-16T12:06:18.002850",
   "channels": [
     {
       "name": "CCTV-1",
@@ -329,6 +329,28 @@
       "category": "📡卫视频道,#genre#"
     },
     {
+      "name": "湖南卫视",
+      "urls": [
+        "http://112.27.235.94:8000/hls/31/index.m3u8"
+      ],
+      "latency": 334,
+      "codec": "h264",
+      "tvg_id": "HunanTV.cn",
+      "logo": "https://live.fanmingming.cn/tv/湖南卫视.png",
+      "category": "📡卫视频道,#genre#"
+    },
+    {
+      "name": "北京卫视",
+      "urls": [
+        "http://112.27.235.94:8000/hls/27/index.m3u8"
+      ],
+      "latency": 365,
+      "codec": "h264",
+      "tvg_id": "BTV1.cn",
+      "logo": "https://live.fanmingming.cn/tv/北京卫视.png",
+      "category": "📡卫视频道,#genre#"
+    },
+    {
       "name": "湖北卫视",
       "urls": [
         "http://112.27.235.94:8000/hls/41/index.m3u8"
@@ -418,6 +440,17 @@
       "category": "📡卫视频道,#genre#"
     },
     {
+      "name": "贵州卫视",
+      "urls": [
+        "http://112.27.235.94:8000/hls/46/index.m3u8"
+      ],
+      "latency": 759,
+      "codec": "h264",
+      "tvg_id": "GuizhouTV.cn",
+      "logo": "https://live.fanmingming.cn/tv/贵州卫视.png",
+      "category": "📡卫视频道,#genre#"
+    },
+    {
       "name": "河北卫视",
       "urls": [
         "http://112.27.235.94:8000/hls/39/index.m3u8"
@@ -474,6 +507,17 @@
       "category": "📡卫视频道,#genre#"
     },
     {
+      "name": "辽宁卫视",
+      "urls": [
+        "http://112.27.235.94:8000/hls/47/index.m3u8"
+      ],
+      "latency": 391,
+      "codec": "h264",
+      "tvg_id": "LiaoningTV.cn",
+      "logo": "https://live.fanmingming.cn/tv/辽宁卫视.png",
+      "category": "📡卫视频道,#genre#"
+    },
+    {
       "name": "内蒙古卫视",
       "urls": [
         "http://112.27.235.94:8000/hls/49/index.m3u8"
@@ -493,6 +537,17 @@
       "codec": "h264",
       "tvg_id": "QinghaiTV.cn",
       "logo": "https://live.fanmingming.cn/tv/青海卫视.png",
+      "category": "📡卫视频道,#genre#"
+    },
+    {
+      "name": "山东卫视",
+      "urls": [
+        "http://112.27.235.94:8000/hls/34/index.m3u8"
+      ],
+      "latency": 336,
+      "codec": "h264",
+      "tvg_id": "ShandongTV.cn",
+      "logo": "https://live.fanmingming.cn/tv/山东卫视.png",
       "category": "📡卫视频道,#genre#"
     },
     {
@@ -748,13 +803,13 @@
       "category": "☘️北京频道,#genre#"
     },
     {
-      "name": "苏州新闻综合",
+      "name": "诸暨新闻综合",
       "urls": [
-        "https://live-auth.51kandianshi.com/szgd/csztv1.m3u8"
+        "https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8"
       ],
-      "latency": 581,
+      "latency": 505,
       "codec": "h264",
-      "logo": "https://live.fanmingming.cn/tv/苏州新闻综合.png",
+      "logo": "https://live.fanmingming.cn/tv/诸暨新闻综合.png",
       "category": "☘️上海频道,#genre#"
     },
     {
@@ -1191,16 +1246,6 @@
       "latency": 607,
       "codec": "h264",
       "logo": "https://live.fanmingming.cn/tv/苍南新闻综合.png",
-      "category": "☘️浙江频道,#genre#"
-    },
-    {
-      "name": "诸暨新闻综合",
-      "urls": [
-        "https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8"
-      ],
-      "latency": 505,
-      "codec": "h264",
-      "logo": "https://live.fanmingming.cn/tv/诸暨新闻综合.png",
       "category": "☘️浙江频道,#genre#"
     },
     {
@@ -1744,6 +1789,16 @@
       "category": "☘️江苏频道,#genre#"
     },
     {
+      "name": "苏州新闻综合",
+      "urls": [
+        "https://live-auth.51kandianshi.com/szgd/csztv1.m3u8"
+      ],
+      "latency": 581,
+      "codec": "h264",
+      "logo": "https://live.fanmingming.cn/tv/苏州新闻综合.png",
+      "category": "☘️江苏频道,#genre#"
+    },
+    {
       "name": "苏州生活资讯",
       "urls": [
         "https://live-auth.51kandianshi.com/szgd/csztv5.m3u8"
@@ -2263,16 +2318,6 @@
       "codec": "h264",
       "logo": "https://live.fanmingming.cn/tv/安顺新闻.png",
       "category": "☘️贵州频道,#genre#"
-    },
-    {
-      "name": "云南白沙远眺玉龙雪山",
-      "urls": [
-        "https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8"
-      ],
-      "latency": 1899,
-      "codec": "h264",
-      "logo": "https://live.fanmingming.cn/tv/云南白沙远眺玉龙雪山.png",
-      "category": "☘️云南频道,#genre#"
     },
     {
       "name": "云南丽江玉龙雪山草甸",

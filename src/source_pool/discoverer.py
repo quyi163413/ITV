@@ -1,5 +1,5 @@
 # src/source_pool/discoverer.py
-"""源发现器 - 多源抓取、去重、入库"""
+"""源发现器 - 多源抓取、去重、入库，支持国内频道过滤"""
 
 import asyncio
 import json
@@ -14,9 +14,44 @@ from src.database import get_db_cache
 from src.logger import logger
 from src.source_pool.models import RawSource, SourceStatus
 
+# ========== 国内频道关键词（用于过滤） ==========
+DOMESTIC_KEYWORDS = [
+    # 央视系列
+    "CCTV", "央视", "中央", "CGTN",
+    # 卫视系列
+    "卫视", "东方卫视", "北京卫视", "湖南卫视", "浙江卫视", "江苏卫视",
+    "广东卫视", "深圳卫视", "天津卫视", "山东卫视", "安徽卫视",
+    "湖北卫视", "黑龙江卫视", "江西卫视", "河南卫视", "河北卫视",
+    "山西卫视", "陕西卫视", "甘肃卫视", "宁夏卫视", "青海卫视",
+    "云南卫视", "贵州卫视", "广西卫视", "内蒙古卫视", "新疆卫视",
+    "西藏卫视", "海南卫视", "东南卫视", "重庆卫视", "四川卫视",
+    "辽宁卫视", "吉林卫视", "厦门卫视", "大湾区卫视", "海峡卫视",
+    # 地方台
+    "电视台", "综合频道", "新闻频道", "都市频道", "生活频道",
+    "影视", "少儿", "公共", "经济", "科教", "文艺", "体育",
+    # 省份/城市
+    "北京", "上海", "广东", "浙江", "江苏", "湖南", "湖北",
+    "山东", "河南", "四川", "福建", "安徽", "辽宁", "陕西",
+    "河北", "江西", "黑龙江", "吉林", "山西", "云南", "贵州",
+    "甘肃", "海南", "青海", "宁夏", "新疆", "西藏", "广西",
+    "内蒙古", "香港", "澳门", "台湾",
+    # 港澳台特色
+    "凤凰", "翡翠", "明珠", "TVB", "无线", "RTHK", "HOY",
+    "东森", "民视", "台视", "华视", "中视", "三立", "纬来"
+]
+
+
+def is_domestic_channel(channel_name: str) -> bool:
+    """判断是否为国内频道"""
+    name_lower = channel_name.lower()
+    for kw in DOMESTIC_KEYWORDS:
+        if kw.lower() in name_lower:
+            return True
+    return False
+
 
 class SourceDiscoverer:
-    """源发现器 - 负责从多个源抓取新源"""
+    """源发现器 - 负责从多个源抓取新源，支持国内频道过滤"""
     
     def __init__(self, pool_db_path: Path = None):
         self.pool_db_path = pool_db_path or Path("data/source_pool.json")
@@ -31,7 +66,6 @@ class SourceDiscoverer:
                 with open(self.pool_db_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     for key, value in data.items():
-                        # 转换时间字符串为 datetime
                         value["discovered_at"] = datetime.fromisoformat(value["discovered_at"])
                         if value.get("last_check"):
                             value["last_check"] = datetime.fromisoformat(value["last_check"])
@@ -45,7 +79,6 @@ class SourceDiscoverer:
         """保存源池数据库"""
         try:
             data = {key: value.to_dict() for key, value in self.pool.items()}
-            # 转换 datetime 为字符串
             for key, value in data.items():
                 value["discovered_at"] = value["discovered_at"].isoformat()
                 if value["last_check"]:
@@ -55,9 +88,15 @@ class SourceDiscoverer:
         except Exception as e:
             logger.error(f"保存源池失败: {e}")
     
-    async def discover(self, db=None) -> Dict[str, List[RawSource]]:
-        """发现新源，按频道名分组"""
-        logger.info("🔍 开始发现新源...")
+    async def discover(self, db=None, filter_domestic: bool = True) -> Dict[str, List[RawSource]]:
+        """
+        发现新源，按频道名分组
+        
+        Args:
+            db: 数据库连接
+            filter_domestic: 是否只保留国内频道（默认True）
+        """
+        logger.info("🔍 开始发现新源..." + (" (仅国内频道)" if filter_domestic else ""))
         
         # 拉取所有源
         raw_contents = await fetch_all_sources_incremental(IPTV_SOURCES, db)
@@ -66,7 +105,16 @@ class SourceDiscoverer:
         new_sources = []
         existing_keys = set(self.pool.keys())
         
+        # 统计过滤
+        total_count = len(channels_dict)
+        filtered_count = 0
+        
         for ch in channels_dict.values():
+            # 国内频道过滤
+            if filter_domestic and not is_domestic_channel(ch["name"]):
+                filtered_count += 1
+                continue
+            
             raw_source = RawSource(
                 url=ch["url"],
                 channel_name=ch["name"],
@@ -93,6 +141,9 @@ class SourceDiscoverer:
             grouped[src.channel_name].append(src)
         
         logger.info(f"✅ 发现新源: {len(new_sources)} 个，涉及 {len(grouped)} 个频道")
+        if filter_domestic:
+            logger.info(f"📊 过滤掉 {filtered_count} 个国外频道（保留国内频道）")
+        
         return grouped
     
     def get_pending_sources(self, limit: int = 100) -> List[RawSource]:

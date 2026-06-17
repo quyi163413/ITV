@@ -43,13 +43,9 @@ from src.demo_filter import (
 from src.database import get_db_cache
 from src.logger import logger
 
-# 新增导入（保留增强输出和特色分类）
+# 新增导入
 from src.generator_enhanced import EnhancedOutputGenerator
 from src.special_categories import collect_and_append_special_categories
-
-# ============================================================
-# 注意：已移除 overseas_filter 导入，取消国外频道功能
-# ============================================================
 
 
 # ========== 传统模式（完整采集） ==========
@@ -147,18 +143,15 @@ async def run_legacy_mode():
 
     generate_outputs_from_demo(ordered_channels, demo_order)
 
+    # ========== 生成增强版输出（取消精简版和EPG版） ==========
     output_gen = EnhancedOutputGenerator()
     output_gen.generate_all_outputs(
         ordered_channels, 
         demo_order,
-        enable_json=ENABLE_JSON_OUTPUT,
-        enable_lite=ENABLE_LITE_VERSION,
-        enable_epg=ENABLE_EPG_OUTPUT
+        enable_json=ENABLE_JSON_OUTPUT,   # 保留 JSON
+        enable_lite=False,                # 关闭精简版
+        enable_epg=False                  # 关闭 EPG 兼容版
     )
-
-    # ============================================================
-    # 已移除国外频道处理（overseas_filter 不再调用）
-    # ============================================================
 
     # 采集特色分类内容
     special_stats = {}
@@ -178,7 +171,7 @@ async def run_legacy_mode():
         "category_stats": dict(cat_counter),
         "unmatched_count": len(unmatched_channels) if unmatched_channels else 0,
         "features": {
-            "epg_injection_enabled": ENABLE_EPG_OUTPUT,
+            "epg_injection_enabled": False,   # 不再生成 EPG 文件
             "incremental_mode": is_fresh and ENABLE_INCREMENTAL_FETCH
         }
     }
@@ -228,19 +221,13 @@ async def run_autonomous_mode():
 async def main():
     """
     主入口 - 根据 AUTONOMOUS_MODE 环境变量选择运行模式
-    
-    自治模式 + 传统模式 = 互补：
-    - 自治模式：发现新源，更新候选池
-    - 传统模式：完整采集、测速、验证、输出
     """
     if AUTONOMOUS_MODE:
         logger.info("🔀 根据 AUTONOMOUS_MODE=true 启用自治模式")
         logger.info("📌 自治模式将先发现新源，然后执行传统模式完整采集")
         
-        # 1. 运行自治模式（发现新源）
         await run_autonomous_mode()
         
-        # 2. 运行传统模式（完整采集 + 输出）
         logger.info("=" * 60)
         logger.info("🔄 执行传统模式完整采集...")
         logger.info("=" * 60)

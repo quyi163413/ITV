@@ -57,7 +57,7 @@ EXCLUDE_KEYWORDS = [
 KOREAN_GIRL_BLACKLIST = [
     "周杰伦颜老师",
     "三国颜老师",
-    "女团社颜老师"
+    "女团社颜老师",
     "花花与三猫CatLive"
 ]
 

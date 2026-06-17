@@ -1,5 +1,6 @@
 # src/demo_filter.py
 # Demo 频道筛选与排序模块，支持拼音匹配和省份自动归类
+# 港澳台统一归入 🌊港·澳·台 分类
 
 import re
 from pathlib import Path
@@ -8,9 +9,8 @@ from src.config import DEMO_FILE, OUTPUT_DIR, DEMO_MATCH_MODE
 from src.classifier import PROVINCES, classify_channel
 from src.logger import logger
 
-# 尝试导入拼音库，若失败则回退到简单匹配
 try:
-    from pypinyin import lazy_pinyin, pinyin
+    from pypinyin import lazy_pinyin
     HAS_PYPINYIN = True
 except ImportError:
     HAS_PYPINYIN = False
@@ -72,16 +72,12 @@ def match_channel_name(channel_name: str, demo_name: str) -> bool:
     if dn_lower in cn_lower or cn_lower in dn_lower:
         return True
     
-    # 2. 拼音匹配（将中文 demo 名转为拼音，检查是否在频道名中）
+    # 2. 拼音匹配
     if HAS_PYPINYIN:
         demo_pinyin = to_pinyin(demo_name)
         channel_pinyin = to_pinyin(channel_name)
-        # 检查拼音是否包含
         if demo_pinyin in channel_pinyin or channel_pinyin in demo_pinyin:
             return True
-        # 检查 demo 中文是否包含在频道名拼音中（例如 demo="浙江", 频道名="zhejiang"）
-        # 也检查频道名中文是否包含 demo 拼音
-        # 已经通过包含检查，但有些频道名是纯拼音，demo 是中文，需要双向检查
     
     # 3. 去除特殊字符后的匹配
     def clean(s):
@@ -95,13 +91,20 @@ def match_channel_name(channel_name: str, demo_name: str) -> bool:
 def detect_province(channel_name: str) -> str:
     """
     检测频道名中的省份/城市，返回省份名（如"北京"）
+    港澳台返回 "港澳台" 以便统一归类
     """
     name = channel_name
-    # 优先匹配省份名
+    # 先检测港澳台
+    hmtj_keywords = ["香港", "澳门", "台湾", "港", "澳", "台"]
+    for kw in hmtj_keywords:
+        if kw in name:
+            return "港澳台"
+    
+    # 检测省份
     for prov in PROVINCES:
         if prov in name:
             return prov
-    # 匹配直辖市简称
+    # 直辖市简称
     if "京" in name: return "北京"
     if "沪" in name: return "上海"
     if "津" in name: return "天津"
@@ -113,8 +116,13 @@ def get_demo_category_for_province(province: str, demo_order: List[Tuple[str, st
     """
     根据省份名生成对应的 demo 分类名
     若 demo 中有 "☘️北京频道,#genre#" 则返回 "☘️北京频道"
-    否则返回 "北京频道"
+    否则返回 "☘️北京频道"
+    港澳台统一返回 "🌊港·澳·台"
     """
+    # 港澳台特殊处理
+    if province == "港澳台":
+        return "🌊港·澳·台"
+    
     # 尝试多种格式
     candidates = [
         f"☘️{province}频道",
@@ -134,7 +142,7 @@ def filter_and_order_by_demo(channels: list) -> tuple:
     """
     增强筛选：
     1. 匹配 demo 中的频道（支持拼音）
-    2. 未匹配的根据省份自动归类
+    2. 未匹配的根据省份自动归类（港澳台统一归入 🌊港·澳·台）
     """
     demo_order = parse_demo_order_with_categories()
     if not demo_order:
@@ -175,15 +183,13 @@ def filter_and_order_by_demo(channels: list) -> tuple:
                 logger.debug(f"🎯 匹配: {ch['name']} -> {category}/{demo_name}")
                 break
 
-    # 第二遍：未匹配频道自动归类到省份分类
+    # 第二遍：未匹配频道自动归类到省份分类（港澳台统一归入 🌊港·澳·台）
     remaining = []
     province_appended = {}
     
     for ch in unmatched:
-        # 检测省份
         province = detect_province(ch["name"])
         if province:
-            # 获取对应的 demo 分类
             cat = get_demo_category_for_province(province, demo_order)
             ch_copy = ch.copy()
             ch_copy["demo_category"] = cat

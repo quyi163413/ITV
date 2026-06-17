@@ -27,16 +27,10 @@ from src.generator import generate_outputs_from_demo
 class IPTVOrchestrator:
     """
     IPTV 自治系统协调器 - 增强版
-    
-    优化：
-    - 大幅增加处理数量，覆盖全部国内频道
-    - 从缓存快速验证，无需网络请求
-    - 与传统模式互补
     """
     
-    # 大幅增加限制，确保覆盖全部国内频道
-    MAX_NEW_SOURCES_PER_RUN = 5000      # 从500增加到5000
-    MAX_OBSERVE_PER_RUN = 3000          # 从300增加到3000
+    MAX_NEW_SOURCES_PER_RUN = 5000
+    MAX_OBSERVE_PER_RUN = 3000
     
     def __init__(self, data_dir: Path = None):
         self.data_dir = data_dir or Path("data")
@@ -57,23 +51,22 @@ class IPTVOrchestrator:
             "new_stable_count": 0
         }
         
-        # 更新候选观察器配置（降低稳定门槛，加快提升）
-        CandidateObserver.MIN_SUCCESS_COUNT = min(CANDIDATE_MIN_SUCCESS, 3)  # 最多3次
+        CandidateObserver.MIN_SUCCESS_COUNT = min(CANDIDATE_MIN_SUCCESS, 3)
         CandidateObserver.MIN_SUCCESS_RATE = CANDIDATE_MIN_SUCCESS_RATE
         CandidateObserver.MAX_AVG_LATENCY = CANDIDATE_MAX_LATENCY
     
     async def discover_phase(self) -> Dict:
-        """阶段1: 发现新源（只保留国内频道）"""
+        """阶段1: 发现新源（强制刷新，拉取所有源）"""
         logger.info("=" * 50)
         logger.info("阶段1: 发现新源（国内频道）")
         logger.info("=" * 50)
         
         try:
             db = await asyncio.wait_for(get_db_cache(), timeout=10)
-            # 启用国内频道过滤
+            # ⭐ 关键修改：force_refresh=True 强制拉取所有源
             new_sources = await asyncio.wait_for(
-                self.discoverer.discover(db, filter_domestic=True), 
-                timeout=60
+                self.discoverer.discover(db, filter_domestic=True, force_refresh=True), 
+                timeout=120
             )
             
             total_new = sum(len(s) for s in new_sources.values())
@@ -87,7 +80,6 @@ class IPTVOrchestrator:
             if total_new > self.MAX_NEW_SOURCES_PER_RUN:
                 logger.warning(f"⚠️ 新源数量 {total_new} 超过限制 {self.MAX_NEW_SOURCES_PER_RUN}，只取前 {self.MAX_NEW_SOURCES_PER_RUN} 个")
             
-            # 批量添加到候选池
             added_sources = []
             count = 0
             for channel_name, sources in new_sources.items():
@@ -105,14 +97,14 @@ class IPTVOrchestrator:
             return new_sources
             
         except asyncio.TimeoutError:
-            logger.warning("⚠️ 发现新源阶段超时（60秒），跳过")
+            logger.warning("⚠️ 发现新源阶段超时（120秒），跳过")
             return {}
         except Exception as e:
             logger.error(f"❌ 发现新源阶段失败: {e}")
             return {}
     
     async def observe_phase(self) -> List:
-        """阶段2: 从缓存快速观察候选源（大批量）"""
+        """阶段2: 从缓存快速观察候选源"""
         logger.info("=" * 50)
         logger.info("阶段2: 从缓存观察候选源")
         logger.info("=" * 50)
@@ -126,7 +118,6 @@ class IPTVOrchestrator:
             stable_count = len(self.candidate_observer.get_stable_candidates())
             logger.info(f"📊 候选池状态: {observing_count} 个正在观察，{stable_count} 个已稳定")
             
-            # 大批量观察
             stable_candidates = await asyncio.wait_for(
                 self.candidate_observer.observe_batch_from_cache(
                     batch_size=self.MAX_OBSERVE_PER_RUN
@@ -148,7 +139,7 @@ class IPTVOrchestrator:
             return []
     
     async def promote_phase(self, stable_candidates: List = None) -> int:
-        """阶段3: 提升稳定源（大批量）"""
+        """阶段3: 提升稳定源"""
         logger.info("=" * 50)
         logger.info("阶段3: 提升稳定源")
         logger.info("=" * 50)
@@ -161,11 +152,9 @@ class IPTVOrchestrator:
                 logger.info("📭 没有稳定的候选源需要提升")
                 return 0
             
-            # 记录提升前的稳定源数量
             before_count = len(self.stable_manager.get_active_sources())
             
             promoted_count = 0
-            # 提升全部稳定候选源（不限制数量）
             for obs in stable_candidates:
                 existing = self.stable_manager.stable_sources.get(obs.channel_name)
                 
@@ -201,18 +190,13 @@ class IPTVOrchestrator:
         logger.info("🚀 IPTV 自治系统启动")
         logger.info(f"📊 配置: 每批发现 {self.MAX_NEW_SOURCES_PER_RUN} 个，每批观察 {self.MAX_OBSERVE_PER_RUN} 个")
         logger.info("📌 只处理国内频道，国外频道自动过滤")
+        logger.info("⚡ 强制刷新模式：重新拉取所有源")
         
         try:
-            # 1. 发现新源（国内频道）
             await self.discover_phase()
-            
-            # 2. 从缓存观察候选源
             stable_candidates = await self.observe_phase()
-            
-            # 3. 提升稳定源
             await self.promote_phase(stable_candidates)
             
-            # 打印统计
             logger.info("=" * 50)
             logger.info("📊 自治模式统计")
             logger.info("=" * 50)
@@ -240,6 +224,5 @@ def get_orchestrator() -> IPTVOrchestrator:
 
 
 async def run_autonomous_mode():
-    """运行自治模式"""
     orchestrator = get_orchestrator()
     return await orchestrator.run_once()

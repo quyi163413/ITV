@@ -46,6 +46,7 @@ RAW_SOURCES = [
     "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
     "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+    "https://raw.githubusercontent.com/zzgpy1/iptv/master/streams/cn.m3u",
 ]
 
 # 不需要代理的源
@@ -136,37 +137,21 @@ WEB_SERVER_HOST = os.getenv("WEB_SERVER_HOST", "0.0.0.0")
 RUN_MODE = os.getenv("RUN_MODE", "once")
 SCHEDULE_INTERVAL = int(os.getenv("SCHEDULE_INTERVAL", 21600))
 
-# ========== 缓存优化配置（新增） ==========
+# ========== 缓存优化配置 ==========
 # 原始源缓存时长（小时）- 建议延长
-CACHE_RAW_HOURS = int(os.getenv("CACHE_RAW_HOURS", 48))  # 从24小时延长到48小时
+CACHE_RAW_HOURS = int(os.getenv("CACHE_RAW_HOURS", 48))
 # 测速结果缓存时长（小时）
 CACHE_SPEED_HOURS = int(os.getenv("CACHE_SPEED_HOURS", 24))
 # 是否启用增量更新（只拉取变化的源）
 ENABLE_INCREMENTAL_FETCH = os.getenv("ENABLE_INCREMENTAL_FETCH", "true").lower() == "true"
 
-# ========== iptv-org 融合配置（新增） ==========
-# 是否启用 iptv-org 适配器
-IPTV_ORG_ENABLE = os.getenv("IPTV_ORG_ENABLE", "true").lower() == "true"
-# iptv-org Logo CDN 地址
-IPTV_ORG_CDN = os.getenv("IPTV_ORG_CDN", "https://raw.githubusercontent.com/iptv-org/iptv/master/resources")
-# 是否将 iptv-org 主列表加入采集源
-IPTV_ORG_ADD_MAIN_LIST = os.getenv("IPTV_ORG_ADD_MAIN_LIST", "true").lower() == "true"
-# iptv-org 特殊缓存（该源变化慢）
-IPTV_ORG_CACHE_HOURS = int(os.getenv("IPTV_ORG_CACHE_HOURS", 72))  # 3天
-
-# ========== 全球频道配置（新增） ==========
-# 是否启用全球频道扩展
-ENABLE_GLOBAL_CHANNELS = os.getenv("ENABLE_GLOBAL_CHANNELS", "false").lower() == "true"
-# 全球频道数量限制
-GLOBAL_CHANNELS_LIMIT = int(os.getenv("GLOBAL_CHANNELS_LIMIT", 200))
-
-# ========== EPG 配置（新增） ==========
+# ========== EPG 配置 ==========
 # 是否启用 EPG 注入
 ENABLE_EPG_INJECTION = os.getenv("ENABLE_EPG_INJECTION", "true").lower() == "true"
 # EPG 缓存天数
 EPG_CACHE_DAYS = int(os.getenv("EPG_CACHE_DAYS", 7))
 
-# ========== 输出格式配置（新增） ==========
+# ========== 输出格式配置 ==========
 # 是否生成 JSON API 输出
 ENABLE_JSON_OUTPUT = os.getenv("ENABLE_JSON_OUTPUT", "true").lower() == "true"
 # 是否生成精简版
@@ -174,12 +159,7 @@ ENABLE_LITE_VERSION = os.getenv("ENABLE_LITE_VERSION", "true").lower() == "true"
 # 是否生成 EPG 就绪版
 ENABLE_EPG_OUTPUT = os.getenv("ENABLE_EPG_OUTPUT", "true").lower() == "true"
 
-# 如果启用 iptv-org，将主列表加入采集源
-if IPTV_ORG_ENABLE and IPTV_ORG_ADD_MAIN_LIST:
-    IPTV_SOURCES.append("https://iptv-org.github.io/iptv/index.m3u")
-    print("🌍 已添加 iptv-org 主列表作为数据源")
-
-# ========== 自治模式配置（新增） ==========
+# ========== 自治模式配置 ==========
 # 是否启用自治模式
 AUTONOMOUS_MODE = os.getenv("AUTONOMOUS_MODE", "false").lower() == "true"
 

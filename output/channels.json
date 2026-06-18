@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 310,
-  "generated": "2026-06-18T23:00:53.666776",
+  "total": 312,
+  "generated": "2026-06-18T23:28:21.113273",
   "channels": [
     {
       "name": "CCTV-1",
@@ -1436,6 +1436,15 @@
       "category": "☘️福建频道,#genre#"
     },
     {
+      "name": "福建公共",
+      "urls": [
+        "https://live.264788.xyz/channel/fujianxiangcungonggong?streamid=2987cc24bada6a8c25589409a6452d9e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
+      ],
+      "latency": 4137,
+      "codec": "h264",
+      "category": "☘️福建频道,#genre#"
+    },
+    {
       "name": "梨园",
       "urls": [
         "https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=41543190cdf375f1c73207222bb96542&wsTime=1769313549"
@@ -1684,6 +1693,15 @@
         "https://play.yunxya.com/channellive/xinwen.m3u8"
       ],
       "latency": 3142,
+      "codec": "h264",
+      "category": "☘️四川频道,#genre#"
+    },
+    {
+      "name": "河综合",
+      "urls": [
+        "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
+      ],
+      "latency": 1920,
       "codec": "h264",
       "category": "☘️四川频道,#genre#"
     },

@@ -80,21 +80,25 @@ def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
     return {k: v for k, v in result.items() if v}
 
 
-async def fetch_abc123_source(db=None) -> Dict[str, List[Tuple[str, str]]]:
-    """获取 abc123 源并解析目标分类"""
+async def fetch_abc123_source() -> Dict[str, List[Tuple[str, str]]]:
+    """
+    直接拉取 abc123 源内容并解析目标分类
+    不依赖 fetcher.py 的缓存逻辑，避免参数问题
+    """
     import aiohttp
-    from src.fetcher import fetch_url_with_metadata
-
     source_url = "https://tv.19860519.xyz/abc123"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    }
 
     try:
         async with aiohttp.ClientSession() as session:
-            content = await fetch_url_with_metadata(session, source_url, db)
-            if content:
+            async with session.get(source_url, timeout=10, headers=headers) as resp:
+                if resp.status != 200:
+                    logger.warning(f"⚠️ abc123 源返回 HTTP {resp.status}")
+                    return {}
+                content = await resp.text()
                 return parse_abc123_for_targets(content)
-            else:
-                logger.warning(f"⚠️ 无法获取 abc123 源: {source_url}")
-                return {}
     except Exception as e:
         logger.error(f"❌ 获取 abc123 源失败: {e}")
         return {}
@@ -144,11 +148,11 @@ def append_special_to_output(
 async def collect_and_append_special_categories(output_dir: Path, db=None) -> Dict[str, int]:
     """
     主函数：采集指定分类并追加到输出文件
-    只接受两个参数：output_dir 和 db（可选）
+    只接受两个参数：output_dir 和 db（可选，实际未使用）
     """
     logger.info("🧠 开始智能补充采集（从 abc123 源）...")
 
-    special_data = await fetch_abc123_source(db)
+    special_data = await fetch_abc123_source()
 
     if not special_data:
         logger.warning("⚠️ 未获取到任何智能补充分类内容")
@@ -164,7 +168,7 @@ async def collect_and_append_special_categories(output_dir: Path, db=None) -> Di
         logger.warning("⚠️ 没有符合分类规则的频道")
         return {}
 
-    # 追加到输出文件（只传两个参数）
+    # 追加到输出文件
     appended = append_special_to_output(special_data, output_dir)
     logger.info(f"✅ 已将 {appended} 个智能补充频道追加到输出文件")
 

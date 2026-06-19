@@ -24,7 +24,7 @@ HK_MACAU_TAIWAN_KEYWORDS = [
     "中天新闻", "三立新闻", "非凡新闻", "寰宇新闻", "华视综合", "中视综合", "台视综合"
 ]
 
-# ========== 预编译正则表达式 ==========
+# 预编译正则表达式
 _CCTV_PATTERN = re.compile(r'(?:cctv|央视|中央电视|中央-|中央台|cntv)', re.IGNORECASE)
 _HK_MACAU_PATTERN = re.compile(r'|'.join(re.escape(kw) for kw in HK_MACAU_TAIWAN_KEYWORDS), re.IGNORECASE)
 _PROVINCE_PATTERN = re.compile(r'|'.join(re.escape(prov) for prov in PROVINCES))
@@ -78,27 +78,27 @@ def classify_and_filter(channels: list) -> dict:
         else:
             other_count += 1
     
-    # 央视排序：使用更精确的匹配，确保 1-17 顺序正确
+    # 央视排序：精确按数字排序
     if result["央视"]:
         def ctv_key(ch):
             name = ch.get("name", "")
-            # 处理 CCTV-5+ 特殊（排在 5 之后，6 之前）
-            if name == "CCTV-5+" or name == "CCTV5+" or name == "CCTV-5＋":
-                return 5  # 索引 5 对应位置
+            # 处理 CCTV-5+ 特殊
+            if name in ["CCTV-5+", "CCTV5+"]:
+                return 5  # 排在 CCTV-5 之后，CCTV-6 之前
             # 提取数字
             match = re.search(r'CCTV[-\s]*(\d+)', name, re.IGNORECASE)
             if match:
                 num = int(match.group(1))
                 if 1 <= num <= 17:
-                    return num - 1  # 0-based 索引
-            # 非数字央视频道（如 CCTV世界地理）放到后面
+                    return num - 1  # 返回索引，0开始
+            # 非数字央视频道排在后面
             for idx, std in enumerate(CCTV_ORDER):
                 if name == std or name.startswith(std):
                     return idx
             return len(CCTV_ORDER)
         result["央视"].sort(key=ctv_key)
     
-    # 其他分类按名称排序
+    # 其他分类排序
     for cat in ["卫视", "地方", "港澳台"]:
         if result[cat]:
             result[cat].sort(key=lambda x: x.get("name", ""))

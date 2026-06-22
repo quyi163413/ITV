@@ -4,6 +4,7 @@ import aiohttp
 from src.config import HEADERS, TIMEOUT, RETRY_MAX_ATTEMPTS, RETRY_BACKOFF_FACTOR, RETRY_MAX_WAIT, ENABLE_RETRY
 from src.database import get_db_cache
 from src.logger import logger
+from src.proxy_utils import fetch_with_proxy_fallback
 
 
 class FetchError(Exception):
@@ -11,7 +12,6 @@ class FetchError(Exception):
 
 
 async def fetch_url_with_metadata(session: aiohttp.ClientSession, url: str, db):
-    """直接拉取 URL，不使用代理"""
     if db:
         cached_content = await db.get_raw_source(url)
         if cached_content:
@@ -23,22 +23,22 @@ async def fetch_url_with_metadata(session: aiohttp.ClientSession, url: str, db):
     while True:
         attempt += 1
         try:
-            async with session.get(url, timeout=TIMEOUT, headers=HEADERS) as resp:
-                if resp.status != 200:
-                    raise FetchError(f"HTTP {resp.status}")
-                content = await resp.text()
+            # 调用代理或直连
+            content, used_proxy = await fetch_with_proxy_fallback(session, url)
+            if content is not None:
                 if db:
                     await db.set_raw_source(url, content)
                 return content
-        except asyncio.TimeoutError:
-            err = "超时"
+            else:
+                # 如果 fetch_with_proxy_fallback 返回 None 且 should_proxy 为 False，可能直连失败
+                # 但 fetch_with_proxy_fallback 内部会处理重试，这里只需抛出异常
+                raise FetchError("拉取失败")
         except Exception as e:
-            err = str(e)
-        if not ENABLE_RETRY or attempt >= RETRY_MAX_ATTEMPTS:
-            raise FetchError(f"{err} (尝试 {attempt} 次)")
-        wait_time = min(RETRY_BACKOFF_FACTOR ** (attempt - 1), RETRY_MAX_WAIT)
-        logger.warning(f"  重试 {url} ({attempt}/{RETRY_MAX_ATTEMPTS})，等待 {wait_time}s")
-        await asyncio.sleep(wait_time)
+            if not ENABLE_RETRY or attempt >= RETRY_MAX_ATTEMPTS:
+                raise FetchError(str(e))
+            wait_time = min(RETRY_BACKOFF_FACTOR ** (attempt - 1), RETRY_MAX_WAIT)
+            logger.warning(f"  重试 {url} ({attempt}/{RETRY_MAX_ATTEMPTS})，等待 {wait_time}s")
+            await asyncio.sleep(wait_time)
 
 
 async def fetch_all_sources_incremental(sources: list, db, force_refresh: bool = False) -> dict:

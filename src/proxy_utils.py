@@ -1,41 +1,32 @@
 # src/proxy_utils.py
 import asyncio
 import aiohttp
-from typing import Optional, Tuple
 from urllib.parse import urlparse
-
-from src.config import (
-    GITHUB_RAW_PROXIES, ENABLE_GITHUB_PROXY, GITHUB_PROXY_TIMEOUT,
-    HEADERS, TIMEOUT
-)
+from src.config import ENABLE_GITHUB_PROXY, HEADERS, TIMEOUT
 from src.logger import logger
 
+GITHUB_RAW_PROXIES = [
+    "https://ghproxy.net/",
+    "https://gh-proxy.19860519.xyz/",
+    "https://raw.kkgithub.com/",
+]
+GITHUB_PROXY_TIMEOUT = 15
+
 def should_proxy(url: str) -> bool:
-    """判断是否需要代理加速"""
     if not ENABLE_GITHUB_PROXY:
         return False
     return "raw.githubusercontent.com" in url
 
 def build_proxy_url(original_url: str, proxy_prefix: str) -> str:
-    """构建代理 URL"""
     if proxy_prefix.startswith(("https://ghproxy.net/", "https://gh.api.99988866.xyz/")):
-        # 直接拼接
         return f"{proxy_prefix}{original_url}"
     elif "raw.staticdn.net" in proxy_prefix or "raw.githubusercontents.com" in proxy_prefix:
         parsed = urlparse(original_url)
-        # 代理只替换域名部分
         return f"{proxy_prefix}{parsed.path}"
     else:
         return f"{proxy_prefix}{original_url}"
 
-async def fetch_with_proxy_fallback(
-    session: aiohttp.ClientSession,
-    url: str
-) -> Tuple[Optional[str], Optional[str]]:
-    """
-    依次尝试代理镜像拉取，直到成功或全部失败。
-    返回 (content, used_proxy_prefix)
-    """
+async def fetch_with_proxy_fallback(session: aiohttp.ClientSession, url: str):
     if not should_proxy(url):
         try:
             async with session.get(url, timeout=TIMEOUT, headers=HEADERS) as resp:
@@ -46,7 +37,6 @@ async def fetch_with_proxy_fallback(
             logger.debug(f"直连 {url} 失败: {e}")
             return None, None
 
-    # 直连失败或代理功能已启用，走代理
     for proxy_prefix in GITHUB_RAW_PROXIES:
         proxy_url = build_proxy_url(url, proxy_prefix)
         try:
@@ -60,6 +50,5 @@ async def fetch_with_proxy_fallback(
             logger.warning(f"⏱️ 代理 {proxy_prefix} 超时")
         except Exception as e:
             logger.debug(f"代理 {proxy_prefix} 失败: {e}")
-        await asyncio.sleep(0.2)  # 稍微间隔，避免请求过快
-
+        await asyncio.sleep(0.2)
     return None, None

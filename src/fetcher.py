@@ -1,11 +1,9 @@
 # src/fetcher.py
-# 支持 HEAD 请求检测更新，无变化则跳过拉取，直接使用数据库缓存
-# 修复 Session is closed 错误：每个请求独立创建会话
+# 拉取模块：支持缓存、重试、代理轮换
 
 import asyncio
 import aiohttp
-from src.config import HEADERS, TIMEOUT, RETRY_MAX_ATTEMPTS, RETRY_BACKOFF_FACTOR, RETRY_MAX_WAIT, ENABLE_RETRY
-from src.database import get_db_cache
+from src.config import HEADERS, TIMEOUT, RETRY_MAX_ATTEMPTS, ENABLE_RETRY, get_proxy_list
 from src.logger import logger
 
 
@@ -13,42 +11,68 @@ class FetchError(Exception):
     pass
 
 
-async def fetch_url_with_metadata(url: str, db):
+async def fetch_url_with_metadata(url: str, db, proxies=None):
     """
-    拉取单个 URL 的内容，支持缓存和重试
-    每次调用独立创建 aiohttp 会话，避免共享会话关闭问题
+    拉取单个 URL 的内容，支持缓存和代理轮换重试
     
     Args:
         url: 要拉取的 URL
         db: 数据库连接（为 None 时禁用缓存）
+        proxies: 代理列表，若为 None 则自动获取
     """
-    # 尝试从缓存获取（仅当 db 不为 None 时）
     if db:
         cached_content = await db.get_raw_source(url)
         if cached_content:
             logger.debug(f"✅ 使用缓存: {url}")
             return cached_content
 
-    logger.info(f"🔄 拉取: {url}")
-    attempt = 0
-    while True:
-        attempt += 1
+    # 获取代理列表
+    if proxies is None:
+        proxies = get_proxy_list()
+    
+    # 判断是否为 GitHub raw 源
+    is_github = "raw.githubusercontent.com" in url
+    
+    # 构造尝试顺序：先尝试直接（如果非GitHub），再尝试代理
+    attempts = []
+    if not is_github:
+        attempts.append(("direct", url))
+    # 代理尝试
+    for proxy in proxies:
+        # 避免重复添加代理前缀
+        if url.startswith(proxy):
+            proxy_url = url
+        else:
+            proxy_url = proxy + url if not url.startswith(proxy) else url
+        attempts.append((proxy, proxy_url))
+    
+    # 去重：避免重复尝试相同URL
+    seen = set()
+    unique_attempts = []
+    for label, attempt_url in attempts:
+        if attempt_url not in seen:
+            seen.add(attempt_url)
+            unique_attempts.append((label, attempt_url))
+    
+    last_exception = None
+    for label, attempt_url in unique_attempts:
         try:
-            # 每次重试创建新的会话，避免 Session is closed
+            logger.info(f"🔄 拉取{' (代理: ' + label + ')' if label != 'direct' else ''}: {attempt_url}")
             async with aiohttp.ClientSession() as session:
-                async with session.get(url, timeout=TIMEOUT, headers=HEADERS) as resp:
+                async with session.get(attempt_url, timeout=TIMEOUT, headers=HEADERS) as resp:
                     if resp.status != 200:
                         raise FetchError(f"HTTP {resp.status}")
                     content = await resp.text()
                     if db:
-                        await db.set_raw_source(url, content)
+                        await db.set_raw_source(url, content)  # 用原始URL存缓存
                     return content
         except Exception as e:
-            if not ENABLE_RETRY or attempt >= RETRY_MAX_ATTEMPTS:
-                raise FetchError(str(e))
-            wait_time = min(RETRY_BACKOFF_FACTOR ** (attempt - 1), RETRY_MAX_WAIT)
-            logger.warning(f"  重试 {url} ({attempt}/{RETRY_MAX_ATTEMPTS})，等待 {wait_time}s")
-            await asyncio.sleep(wait_time)
+            last_exception = e
+            logger.warning(f"  尝试失败 ({label}): {e}")
+            await asyncio.sleep(1)  # 短暂等待后重试下一个代理
+    
+    # 所有尝试都失败，抛出最后一个异常
+    raise FetchError(str(last_exception) if last_exception else "所有代理尝试失败")
 
 
 async def fetch_all_sources_incremental(sources: list, db, force_refresh: bool = False) -> dict:
@@ -63,11 +87,10 @@ async def fetch_all_sources_incremental(sources: list, db, force_refresh: bool =
     Returns:
         {url: content} 字典
     """
-    # 不再使用共享会话，每个 fetch_url_with_metadata 内部自己创建
+    # 每个 fetch_url_with_metadata 内部自己创建会话，无需共享
     tasks = []
     for url in sources:
         if force_refresh:
-            # 强制刷新：传入 db=None 禁用缓存
             tasks.append(fetch_url_with_metadata(url, None))
         else:
             tasks.append(fetch_url_with_metadata(url, db))

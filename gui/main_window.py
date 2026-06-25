@@ -189,7 +189,15 @@ class IPTVMainWindow(QMainWindow):
         )
     
     def apply_style(self):
+    try:
+        from src.gui.styles import DARK_STYLE
         self.setStyleSheet(DARK_STYLE)
+    except ImportError:
+        # 如果样式文件不存在，使用简单暗色
+        self.setStyleSheet("""
+            QMainWindow { background-color: #1a1d20; }
+            QWidget { background-color: #1a1d20; color: #e9ecef; }
+        """)
 
 
 # 以下为占位类，实际定义在 widgets.py 中

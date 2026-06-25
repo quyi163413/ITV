@@ -31,6 +31,9 @@ def check_ffprobe_sync():
     try:
         result = subprocess.run(["ffprobe", "-version"], capture_output=True, timeout=5, text=True)
         return result.returncode == 0
+    except FileNotFoundError:
+        # ffprobe 未安装，返回 False
+        return False
     except Exception:
         return False
 

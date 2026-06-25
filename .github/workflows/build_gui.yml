@@ -3,8 +3,8 @@ name: 构建并发布 GUI 桌面版
 on:
   push:
     tags:
-      - 'v*'   # 当推送 v1.0, v2.0 等标签时触发
-  workflow_dispatch:   # 允许手动触发
+      - 'v*'
+  workflow_dispatch:
 
 jobs:
   build-windows:
@@ -30,7 +30,7 @@ jobs:
 
     - name: 打包为 exe
       run: |
-        pyinstaller --onefile --windowed --name "IPTV_Manager" --add-data "src;src" --add-data "output;output" --add-data "alias.txt;." --add-data "blacklist.txt;." --add-data "demo.txt;." gui_main.py
+        pyinstaller --onefile --windowed --name "IPTV_Manager" --add-data "src;src" --add-data "alias.txt;." --add-data "blacklist.txt;." --add-data "demo.txt;." gui_main.py
 
     - name: 上传到 Releases
       uses: softprops/action-gh-release@v1

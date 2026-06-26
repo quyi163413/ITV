@@ -26,7 +26,7 @@ CCTV_FIXED_SOURCES = {
 }
 
 # 是否启用固定源（优先级最高）
-ENABLE_FIXED_SOURCES = True
+ENABLE_FIXED_SOURCES = False
 
 # 固定源的质量评分（极低延迟，确保被优先选择）
 FIXED_SOURCE_LATENCY = 50  # 50ms 极低延迟

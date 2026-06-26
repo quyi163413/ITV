@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 339,
-  "generated": "2026-06-26T09:37:13.718370",
+  "total": 338,
+  "generated": "2026-06-26T14:36:13.946150",
   "channels": [
     {
       "name": "CCTV-1",
@@ -495,7 +495,7 @@
       "urls": [
         "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8"
       ],
-      "latency": 1092,
+      "latency": 1095,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -808,7 +808,7 @@
       "urls": [
         "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8"
       ],
-      "latency": 1002,
+      "latency": 458,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1874,15 +1874,6 @@
         "http://110.153.180.106:55555/out_2/index.m3u8?zxinjd"
       ],
       "latency": 844,
-      "codec": "h264",
-      "category": "☘️新疆频道"
-    },
-    {
-      "name": "兵团五师双河新闻综合",
-      "urls": [
-        "http://liveout.btzx.com.cn/62ds9e/4nxdih.m3u8?fbl="
-      ],
-      "latency": 3167,
       "codec": "h264",
       "category": "☘️新疆频道"
     },

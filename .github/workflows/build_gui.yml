@@ -33,16 +33,15 @@ jobs:
         run: |
           python -c "import PyQt5; print('PyQt5 installed')"
 
-      - name: Ensure gui/__init__.py is correct (do not delete gui folder)
+      - name: Ensure gui/__init__.py is correct
         run: |
-          # 仅覆盖 __init__.py 文件，确保内容为有效 Python
           Set-Content -Path gui/__init__.py -Value "# gui package"
           Set-Content -Path gui/resources/__init__.py -Value "# placeholder"
           Set-Content -Path gui/styles/dark_theme.qss -Value "/* placeholder */"
 
-      - name: Build with PyInstaller (onedir)
+      - name: Build with PyInstaller (onedir, console)
         run: |
-          pyinstaller --clean --onedir --windowed `
+          pyinstaller --clean --onedir --console `
             --add-data "gui;gui" `
             --add-data "gui/styles;styles" `
             --add-data "gui/resources;resources" `
@@ -54,25 +53,24 @@ jobs:
             --hidden-import PyQt5.QtGui `
             --hidden-import PyQt5.QtWidgets `
             --hidden-import src `
-            --name "IPTV_Collector" `
+            --name "IPTV_Collector_debug" `
             gui/main.py
 
       - name: Copy config files to output folder
         run: |
-          # 将根目录的配置文件复制到 exe 所在目录，方便用户使用
-          Copy-Item -Path demo.txt -Destination dist/IPTV_Collector/ -ErrorAction SilentlyContinue
-          Copy-Item -Path alias.txt -Destination dist/IPTV_Collector/ -ErrorAction SilentlyContinue
-          Copy-Item -Path blacklist.txt -Destination dist/IPTV_Collector/ -ErrorAction SilentlyContinue
+          Copy-Item -Path demo.txt -Destination dist/IPTV_Collector_debug/ -ErrorAction SilentlyContinue
+          Copy-Item -Path alias.txt -Destination dist/IPTV_Collector_debug/ -ErrorAction SilentlyContinue
+          Copy-Item -Path blacklist.txt -Destination dist/IPTV_Collector_debug/ -ErrorAction SilentlyContinue
 
       - name: Compress output folder to zip
         run: |
-          Compress-Archive -Path dist/IPTV_Collector/* -DestinationPath dist/IPTV_Collector_Windows_x64.zip -Force
+          Compress-Archive -Path dist/IPTV_Collector_debug/* -DestinationPath dist/IPTV_Collector_Windows_x64_debug.zip -Force
 
       - name: Upload zip to Release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: dist/IPTV_Collector_Windows_x64.zip
-          asset_name: IPTV_Collector_Windows_x64.zip
+          file: dist/IPTV_Collector_Windows_x64_debug.zip
+          asset_name: IPTV_Collector_Windows_x64_debug.zip
           tag: ${{ github.ref_name }}
           overwrite: true

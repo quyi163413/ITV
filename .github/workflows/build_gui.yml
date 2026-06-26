@@ -28,9 +28,49 @@ jobs:
           pip install -r requirements.txt
           pip install pyinstaller
 
+      - name: Create necessary directories
+        run: |
+          mkdir -p gui/resources
+          mkdir -p gui/styles
+          echo "# placeholder" > gui/resources/__init__.py
+          echo "/* placeholder */" > gui/styles/dark_theme.qss
+
       - name: Build with PyInstaller
         run: |
-          pyinstaller --clean --onefile --windowed --add-data "gui/styles;styles" --hidden-import "PyQt5" --collect-all PyQt5 --name "IPTV_Collector" gui/main.py
+          pyinstaller --clean --onefile --windowed `
+            --add-data "gui/styles;styles" `
+            --add-data "gui/resources;resources" `
+            --collect-all PyQt5 `
+            --collect-all PyQt5.sip `
+            --collect-all src `
+            --hidden-import PyQt5 `
+            --hidden-import PyQt5.QtCore `
+            --hidden-import PyQt5.QtGui `
+            --hidden-import PyQt5.QtWidgets `
+            --hidden-import src.config `
+            --hidden-import src.logger `
+            --hidden-import src.run `
+            --hidden-import src.fetcher `
+            --hidden-import src.parser `
+            --hidden-import src.speed_tester `
+            --hidden-import src.ffmpeg_validator `
+            --hidden-import src.generator `
+            --hidden-import src.merger `
+            --hidden-import src.blacklist_filter `
+            --hidden-import src.demo_filter `
+            --hidden-import src.database `
+            --hidden-import src.alias_matcher `
+            --hidden-import src.classifier `
+            --hidden-import src.logo_matcher `
+            --hidden-import src.generator_enhanced `
+            --hidden-import src.special_categories `
+            --hidden-import src.overseas_filter `
+            --hidden-import src.stable.manager `
+            --hidden-import src.source_pool.discoverer `
+            --hidden-import src.candidate.observer `
+            --hidden-import src.quality.monitor `
+            --name "IPTV_Collector" `
+            gui/main.py
 
       - name: Upload exe to Release
         uses: svenstaro/upload-release-action@v2

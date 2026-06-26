@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "total": 339,
-  "generated": "2026-06-26T07:42:02.188084",
+  "generated": "2026-06-26T08:05:45.443608",
   "channels": [
     {
       "name": "CCTV-1",
@@ -677,7 +677,7 @@
       "urls": [
         "https://stream.sun0769.com/dgrtv1/mp4tv2_800/index.m3u8"
       ],
-      "latency": 5808,
+      "latency": 3062,
       "codec": "h264",
       "category": "☘️广东频道"
     },

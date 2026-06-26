@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 437
+# 原始频道总数: 438
 # Demo匹配成功: 339
-# 丢弃数量: 98
+# 丢弃数量: 99
 
 1989年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8
 八度空间,https://cdn6.163189.xyz/163189/8tv
@@ -56,8 +56,8 @@ Xinjiang TV 3,http://218.84.35.38:3000/m3u8/live/tctv-2/index.m3u8
 直中国精编直,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8
 钱江都市,https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 Xinjiang TV 2,http://110.153.180.106:55555/out_3/index.m3u8
-Beautiful Life TV,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
 上虞3新商都 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8
+Beautiful Life TV,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
 Xinjiang TV 8,http://120.70.60.179:9901/tsfile/live/1002_1.m3u8?authid=0&key=txiptv&playlive=1
 直中国,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
 2024年春晚,https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
@@ -100,4 +100,5 @@ NewTV武搏世界,http://1.94.31.214/php/hntv.php?id=wspd
 RT Doc-Русский,https://rt-doc.rttv.com/dvr/rtdru/rtdru1080.m3u8
 象视界,http://1.94.31.214/php/hntv.php?id=xsj
 上虞經濟文化 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
+餘姚姚江文化 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8
 兵团五师双河影,https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd

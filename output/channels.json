@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 326,
-  "generated": "2026-06-27T13:53:48.277760",
+  "total": 328,
+  "generated": "2026-06-27T19:29:07.759841",
   "channels": [
     {
       "name": "CCTV-1",
@@ -442,7 +442,7 @@
       "urls": [
         "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8"
       ],
-      "latency": 1095,
+      "latency": 756,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -583,6 +583,15 @@
       "category": "☘️广东频道"
     },
     {
+      "name": "东莞生活资讯",
+      "urls": [
+        "https://stream.sun0769.com/dgrtv1/mp4tv2_800/index.m3u8"
+      ],
+      "latency": 1902,
+      "codec": "h264",
+      "category": "☘️广东频道"
+    },
+    {
       "name": "南国都市",
       "urls": [
         "https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=550af55c0ea34ce492748481415b6dfa&txTime=1903e7b17de",
@@ -718,7 +727,7 @@
       "urls": [
         "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8"
       ],
-      "latency": 458,
+      "latency": 332,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1364,6 +1373,15 @@
       "category": "☘️安徽频道"
     },
     {
+      "name": "宿州新闻综合 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-szzh/index.m3u8"
+      ],
+      "latency": 845,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
       "name": "宿州公共 [Not 24/7]",
       "urls": [
         "http://live.ahsz.tv/video/s10001-ggpd/index.m3u8"
@@ -1413,7 +1431,7 @@
       "urls": [
         "https://live.264788.xyz/channel/fujianxiangcungonggong?streamid=2987cc24bada6a8c25589409a6452d9e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       ],
-      "latency": 6938,
+      "latency": 3128,
       "codec": "h264",
       "category": "☘️福建频道"
     },
@@ -1873,7 +1891,7 @@
       "urls": [
         "http://file.loulannews.cn/nmip-media/channellive/channel103824/playlist.m3u8"
       ],
-      "latency": 5382,
+      "latency": 1073,
       "codec": "h264",
       "category": "☘️新疆频道"
     },

@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 418
-# Demo匹配成功: 326
-# 丢弃数量: 92
+# 原始频道总数: 422
+# Demo匹配成功: 327
+# 丢弃数量: 95
 
 1988年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5216575810935394655_hlsb.m3u8
 1989年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8
@@ -69,6 +69,7 @@ RT Français,https://rt-fra.rttv.com/dvr/rtfrance/playlist_4500Kb.m3u8
 泰山玉皇顶,https://gcalic.v.myalicdn.com/gc/taishan06_1/index.m3u8
 人与自然,http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba82b807b221193/1200.m3u8
 RT Arabic,https://rt-arb.rttv.com/dvr/rtarab/playlist_4500Kb.m3u8
+餘姚姚江文化 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8
 舒兰新闻,http://stream8.jlntv.cn/shulan/sd/live.m3u8?zjild
 韩国EBS少儿,http://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8
 Arirang,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
@@ -95,3 +96,5 @@ Harbin Movie Channel,https://stream.hrbtv.net/yspd/playlist.m3u8
 Chifeng Comprehensive News Chanel,http://play1-qk.nmtv.cn/live/1735546697341033.m3u8
 象视界,http://1.94.31.214/php/hntv.php?id=xsj
 文物宝库,http://1.94.31.214/php/hntv.php?id=wwbk
+上虞經濟文化 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
+上虞3新商都 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8

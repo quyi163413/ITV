@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 326,
-  "generated": "2026-06-30T20:06:47.617842",
+  "total": 327,
+  "generated": "2026-07-01T04:16:10.197401",
   "channels": [
     {
       "name": "CCTV-1",
@@ -431,7 +431,7 @@
       "urls": [
         "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8"
       ],
-      "latency": 766,
+      "latency": 758,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -576,7 +576,7 @@
       "urls": [
         "https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8"
       ],
-      "latency": 2035,
+      "latency": 5547,
       "codec": "h264",
       "category": "☘️广东频道"
     },
@@ -1030,6 +1030,7 @@
     {
       "name": "余姚姚江文化",
       "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8",
         "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8"
       ],
       "latency": 423,
@@ -1374,7 +1375,7 @@
       "urls": [
         "http://live.ahsz.tv/video/s10001-ggpd/index.m3u8"
       ],
-      "latency": 859,
+      "latency": 819,
       "codec": "h264",
       "category": "☘️安徽频道"
     },
@@ -1420,6 +1421,15 @@
         "https://live.zzyxxw.com:2443/live/xwzh.m3u8"
       ],
       "latency": 1912,
+      "codec": "h264",
+      "category": "☘️福建频道"
+    },
+    {
+      "name": "福建公共",
+      "urls": [
+        "https://live.264788.xyz/channel/fujianxiangcungonggong?streamid=2987cc24bada6a8c25589409a6452d9e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
+      ],
+      "latency": 3131,
       "codec": "h264",
       "category": "☘️福建频道"
     },

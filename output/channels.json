@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "total": 317,
-  "generated": "2026-07-02T03:57:08.546346",
+  "generated": "2026-07-02T09:21:58.527837",
   "channels": [
     {
       "name": "CCTV-1",
@@ -456,7 +456,7 @@
       "urls": [
         "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8"
       ],
-      "latency": 758,
+      "latency": 1044,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -1101,15 +1101,14 @@
         "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8",
         "https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
       ],
-      "latency": 1187,
+      "latency": 1382,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
     {
       "name": "余姚姚江文化",
       "urls": [
-        "http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed",
-        "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8"
+        "http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed"
       ],
       "latency": 410,
       "codec": "h264",
@@ -1422,15 +1421,6 @@
       "category": "☘️安徽频道"
     },
     {
-      "name": "宿州公共 [Not 24/7]",
-      "urls": [
-        "http://live.ahsz.tv/video/s10001-ggpd/index.m3u8"
-      ],
-      "latency": 819,
-      "codec": "h264",
-      "category": "☘️安徽频道"
-    },
-    {
       "name": "七台河新闻综合",
       "urls": [
         "http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8"
@@ -1535,6 +1525,15 @@
         "http://59.175.226.142:280/gb28181/xwzh.m3u8?zhubd"
       ],
       "latency": 2805,
+      "codec": "h264",
+      "category": "☘️湖北频道"
+    },
+    {
+      "name": "荆门新闻综合",
+      "urls": [
+        "http://stream.jmtv.com.cn/xwzh/sd/live.m3u8"
+      ],
+      "latency": 1239,
       "codec": "h264",
       "category": "☘️湖北频道"
     },

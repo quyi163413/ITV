@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 329,
-  "generated": "2026-07-02T19:42:31.901752",
+  "total": 330,
+  "generated": "2026-07-03T03:39:07.798212",
   "channels": [
     {
       "name": "CCTV-1",
@@ -798,7 +798,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8"
       ],
-      "latency": 4431,
+      "latency": 5504,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -871,15 +871,6 @@
         "https://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8"
       ],
       "latency": 571,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "诸暨新闻综合",
-      "urls": [
-        "https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8"
-      ],
-      "latency": 4514,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1041,7 +1032,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8"
       ],
-      "latency": 4831,
+      "latency": 5801,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1165,11 +1156,20 @@
       "category": "☘️浙江频道"
     },
     {
-      "name": "上虞新商都",
+      "name": "上虞3新商都 [Not 24/7]",
       "urls": [
-        "http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8"
+        "https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8"
       ],
-      "latency": 1420,
+      "latency": 877,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "上虞文化影院",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8"
+      ],
+      "latency": 617,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1752,7 +1752,8 @@
     {
       "name": "河综合",
       "urls": [
-        "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
+        "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8",
+        "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
       ],
       "latency": 1218,
       "codec": "h264",
@@ -2034,6 +2035,15 @@
         "http://uzoiczhh.live.sxmty.com/live/hls/0d41f1480c4042d49927858f01fde707/53130407737b417b9a6259b57246bae3.m3u8?zshanxd"
       ],
       "latency": 3200,
+      "codec": "h264",
+      "category": "☘️山西频道"
+    },
+    {
+      "name": "平遥新闻综合",
+      "urls": [
+        "https://tntgjhjb.live.sxmty.com/live/hls/3a4585ac11ec4e1bb07b419101b370c3/baf63e2b313440c2a25d7859f9b73b05-1.m3u8?zshanxd"
+      ],
+      "latency": 1872,
       "codec": "h264",
       "category": "☘️山西频道"
     },
@@ -2375,7 +2385,7 @@
       "urls": [
         "https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8"
       ],
-      "latency": 1664,
+      "latency": 1139,
       "codec": "h264",
       "category": "☘️河北频道"
     },
@@ -2411,7 +2421,7 @@
       "urls": [
         "http://1.94.31.214/php/hebei.php?id=sekj"
       ],
-      "latency": 2943,
+      "latency": 2292,
       "codec": "h264",
       "category": "☘️河北频道"
     },
@@ -2483,7 +2493,7 @@
       "urls": [
         "https://jwcdnqx.hebyun.com.cn/live/hdxwzh/1500k/tzwj_video.m3u8"
       ],
-      "latency": 1168,
+      "latency": 959,
       "codec": "h264",
       "category": "☘️河北频道"
     },

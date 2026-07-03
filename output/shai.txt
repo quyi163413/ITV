@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 423
-# Demo匹配成功: 329
-# 丢弃数量: 94
+# 原始频道总数: 422
+# Demo匹配成功: 330
+# 丢弃数量: 92
 
 Newsmax,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 TVB Plus,http://r.jdshipin.com/Nr5jq
@@ -34,7 +34,6 @@ Xinjiang TV 8,http://120.70.60.179:9901/tsfile/live/1002_1.m3u8?authid=0&key=txi
 直中国,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
 泰山碧霞祠,https://gcalic.v.myalicdn.com/gc/hkts03_1/index.m3u8
 玛纳斯,http://218.84.127.245:1026/hls/main1/playlist.m3u8?zxinjd
-上虞3新商都 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8
 RT Doc-Русский,https://rt-doc.rttv.com/dvr/rtdru/rtdru1080.m3u8
 RT DE,https://rt-ger.rttv.com/dvr/rtdeutsch/playlist_4500Kb.m3u8
 RT Balkan,https://rt-srb.rttv.com/dvr/rtbalkan/playlist_4500Kb.m3u8
@@ -45,7 +44,6 @@ RT Español,https://rt-esp.rttv.com/dvr/rtesp/playlist_4500Kb.m3u8
 Dali TV,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
 RT Français,https://rt-fra.rttv.com/dvr/rtfrance/playlist_4500Kb.m3u8
 萧山综合,http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8
-蕭山生活頻道 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
 直中国精编直,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8
 倩女幽魂道道道,http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8
 RT Documentary,https://rt-rtd.rttv.com/dvr/rtdoc/playlist_4500Kb.m3u8
@@ -82,7 +80,6 @@ Siping TV,http://stream2.jlntv.cn/sptv/sd/live.m3u8?_upt=f27750421743154598
 Guangzhou TV,https://tencentplaybusiness.gztv.com/live/zonghes.m3u8
 月牙泉,https://gcalic.v.myalicdn.com/gc/dhyyqsm_1/index.m3u8
 Harbin Comprehensive News Channel,https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594
-萧山新闻综合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8
 Harbin Movie Channel,https://stream.hrbtv.net/yspd/playlist.m3u8
 象视界,http://1.94.31.214/php/hntv.php?id=xsj
 2024年春晚,https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
@@ -97,3 +94,4 @@ FZTV3,http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8
 鸣沙山,https://gcalic.v.myalicdn.com/gc/dhyyqst_1/index.m3u8
 象山新闻综合,http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8
 黄花城水长城02,http://gctxyc.liveplay.myqcloud.com/gc/wgw02_1/index.m3u8
+蕭山生活頻道 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8

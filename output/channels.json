@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "total": 249,
-  "generated": "2026-07-05T03:48:47.568192",
+  "generated": "2026-07-05T09:00:30.844909",
   "channels": [
     {
       "name": "CCTV-1",
@@ -795,7 +795,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8"
       ],
-      "latency": 1065,
+      "latency": 1870,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -980,6 +980,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "平湖新闻综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed"
+      ],
+      "latency": 533,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "嵊州新闻综合",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8"
@@ -1112,7 +1121,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8"
       ],
-      "latency": 2688,
+      "latency": 4710,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1355,7 +1364,7 @@
       "urls": [
         "https://live.264788.xyz/channel/fujianxiangcungonggong?streamid=2987cc24bada6a8c25589409a6452d9e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       ],
-      "latency": 5761,
+      "latency": 6525,
       "codec": "h264",
       "category": "☘️福建频道"
     },
@@ -1400,7 +1409,7 @@
       "urls": [
         "http://1.94.31.214/php/hntv.php?id=hnly"
       ],
-      "latency": 2308,
+      "latency": 4086,
       "codec": "h264",
       "category": "☘️河南频道"
     },
@@ -1526,7 +1535,7 @@
       "urls": [
         "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
       ],
-      "latency": 1519,
+      "latency": 1813,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -1922,7 +1931,7 @@
       "urls": [
         "https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8"
       ],
-      "latency": 1664,
+      "latency": 1789,
       "codec": "h264",
       "category": "☘️河北频道"
     },
@@ -1958,7 +1967,7 @@
       "urls": [
         "http://1.94.31.214/php/hebei.php?id=sekj"
       ],
-      "latency": 3823,
+      "latency": 3578,
       "codec": "h264",
       "category": "☘️河北频道"
     },
@@ -2022,15 +2031,6 @@
         "https://jwcdnqx.hebyun.com.cn/live/hdgg/1500k/tzwj_video.m3u8"
       ],
       "latency": 615,
-      "codec": "h264",
-      "category": "☘️河北频道"
-    },
-    {
-      "name": "邯郸新闻",
-      "urls": [
-        "https://jwcdnqx.hebyun.com.cn/live/hdxwzh/1500k/tzwj_video.m3u8"
-      ],
-      "latency": 1384,
       "codec": "h264",
       "category": "☘️河北频道"
     },

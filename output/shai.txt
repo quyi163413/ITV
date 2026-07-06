@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 422
-# Demo匹配成功: 329
-# 丢弃数量: 93
+# 原始频道总数: 419
+# Demo匹配成功: 328
+# 丢弃数量: 91
 
 Newsmax,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 CGTN Documentary,https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
@@ -88,11 +88,9 @@ NewTV武搏世界,http://1.94.31.214/php/hntv.php?id=wspd
 新昌新聞綜合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8
 Harbin Movie Channel,https://stream.hrbtv.net/yspd/playlist.m3u8
 Harbin Comprehensive News Channel,https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594
+春晚2024,https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
 文物宝库,http://1.94.31.214/php/hntv.php?id=wwbk
 象视界,http://1.94.31.214/php/hntv.php?id=xsj
 萧山综合,http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8
 RT DE,https://rt-ger.rttv.com/dvr/rtdeutsch/playlist_4500Kb.m3u8
-春晚2024,https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
-上虞3新商都 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8
 余杭综合频道,http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed
-兵团五师双河影,https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd

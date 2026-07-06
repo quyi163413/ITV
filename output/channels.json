@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "total": 329,
-  "generated": "2026-07-06T03:56:57.579123",
+  "generated": "2026-07-06T10:47:20.124109",
   "channels": [
     {
       "name": "CCTV-1",
@@ -886,7 +886,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8"
       ],
-      "latency": 1870,
+      "latency": 536,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1221,7 +1221,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8"
       ],
-      "latency": 4710,
+      "latency": 1252,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1554,7 +1554,7 @@
       "urls": [
         "http://1.94.31.214/php/hntv.php?id=hnly"
       ],
-      "latency": 4086,
+      "latency": 1950,
       "codec": "h264",
       "category": "☘️河南频道"
     },
@@ -1779,7 +1779,7 @@
       "urls": [
         "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
       ],
-      "latency": 1813,
+      "latency": 1348,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -2391,7 +2391,7 @@
       "urls": [
         "https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8"
       ],
-      "latency": 1789,
+      "latency": 1487,
       "codec": "h264",
       "category": "☘️河北频道"
     },
@@ -2427,7 +2427,7 @@
       "urls": [
         "http://1.94.31.214/php/hebei.php?id=sekj"
       ],
-      "latency": 3578,
+      "latency": 2326,
       "codec": "h264",
       "category": "☘️河北频道"
     },
@@ -2605,8 +2605,7 @@
     {
       "name": "浙江经济",
       "urls": [
-        "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
-        "http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8"
+        "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8"
       ],
       "latency": 458,
       "codec": "h264",

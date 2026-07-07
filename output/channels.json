@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 317,
-  "generated": "2026-07-06T20:07:13.355308",
+  "total": 318,
+  "generated": "2026-07-07T03:46:36.521425",
   "channels": [
     {
       "name": "CCTV-1",
@@ -126,7 +126,8 @@
     {
       "name": "CCTV-12",
       "urls": [
-        "http://74.91.26.218:82/live/cctv12hd.m3u8"
+        "http://74.91.26.218:82/live/cctv12hd.m3u8",
+        "http://112.46.85.60:8009/hls/507/index.m3u8"
       ],
       "latency": 387,
       "codec": "h264",
@@ -926,47 +927,56 @@
       "category": "☘️浙江频道"
     },
     {
-      "name": "新昌新闻综合",
+      "name": "洞头综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8"
+      ],
+      "latency": 4022,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "永嘉新闻综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXyongjia1/720p.m3u8"
+      ],
+      "latency": 4807,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "武义新闻综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8"
+      ],
+      "latency": 5458,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "松阳综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8"
+      ],
+      "latency": 5820,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "新昌生活",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8"
+      ],
+      "latency": 5597,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "新昌新聞綜合 [Not 24/7]",
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8"
       ],
-      "latency": 5550,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "庆元综合",
-      "urls": [
-        "http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8"
-      ],
-      "latency": 5764,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "庆元新闻综合",
-      "urls": [
-        "http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?fbl="
-      ],
-      "latency": 5805,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "平湖新闻综合",
-      "urls": [
-        "http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed"
-      ],
-      "latency": 5383,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "嵊州新闻综合",
-      "urls": [
-        "http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8"
-      ],
-      "latency": 5368,
+      "latency": 414,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -2486,15 +2496,6 @@
       "category": "☘️陕西频道"
     },
     {
-      "name": "福建武夷山玉女峰",
-      "urls": [
-        "https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8"
-      ],
-      "latency": 414,
-      "codec": "h264",
-      "category": "☘️福建频道"
-    },
-    {
       "name": "浙江 Ⅰ 绍兴综合",
       "urls": [
         "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8"
@@ -2504,6 +2505,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "福建武夷山玉女峰",
+      "urls": [
+        "https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8"
+      ],
+      "latency": 414,
+      "codec": "h264",
+      "category": "☘️福建频道"
+    },
+    {
       "name": "浙江教科影院",
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
@@ -2511,15 +2521,6 @@
       "latency": 426,
       "codec": "h264",
       "category": "☘️浙江频道"
-    },
-    {
-      "name": "陕西洋县国宝朱鹮02",
-      "urls": [
-        "https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8"
-      ],
-      "latency": 457,
-      "codec": "h264",
-      "category": "☘️陕西频道"
     },
     {
       "name": "安徽池州九华山风景区九华山",
@@ -2538,6 +2539,15 @@
       "latency": 457,
       "codec": "h264",
       "category": "☘️安徽频道"
+    },
+    {
+      "name": "陕西洋县国宝朱鹮02",
+      "urls": [
+        "https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8"
+      ],
+      "latency": 457,
+      "codec": "h264",
+      "category": "☘️陕西频道"
     },
     {
       "name": "望乡台",

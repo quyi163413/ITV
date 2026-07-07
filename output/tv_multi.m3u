@@ -229,16 +229,6 @@ http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8
 http://l.cztvcloud.com/channels/lantian/SXkaihua1/720p.m3u8?zzhed
 #EXTINF:-1 group-title="☘️浙江频道",开化国家公园
 http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",庆元综合
-http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",庆元新闻综合
-http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?fbl=
-#EXTINF:-1 group-title="☘️浙江频道",平湖民生休闲
-http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",平湖新闻综合
-http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed
-#EXTINF:-1 group-title="☘️浙江频道",嵊州新闻综合
-http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",兰溪新闻综合
 http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",余杭综合
@@ -265,8 +255,6 @@ http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed
 http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",上虞文化影院
 http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",嵊州综合 [Not 24/7]
-https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8
 #EXTINF:-1 group-title="☘️江苏频道",南京教科
 http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8
 #EXTINF:-1 group-title="☘️江苏频道",南京新闻综合
@@ -397,6 +385,8 @@ http://channel.wcrmt.cn:80/nmip-media/channellive/channel105268/playlist.m3u8
 https://file.ysxtv.cn/nmip-media/channellive/channel101492/playlist.m3u8
 #EXTINF:-1 group-title="☘️四川频道",都江堰鱼嘴
 https://gcalic.v.myalicdn.com/gc/djyqyl1_1/index.m3u8
+#EXTINF:-1 group-title="☘️四川频道",雅安新闻综合
+https://play.yunxya.com/channellive/xinwen.m3u8
 #EXTINF:-1 group-title="☘️四川频道",龙泉新闻综合
 http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8
 #EXTINF:-1 group-title="☘️四川频道",河综合
@@ -561,8 +551,6 @@ http://112.27.235.94:8000/hls/48/index.m3u8
 https://ls.qingting.fm/live/4972/64k.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江新闻
 https://ls.qingting.fm/live/4974/64k.m3u8
-#EXTINF:-1 group-title="☘️河北频道",任丘综合
-https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8
 #EXTINF:-1 group-title="☘️河北频道",平泉综合
 https://jwcdnqx.hebyun.com.cn/live/pqzh/1500k/tzwj_video.m3u8
 #EXTINF:-1 group-title="☘️河北频道",河北公共

@@ -76,7 +76,7 @@ Bread TV面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 龙门飞甲,http://jsmov2.a.yximgs.com/bs3/video-hls/5203346449046555193_hlsb.m3u8
 ☘️浙江频道,#genre#
 浙江钱江,https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
-浙江经济,http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+浙江经济生活,http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
 浙江教育,http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8
 浙江民生,https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 浙江新闻,https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
@@ -102,7 +102,9 @@ Bread TV面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 青田电视台,http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8
 遂昌综合,http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8?zzhed
 象山综合,http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39
+缙云综合,http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed
 缙云新闻综合,http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8
+海宁新闻综合,https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8
 洞头综合,http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8
 永嘉新闻综合,http://l.cztvcloud.com/channels/lantian/SXyongjia1/720p.m3u8
 武义新闻综合,http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8
@@ -160,7 +162,6 @@ Bread TV面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 合肥新闻,http://112.27.235.94:8000/hls/18/index.m3u8
 固镇新闻,http://www.guzhenm.com:7001/hls/hd-live.m3u8
 黄山,https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
-黄山公共生活,http://hslive.hsnewsnet.com/lsdream/iY92ady/1000/live.m3u8?zanhd
 铜陵新闻综合,https://ls.qingting.fm/live/21303/64k.m3u8
 广德生活,https://live.gdtv.ah.cn/live/newsTV.m3u8
 宿州科教 [Not 24/7],http://live.ahsz.tv/video/s10001-kxjy/index.m3u8
@@ -176,7 +177,7 @@ RT News,https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
 ☘️江西频道,#genre#
 ☘️山东频道,#genre#
 ☘️河南频道,#genre#
-梨园,https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=41543190cdf375f1c73207222bb96542&wsTime=1769313549
+河南梨园,http://1.94.31.214/php/hntv.php?id=hnly
 洛阳科教,http://devlivepull.migucloud.com/live/A2HVH5BQ_C0.flv
 洛阳文旅,http://devlivepull.migucloud.com/live/Q081CD54_C0.flv
 河南公共,http://1.94.31.214/php/hntv.php?id=hngg
@@ -233,6 +234,7 @@ CHC电影,http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive
 陕西银龄,http://112.46.105.20:8009/hls/20/index.m3u8
 黄龙,https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
 黄龙,https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
+新昌休闲影视 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
 ☘️甘肃频道,#genre#
 张掖七彩丹霞,https://gcalic.v.myalicdn.com/gc/zyqcdx01_1/index.m3u8
 ☘️青海频道,#genre#

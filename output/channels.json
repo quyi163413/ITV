@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 348,
-  "generated": "2026-07-19T08:28:15.612909",
+  "total": 346,
+  "generated": "2026-07-19T13:27:45.680772",
   "channels": [
     {
       "name": "CCTV-1",
@@ -558,7 +558,7 @@
       "urls": [
         "http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4"
       ],
-      "latency": 223,
+      "latency": 387,
       "codec": "hevc",
       "category": "📡卫视频道"
     },
@@ -1018,15 +1018,6 @@
       "category": "☘️浙江频道"
     },
     {
-      "name": "海宁新闻综合",
-      "urls": [
-        "https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8"
-      ],
-      "latency": 4734,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
       "name": "洞头综合",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8"
@@ -1212,15 +1203,6 @@
         "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8"
       ],
       "latency": 533,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "余姚综合",
-      "urls": [
-        "https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
-      ],
-      "latency": 1601,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1600,7 +1582,7 @@
       "urls": [
         "https://live.264788.xyz/channel/fujianxiangcungonggong?streamid=1cf7fc3a8f6d160c33b43c2f9507a0cc&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       ],
-      "latency": 4514,
+      "latency": 2986,
       "codec": "h264",
       "category": "☘️福建频道"
     },
@@ -1771,7 +1753,7 @@
       "urls": [
         "https://ls.qingting.fm/live/5043/64k.m3u8"
       ],
-      "latency": 1141,
+      "latency": 1705,
       "codec": "h264",
       "category": "☘️广西频道"
     },
@@ -1861,7 +1843,7 @@
       "urls": [
         "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel100999/playlist.m3u8"
       ],
-      "latency": 5733,
+      "latency": 1495,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -1952,7 +1934,7 @@
       "urls": [
         "https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8"
       ],
-      "latency": 5328,
+      "latency": 1491,
       "codec": "h264",
       "category": "☘️云南频道"
     },
@@ -2096,7 +2078,7 @@
       "urls": [
         "http://file.loulannews.cn/nmip-media/channellive/channel103824/playlist.m3u8"
       ],
-      "latency": 5035,
+      "latency": 1934,
       "codec": "h264",
       "category": "☘️新疆频道"
     },
@@ -2510,7 +2492,7 @@
       "urls": [
         "https://ls.qingting.fm/live/4974/64k.m3u8"
       ],
-      "latency": 2668,
+      "latency": 2305,
       "codec": "h264",
       "category": "☘️黑龙江频道"
     },
@@ -2546,7 +2528,7 @@
       "urls": [
         "https://event.pull.hebtv.com:443/live/live101.m3u8"
       ],
-      "latency": 5243,
+      "latency": 2436,
       "codec": "h264",
       "category": "☘️河北频道"
     },

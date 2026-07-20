@@ -42,8 +42,8 @@ Xinjiang TV 3,http://110.153.180.106:55555/out_2/index.m3u8
 Xinjiang TV 2,http://110.153.180.106:55555/out_3/index.m3u8
 直中国,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
 Nei Monggol TV [Not 24/7],http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
-倩女幽魂妖魔道,http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8
 Xinjiang TV 8,http://120.70.60.179:9901/tsfile/live/1002_1.m3u8?authid=0&key=txiptv&playlive=1
+倩女幽魂妖魔道,http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8
 五彩池,https://gcalic.v.myalicdn.com/gc/hlwcc_1/index.m3u8
 Zhejiang TV International,https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8
 舒兰新闻,http://stream8.jlntv.cn/shulan/sd/live.m3u8?zjild
@@ -93,5 +93,5 @@ Harbin Comprehensive News Channel,https://stream.hrbtv.net/xwzh/playlist.m3u8?_u
 FZTV3,http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8
 上虞經濟文化 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
 RT Balkan,https://rt-srb.rttv.com/dvr/rtbalkan/playlist_4500Kb.m3u8
-Xizang TV Tibetan [Not 24/7],http://php.jdshipin.com:8880/xztv.php?id=zy
 萧山综合,http://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8
+Xizang TV Tibetan [Not 24/7],http://php.jdshipin.com:8880/xztv.php?id=zy

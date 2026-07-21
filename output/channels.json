@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "total": 352,
-  "generated": "2026-07-20T19:51:02.458589",
+  "generated": "2026-07-21T02:59:09.916299",
   "channels": [
     {
       "name": "CCTV-1",
@@ -1623,6 +1623,15 @@
       "category": "☘️福建频道"
     },
     {
+      "name": "福建公共",
+      "urls": [
+        "https://live.264788.xyz/channel/fujianxiangcungonggong?streamid=1cf7fc3a8f6d160c33b43c2f9507a0cc&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
+      ],
+      "latency": 4731,
+      "codec": "h264",
+      "category": "☘️福建频道"
+    },
+    {
       "name": "梨园",
       "urls": [
         "https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=41543190cdf375f1c73207222bb96542&wsTime=1769313549"
@@ -2196,15 +2205,6 @@
         "https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8"
       ],
       "latency": 979,
-      "codec": "h264",
-      "category": "☘️山西频道"
-    },
-    {
-      "name": "武乡新闻综合",
-      "urls": [
-        "http://uzoiczhh.live.sxmty.com/live/hls/0d41f1480c4042d49927858f01fde707/53130407737b417b9a6259b57246bae3.m3u8?zshanxd"
-      ],
-      "latency": 1544,
       "codec": "h264",
       "category": "☘️山西频道"
     },

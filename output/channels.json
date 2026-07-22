@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 340,
-  "generated": "2026-07-22T02:56:27.500068",
+  "total": 341,
+  "generated": "2026-07-22T08:37:44.075072",
   "channels": [
     {
       "name": "CCTV-1",
@@ -106,7 +106,8 @@
       "name": "CCTV-10",
       "urls": [
         "http://112.27.235.94:8000/hls/11/index.m3u8",
-        "http://74.91.26.218:82/live/cctv10hd.m3u8"
+        "http://74.91.26.218:82/live/cctv10hd.m3u8",
+        "https://jsv-live-play.sfccn.com/live/jsv_3920_fhd.m3u8"
       ],
       "latency": 491,
       "codec": "h264",
@@ -1594,11 +1595,11 @@
       "category": "☘️福建频道"
     },
     {
-      "name": "福建公共",
+      "name": "福建旅游",
       "urls": [
-        "https://live.264788.xyz/channel/fujianxiangcungonggong?streamid=1cf7fc3a8f6d160c33b43c2f9507a0cc&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
+        "https://live.264788.xyz/channel/fujianlvyou?streamid=221239fcf3c7edb274f2f0760fe47f96&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       ],
-      "latency": 4731,
+      "latency": 7262,
       "codec": "h264",
       "category": "☘️福建频道"
     },
@@ -1869,6 +1870,15 @@
         "https://gcalic.v.myalicdn.com/gc/djyqyl1_1/index.m3u8"
       ],
       "latency": 603,
+      "codec": "h264",
+      "category": "☘️四川频道"
+    },
+    {
+      "name": "雅安新闻综合",
+      "urls": [
+        "https://play.yunxya.com/channellive/xinwen.m3u8"
+      ],
+      "latency": 3096,
       "codec": "h264",
       "category": "☘️四川频道"
     },

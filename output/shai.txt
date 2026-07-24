@@ -1,6 +1,6 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 429
-# Demo匹配成功: 339
+# 原始频道总数: 430
+# Demo匹配成功: 340
 # 丢弃数量: 90
 
 春晚2025,https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8

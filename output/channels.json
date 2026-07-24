@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 339,
-  "generated": "2026-07-24T08:35:34.680718",
+  "total": 340,
+  "generated": "2026-07-24T13:54:19.528422",
   "channels": [
     {
       "name": "CCTV-1",
@@ -1280,6 +1280,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "上虞文化影院",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8"
+      ],
+      "latency": 1480,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "南京教科",
       "urls": [
         "http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8"
@@ -1608,7 +1617,7 @@
       "urls": [
         "https://live.264788.xyz/channel/fujianlvyou?streamid=221239fcf3c7edb274f2f0760fe47f96&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       ],
-      "latency": 6454,
+      "latency": 6746,
       "codec": "h264",
       "category": "☘️福建频道"
     },

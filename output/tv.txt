@@ -69,7 +69,7 @@ Bread TV面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 北京新闻,https://ls.qingting.fm/live/339/64k.m3u8
 耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/chunklist_w99771165.m3u8
 ☘️上海频道,#genre#
-萧山新闻综合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8
+兰溪新闻综合,http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8
 新纪实,http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 ☘️天津频道,#genre#
 天津卫视,http://112.27.235.94:8000/hls/42/index.m3u8
@@ -213,7 +213,6 @@ RT News,https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
 都市青春,http://112.46.105.20:8009/hls/19/index.m3u8
 陕西卫视,http://112.27.235.94:8000/hls/43/index.m3u8
 陕西银龄,http://112.46.105.20:8009/hls/20/index.m3u8
-新昌休闲影视 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
 ☘️甘肃频道,#genre#
 甘肃卫视,http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
 ☘️青海频道,#genre#

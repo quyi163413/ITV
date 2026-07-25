@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 319
-# Demo匹配成功: 254
-# 丢弃数量: 65
+# 原始频道总数: 328
+# Demo匹配成功: 262
+# 丢弃数量: 66
 
 Newsmax,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 春晚2025,https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8
@@ -47,6 +47,7 @@ Nei Monggol TV [Not 24/7],http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
 Arirang,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
 RT Español,https://rt-esp.rttv.com/dvr/rtesp/playlist_4500Kb.m3u8
 NewTV武搏世界,http://1.94.31.214/php/hntv.php?id=wspd
+CND Film Middle School Channel,http://live-play.zxstv.com.cn/zhongxuesheng/zhongxuesheng.m3u8
 直中国精编直,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8
 直中国,https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
 RT Arabic,https://rt-arb.rttv.com/dvr/rtarab/playlist_4500Kb.m3u8

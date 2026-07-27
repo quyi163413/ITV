@@ -1,6 +1,6 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 422
-# Demo匹配成功: 334
+# 原始频道总数: 424
+# Demo匹配成功: 336
 # 丢弃数量: 88
 
 VOA美国之音,https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8

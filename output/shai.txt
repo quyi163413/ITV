@@ -1,6 +1,6 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 421
-# Demo匹配成功: 331
+# 原始频道总数: 424
+# Demo匹配成功: 334
 # 丢弃数量: 90
 
 WionNews,https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
@@ -29,8 +29,8 @@ CGTN French,http://145.239.5.177/214/index.m3u8
 八里沟风景区桃花湾瀑布,https://gcalic.v.myalicdn.com/gc/blg05_1/index.m3u8
 CNA,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 泰山碧霞祠,https://gcalic.v.myalicdn.com/gc/hkts03_1/index.m3u8
-Newsmax,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 八里沟风景区天界山玻璃栈道,https://gcalic.v.myalicdn.com/gc/blg03_1/index.m3u8
+Newsmax,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 乌镇龙形田,https://gcalic.v.myalicdn.com/gc/zjwzlxt_1/index.m3u8
 鸣沙山,https://gcalic.v.myalicdn.com/gc/dhyyqst_1/index.m3u8
 辽新闻综合 [Geo-blocked],https://stream2.jlntv.cn/liaoyuan1/sd/live.m3u8

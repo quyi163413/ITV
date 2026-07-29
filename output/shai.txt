@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 422
-# Demo匹配成功: 332
-# 丢弃数量: 90
+# 原始频道总数: 431
+# Demo匹配成功: 339
+# 丢弃数量: 92
 
 WionNews,https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
 1989年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8
@@ -93,3 +93,5 @@ RT Arabic,https://rt-arb.rttv.com/dvr/rtarab/playlist_4500Kb.m3u8
 春晚2024,https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
 余杭综合频道,http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed
 衢江新闻综合,http://l.cztvcloud.com/channels/lantian/SXqujiang1/720p.m3u8?zzhed
+TVB News,http://r.jdshipin.com/CkuBd
+TVB Plus,http://r.jdshipin.com/ndGgS

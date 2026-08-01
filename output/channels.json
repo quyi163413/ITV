@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "total": 287,
-  "generated": "2026-08-01T03:20:40.327871",
+  "generated": "2026-08-01T08:29:11.770566",
   "channels": [
     {
       "name": "CCTV-1",
@@ -631,7 +631,7 @@
       "urls": [
         "http://bp-resource-dfl.bestv.cn/155/3/video.m3u8"
       ],
-      "latency": 982,
+      "latency": 1433,
       "codec": "h264",
       "category": "☘️上海频道"
     },
@@ -667,7 +667,7 @@
       "urls": [
         "https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8"
       ],
-      "latency": 1999,
+      "latency": 3419,
       "codec": "h264",
       "category": "☘️广东频道"
     },
@@ -676,7 +676,7 @@
       "urls": [
         "https://stream.sun0769.com/dgrtv1/mp4tv2_800/index.m3u8"
       ],
-      "latency": 1977,
+      "latency": 3242,
       "codec": "h264",
       "category": "☘️广东频道"
     },
@@ -713,7 +713,7 @@
       "urls": [
         "http://jsmov2.a.yximgs.com/bs3/video-hls/5203346449046555193_hlsb.m3u8"
       ],
-      "latency": 1155,
+      "latency": 1199,
       "codec": "h264",
       "category": "☘️广东频道"
     },
@@ -1212,7 +1212,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8"
       ],
-      "latency": 3899,
+      "latency": 2456,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -2202,7 +2202,7 @@
       "urls": [
         "https://jwcdnqx.hebyun.com.cn/live/pqzh/1500k/tzwj_video.m3u8"
       ],
-      "latency": 1660,
+      "latency": 1828,
       "codec": "h264",
       "category": "☘️河北频道"
     },

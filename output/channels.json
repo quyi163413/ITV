@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 284,
-  "generated": "2026-08-02T08:32:00.549380",
+  "total": 285,
+  "generated": "2026-08-02T13:31:49.251302",
   "channels": [
     {
       "name": "CCTV-1",
@@ -630,7 +630,7 @@
       "urls": [
         "http://183.64.181.25:40023/rongchang01.m3u8"
       ],
-      "latency": 3129,
+      "latency": 5389,
       "codec": "h264",
       "category": "☘️重庆频道"
     },
@@ -1181,6 +1181,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "嵊州综合 [Not 24/7]",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8"
+      ],
+      "latency": 2259,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "南京教科",
       "urls": [
         "http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8"
@@ -1563,7 +1572,7 @@
       "urls": [
         "https://ls.qingting.fm/live/5043/64k.m3u8"
       ],
-      "latency": 2840,
+      "latency": 3124,
       "codec": "h264",
       "category": "☘️广西频道"
     },
@@ -1608,7 +1617,7 @@
       "urls": [
         "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel100999/playlist.m3u8"
       ],
-      "latency": 2512,
+      "latency": 1956,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -2175,7 +2184,7 @@
       "urls": [
         "https://ls.qingting.fm/live/4974/64k.m3u8"
       ],
-      "latency": 1013,
+      "latency": 1760,
       "codec": "h264",
       "category": "☘️黑龙江频道"
     },

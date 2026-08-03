@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 304,
-  "generated": "2026-08-03T09:55:58.679744",
+  "total": 305,
+  "generated": "2026-08-03T14:49:39.451806",
   "channels": [
     {
       "name": "CCTV-1",
@@ -971,6 +971,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "缙云综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed"
+      ],
+      "latency": 1816,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "缙云新闻综合",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8"
@@ -1247,7 +1256,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8"
       ],
-      "latency": 2259,
+      "latency": 3464,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1409,7 +1418,7 @@
       "urls": [
         "http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8"
       ],
-      "latency": 5220,
+      "latency": 1345,
       "codec": "h264",
       "category": "☘️江苏频道"
     },
@@ -1634,7 +1643,7 @@
       "urls": [
         "https://ls.qingting.fm/live/5043/64k.m3u8"
       ],
-      "latency": 3124,
+      "latency": 2464,
       "codec": "h264",
       "category": "☘️广西频道"
     },
@@ -1688,7 +1697,7 @@
       "urls": [
         "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel100999/playlist.m3u8"
       ],
-      "latency": 1956,
+      "latency": 4169,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -1824,7 +1833,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8"
       ],
-      "latency": 5408,
+      "latency": 556,
       "codec": "h264",
       "category": "☘️陕西频道"
     },
@@ -2274,7 +2283,7 @@
       "urls": [
         "https://ls.qingting.fm/live/4974/64k.m3u8"
       ],
-      "latency": 1760,
+      "latency": 2103,
       "codec": "h264",
       "category": "☘️黑龙江频道"
     },

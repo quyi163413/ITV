@@ -1,5 +1,5 @@
 📺央视频道,#genre#
-CCTV-1,http://112.27.235.94:8000/hls/1/index.m3u8
+CCTV-1,http://74.91.26.218:82/live/cctv1hd.m3u8
 CCTV-2,http://74.91.26.218:82/live/cctv2hd.m3u8
 CCTV-3,http://74.91.26.218:82/live/cctv3hd.m3u8
 CCTV-4,http://74.91.26.218:82/live/cctv4hd.m3u8
@@ -262,6 +262,7 @@ CHC电影,http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive
 古县综合,https://l2fpdktp.live.sxmty.com/live/hls/e4c3b363cc4549788e2d983f403e07db/d99ce1eb686e41b9afc888110bd95aa7.m3u8?zshanxd
 太谷新闻综合,https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&tpid=1516989100&type=0
 山西卫视,http://112.27.235.94:8000/hls/45/index.m3u8
+武乡新闻综合,http://uzoiczhh.live.sxmty.com/live/hls/0d41f1480c4042d49927858f01fde707/53130407737b417b9a6259b57246bae3.m3u8?zshanxd
 ☘️辽宁频道,#genre#
 辽宁体育,http://dassby.qqff.top:99/live/辽宁体育/index.m3u8
 辽宁卫视,http://112.27.235.94:8000/hls/47/index.m3u8

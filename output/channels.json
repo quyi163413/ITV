@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 305,
-  "generated": "2026-08-05T02:48:45.191142",
+  "total": 306,
+  "generated": "2026-08-05T08:43:57.605921",
   "channels": [
     {
       "name": "CCTV-1",
@@ -1126,7 +1126,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8"
       ],
-      "latency": 2679,
+      "latency": 3928,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1240,11 +1240,11 @@
       "category": "☘️浙江频道"
     },
     {
-      "name": "上虞新商都",
+      "name": "上虞3新商都 [Not 24/7]",
       "urls": [
-        "http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8"
+        "https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8"
       ],
-      "latency": 1418,
+      "latency": 1584,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1479,6 +1479,15 @@
         "https://live.gdtv.ah.cn/live/newsTV.m3u8"
       ],
       "latency": 3643,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
+      "name": "宿州新闻综合 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-szzh/index.m3u8"
+      ],
+      "latency": 1084,
       "codec": "h264",
       "category": "☘️安徽频道"
     },

@@ -1,6 +1,6 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 354
-# Demo匹配成功: 284
+# 原始频道总数: 355
+# Demo匹配成功: 285
 # 丢弃数量: 70
 
 TVB Plus,http://r.jdshipin.com/ndGgS

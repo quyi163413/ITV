@@ -1,5 +1,5 @@
 📺央视频道,#genre#
-CCTV-1,http://112.30.73.119:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
+CCTV-1,http://74.91.26.218:82/live/cctv1hd.m3u8
 CCTV-2,http://74.91.26.218:82/live/cctv2hd.m3u8
 CCTV-3,http://74.91.26.218:82/live/cctv3hd.m3u8
 CCTV-4,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1786374000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-8e598d9663e1048302f5098fdff9c1e2&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
@@ -65,7 +65,7 @@ TVB娱乐新闻台,http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
 西安新闻,http://112.46.105.20:8009/hls/28/index.m3u8
 TVB星河,http://r.jdshipin.com/sXuuD
 明珠台,http://php.jdshipin.com/TVOD/iptv.php?id=mzt2
-翡翠台,http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4
+TVB翡翠台,http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct3
 桦甸,http://stream10.jlntv.cn/huadian/sd/live.m3u8?zjild
 浙江国际,http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
@@ -86,8 +86,6 @@ TVB星河,http://r.jdshipin.com/sXuuD
 荣昌综合 [Not 24/7],http://183.64.181.25:40023/rongchang01.m3u8
 江津新闻综合,http://222.179.155.21:1935/ch1.m3u8
 ☘️广东频道,#genre#
-东莞新闻综合,https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8
-东莞生活资讯,https://stream.sun0769.com/dgrtv1/mp4tv2_800/index.m3u8
 南国都市,https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=550af55c0ea34ce492748481415b6dfa&txTime=1903e7b17de
 广东卫视,http://112.27.235.94:8000/hls/30/index.m3u8
 广东大湾区,http://222.128.55.152:9080/live/dwq.m3u8
@@ -312,7 +310,7 @@ CHC电影,http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive
 邯郸新闻,https://jwcdnqx.hebyun.com.cn/live/hdxwzh/1500k/tzwj_video.m3u8
 邯郸科技教育,https://jwcdnqx.hebyun.com.cn/live/hdkj/1500k/tzwj_video.m3u8
 🌊港·澳·台,#genre#
-华丽翡翠台,http://r.jdshipin.com/thuYX
+翡翠台,http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4
 明珠台,http://php.jdshipin.com/TVOD/iptv.php?id=mzt2
 凤凰中文,http://r.jdshipin.com/cCCzW
 凤凰资讯,http://r.jdshipin.com/0Rp07

@@ -1,6 +1,6 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 359
-# Demo匹配成功: 286
+# 原始频道总数: 360
+# Demo匹配成功: 287
 # 丢弃数量: 73
 
 亚洲武侠,http://php.jdshipin.com/TVOD/iptv.php?id=yzwx

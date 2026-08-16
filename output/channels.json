@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 276,
-  "generated": "2026-08-16T01:32:59.731488",
+  "total": 277,
+  "generated": "2026-08-16T06:47:27.750103",
   "channels": [
     {
       "name": "CCTV-1",
@@ -309,6 +309,15 @@
         "http://112.27.235.94:8000/hls/38/index.m3u8"
       ],
       "latency": 747,
+      "codec": "h264",
+      "category": "📡卫视频道"
+    },
+    {
+      "name": "甘肃卫视",
+      "urls": [
+        "http://218.13.170.98:9901/tsfile/live/0141_1.m3u8"
+      ],
+      "latency": 1802,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -1161,11 +1170,11 @@
       "category": "☘️浙江频道"
     },
     {
-      "name": "余杭未来E频道",
+      "name": "余杭未来E",
       "urls": [
-        "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed"
+        "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8"
       ],
-      "latency": 3639,
+      "latency": 2681,
       "codec": "h264",
       "category": "☘️浙江频道"
     },

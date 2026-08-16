@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 291,
-  "generated": "2026-08-16T12:48:42.305817",
+  "total": 294,
+  "generated": "2026-08-16T18:37:11.306081",
   "channels": [
     {
       "name": "CCTV-1",
@@ -916,6 +916,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "诸暨新闻综合",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8"
+      ],
+      "latency": 4936,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "龙泉新闻综合",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8"
@@ -1348,6 +1357,15 @@
       "category": "☘️江苏频道"
     },
     {
+      "name": "镇江新闻综合",
+      "urls": [
+        "http://cm-wshls.homecdn.com/live/2aa50.m3u8"
+      ],
+      "latency": 991,
+      "codec": "h264",
+      "category": "☘️江苏频道"
+    },
+    {
       "name": "靖江新闻綜合 [Not 24/7]",
       "urls": [
         "http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8"
@@ -1443,6 +1461,15 @@
         "http://zbbf2.ahbztv.com/live/418.m3u8"
       ],
       "latency": 1441,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
+      "name": "RT News",
+      "urls": [
+        "https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8"
+      ],
+      "latency": 3192,
       "codec": "h264",
       "category": "☘️安徽频道"
     },
@@ -1656,10 +1683,9 @@
     {
       "name": "河综合",
       "urls": [
-        "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8",
         "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
       ],
-      "latency": 1067,
+      "latency": 1414,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -2169,15 +2195,6 @@
       "category": "☘️黑龙江频道"
     },
     {
-      "name": "河公共",
-      "urls": [
-        "http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8"
-      ],
-      "latency": 1129,
-      "codec": "h264",
-      "category": "☘️黑龙江频道"
-    },
-    {
       "name": "双鸭山综合",
       "urls": [
         "http://live.qthnews.org.cn:1935/live/live2/800k/tzwj_video.m3u8"
@@ -2645,6 +2662,15 @@
       "latency": 4472,
       "codec": "h264",
       "category": "☘️河南频道"
+    },
+    {
+      "name": "浙江留学",
+      "urls": [
+        "http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8"
+      ],
+      "latency": 864,
+      "codec": "h264",
+      "category": "☘️浙江频道"
     }
   ]
 }

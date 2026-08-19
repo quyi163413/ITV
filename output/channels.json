@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 262,
-  "generated": "2026-08-18T18:59:11.117445",
+  "total": 261,
+  "generated": "2026-08-19T01:27:25.363203",
   "channels": [
     {
       "name": "CCTV-1",
@@ -161,15 +161,6 @@
         "http://111.59.24.227:8181/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0"
       ],
       "latency": 178,
-      "codec": "h264",
-      "category": "📺央视频道"
-    },
-    {
-      "name": "世界地理",
-      "urls": [
-        "https://shcm-stream-cf1.stream.264788.xyz/cms001/ch00000090990000001620/index.m3u8?streamid=8a034b40397504e25b3775c772237996&streamkey=01vY5fRxC8VyKg4oq30vfikHXTCAKySLP29l6OG91kQlzDttHgzNLkUw5kivm3PfNsVHJv5FgdsPBYFYI2IWpt7tfRCuFHqLT2pvX67ubMds8jl2DHtvOh0&token=1775754349-4f33f4f84a4abeba-0-91687dc8c9325092efa1d00f330d2710"
-      ],
-      "latency": 2897,
       "codec": "h264",
       "category": "📺央视频道"
     },

@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 286,
-  "generated": "2026-08-20T01:26:48.733399",
+  "total": 284,
+  "generated": "2026-08-20T06:55:22.192289",
   "channels": [
     {
       "name": "CCTV-1",
@@ -270,7 +270,8 @@
     {
       "name": "东方卫视",
       "urls": [
-        "http://bp-resource-dfl.bestv.cn/155/3/video.m3u8"
+        "http://bp-resource-dfl.bestv.cn/155/3/video.m3u8",
+        "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
       ],
       "latency": 1100,
       "codec": "h264",
@@ -1120,7 +1121,8 @@
     {
       "name": "余姚姚江文化",
       "urls": [
-        "http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed"
+        "http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed",
+        "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8"
       ],
       "latency": 553,
       "codec": "h264",
@@ -1384,24 +1386,6 @@
         "http://live.ahsz.tv/video/s10001-kxjy/index.m3u8"
       ],
       "latency": 940,
-      "codec": "h264",
-      "category": "☘️安徽频道"
-    },
-    {
-      "name": "宿州新闻综合 [Not 24/7]",
-      "urls": [
-        "http://live.ahsz.tv/video/s10001-szzh/index.m3u8"
-      ],
-      "latency": 874,
-      "codec": "h264",
-      "category": "☘️安徽频道"
-    },
-    {
-      "name": "宿州公共 [Not 24/7]",
-      "urls": [
-        "http://live.ahsz.tv/video/s10001-ggpd/index.m3u8"
-      ],
-      "latency": 980,
       "codec": "h264",
       "category": "☘️安徽频道"
     },

@@ -40,6 +40,7 @@ CGTN英语,https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
 山西卫视,http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
 四川卫视,http://61.161.61.119:9004/hls/52/index.m3u8
 深圳卫视,http://111.8.242.142:9999/tsfile/live/1021_1.m3u8?key=txiptv&playlive=1&authid=0
+天津卫视,http://223.78.65.165:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
 西藏卫视,http://222.71.55.147:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=0&authid=0
 新疆卫视,http://222.71.55.147:9901/tsfile/live/0110_1.m3u8?key=txiptv&playlive=0&authid=0
 云南卫视,http://113.9.214.47:9003/hls/52/index.m3u8
@@ -66,9 +67,10 @@ TVB星河,http://r.jdshipin.com/Voac4
 北京卡酷少儿,http://111.59.139.82:11888/tsfile/live/1056_1.m3u8?key=txiptv&playlive=1&authid=0
 耀才财经,https://v3.mediacast.hk/webcast/bshdlive-pc/chunklist_w99771165.m3u8
 ☘️上海频道,#genre#
-象山新闻综合,http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8
+武义新闻综合,http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8?zzhed
 新纪实,http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 ☘️天津频道,#genre#
+天津卫视,http://223.78.65.165:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
 ☘️重庆频道,#genre#
 铜梁综合,http://183.64.174.171:40123/ch1.m3u8?zzhongqd
 荣昌综合 [Not 24/7],http://183.64.181.25:40023/rongchang01.m3u8
@@ -118,7 +120,9 @@ TVB星河,http://r.jdshipin.com/Voac4
 普陀电视台,https://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8
 普陀新闻综合,http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8
 新昌生活,http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
+文成综合,http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed?
 文成新闻综合,http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8
+开化新闻综合,http://l.cztvcloud.com/channels/lantian/SXkaihua1/720p.m3u8?zzhed
 开化国家公园,http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8
 庆元综合,http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8
 庆元新闻综合,http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?fbl=
@@ -130,10 +134,12 @@ TVB星河,http://r.jdshipin.com/Voac4
 余姚综合,https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8
 余姚新闻综合,http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8
 余姚姚江文化,https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8
+云和新闻综合,http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8
 中国蓝新闻,http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
 东阳影视生活,http://l.cztvcloud.com/channels/lantian/SXdongyang1/720p.m3u8
 上虞新闻综合,http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed
 上虞新商都,http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8
+嵊州综合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8
 ☘️江苏频道,#genre#
 南京教科,http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8
 南京新闻综合,http://nklive.nbs.cn/hls/d511bc9d-a694-4453-b3a2-4fc842cc97a1/index.m3u8
@@ -206,13 +212,12 @@ CHC电影,http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive
 云南卫视,http://113.9.214.47:9003/hls/52/index.m3u8
 易门综合,https://zb-live.ynurl.com/yimen/3b75a2f9-7941-46b7-992d-a9796fbca5fe.m3u8
 ☘️陕西频道,#genre#
-陕西新闻咨询,http://112.46.105.20:8009/hls/18/index.m3u8
+新闻咨询,http://112.46.105.20:8009/hls/18/index.m3u8
 无线新闻台,http://r.jdshipin.com/CkuBd
 西安都市,http://112.46.105.20:8009/hls/29/index.m3u8
 都市青春,http://112.46.105.20:8009/hls/19/index.m3u8
 陕西秦腔,http://112.46.105.20:8009/hls/22/index.m3u8
 陕西银龄,http://112.46.105.20:8009/hls/20/index.m3u8
-新闻咨询,http://112.46.105.20:8009/hls/18/index.m3u8
 新昌休闲影视 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
 ☘️甘肃频道,#genre#
 甘肃卫视,http://218.13.170.98:9901/tsfile/live/0141_1.m3u8

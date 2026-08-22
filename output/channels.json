@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "total": 288,
-  "generated": "2026-08-22T12:47:38.745005",
+  "generated": "2026-08-22T18:38:02.927262",
   "channels": [
     {
       "name": "CCTV-1",
@@ -563,12 +563,12 @@
       "category": "📡卫视频道"
     },
     {
-      "name": "TVB翡翠台",
+      "name": "翡翠台",
       "urls": [
-        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct3"
+        "http://r.jdshipin.com/qClQf"
       ],
-      "latency": 306,
-      "codec": "hevc",
+      "latency": 113,
+      "codec": "h264",
       "category": "📡卫视频道"
     },
     {
@@ -2300,11 +2300,11 @@
       "category": "☘️河北频道"
     },
     {
-      "name": "翡翠台",
+      "name": "翡翠台北美版",
       "urls": [
-        "http://r.jdshipin.com/qClQf"
+        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=j1"
       ],
-      "latency": 113,
+      "latency": 233,
       "codec": "h264",
       "category": "🌊港·澳·台"
     },
@@ -2400,6 +2400,15 @@
       "category": "🌊港·澳·台"
     },
     {
+      "name": "TVB翡翠台",
+      "urls": [
+        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct3"
+      ],
+      "latency": 306,
+      "codec": "hevc",
+      "category": "🌊港·澳·台"
+    },
+    {
       "name": "三立戏剧",
       "urls": [
         "http://61.221.215.25:8800/hls/41/index.m3u8"
@@ -2423,15 +2432,6 @@
         "http://61.221.215.25:8800/hls/48/index.m3u8"
       ],
       "latency": 267,
-      "codec": "h264",
-      "category": "🌊港·澳·台"
-    },
-    {
-      "name": "翡翠台北美版",
-      "urls": [
-        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=j1"
-      ],
-      "latency": 233,
       "codec": "h264",
       "category": "🌊港·澳·台"
     },

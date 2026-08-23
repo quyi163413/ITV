@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 281,
-  "generated": "2026-08-23T12:48:20.900381",
+  "total": 283,
+  "generated": "2026-08-23T18:37:19.233336",
   "channels": [
     {
       "name": "CCTV-1",
@@ -261,8 +261,7 @@
     {
       "name": "东方卫视",
       "urls": [
-        "https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8",
-        "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
+        "https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8"
       ],
       "latency": 266,
       "codec": "h264",
@@ -1153,7 +1152,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8"
       ],
-      "latency": 2865,
+      "latency": 3174,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1199,6 +1198,15 @@
         "http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8"
       ],
       "latency": 1575,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "上虞文化影院",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8"
+      ],
+      "latency": 1110,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1803,6 +1811,15 @@
         "https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&tpid=1516989100&type=0"
       ],
       "latency": 1685,
+      "codec": "h264",
+      "category": "☘️山西频道"
+    },
+    {
+      "name": "长子综合",
+      "urls": [
+        "https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd"
+      ],
+      "latency": 1427,
       "codec": "h264",
       "category": "☘️山西频道"
     },
@@ -2459,20 +2476,29 @@
       "category": "🌊港·澳·台"
     },
     {
-      "name": "浙江留学",
-      "urls": [
-        "http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8"
-      ],
-      "latency": 906,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
       "name": "浙江 Ⅰ 绍兴影视",
       "urls": [
         "http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8"
       ],
       "latency": 957,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "浙江民生休闲",
+      "urls": [
+        "http://ali-vl.cztv.com/channels/lantian/channel006/360p.m3u8"
+      ],
+      "latency": 988,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "浙江教科影视",
+      "urls": [
+        "http://ali-vl.cztv.com/channels/lantian/channel004/360p.m3u8"
+      ],
+      "latency": 1213,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -2540,20 +2566,11 @@
       "category": "🌊港·澳·台"
     },
     {
-      "name": "浙江民生休闲",
+      "name": "浙江留学",
       "urls": [
-        "http://ali-vl.cztv.com/channels/lantian/channel006/360p.m3u8"
+        "http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8"
       ],
-      "latency": 988,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "浙江教科影视",
-      "urls": [
-        "http://ali-vl.cztv.com/channels/lantian/channel004/360p.m3u8"
-      ],
-      "latency": 1213,
+      "latency": 906,
       "codec": "h264",
       "category": "☘️浙江频道"
     }

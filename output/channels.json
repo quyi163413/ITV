@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 283,
-  "generated": "2026-08-23T18:37:19.233336",
+  "total": 282,
+  "generated": "2026-08-24T01:31:06.810112",
   "channels": [
     {
       "name": "CCTV-1",
@@ -261,7 +261,8 @@
     {
       "name": "东方卫视",
       "urls": [
-        "https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8"
+        "https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8",
+        "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
       ],
       "latency": 266,
       "codec": "h264",
@@ -891,15 +892,6 @@
         "https://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8"
       ],
       "latency": 1844,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "龙游新闻综合",
-      "urls": [
-        "https://l.cztvcloud.com/channels/lantian/SXlongyou1/720p.m3u8"
-      ],
-      "latency": 1046,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -2476,6 +2468,15 @@
       "category": "🌊港·澳·台"
     },
     {
+      "name": "浙江留学",
+      "urls": [
+        "http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8"
+      ],
+      "latency": 906,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "浙江 Ⅰ 绍兴影视",
       "urls": [
         "http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8"
@@ -2564,15 +2565,6 @@
       "latency": 2086,
       "codec": "h264",
       "category": "🌊港·澳·台"
-    },
-    {
-      "name": "浙江留学",
-      "urls": [
-        "http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8"
-      ],
-      "latency": 906,
-      "codec": "h264",
-      "category": "☘️浙江频道"
     }
   ]
 }

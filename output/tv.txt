@@ -37,6 +37,7 @@ CGTN英语,https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
 河南卫视,http://111.59.139.82:11888/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
 吉林卫视,http://113.9.214.47:9003/hls/35/index.m3u8
 江苏卫视,http://8.138.7.223/tv/jsws4k.php
+江西卫视,http://123.118.53.84:45237/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
 辽宁卫视,http://123.118.53.84:45237/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
 青海卫视,http://123.118.53.84:45237/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0
 山东卫视,http://113.57.140.161:10081/newlive/live/hls/35/live.m3u8

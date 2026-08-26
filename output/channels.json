@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 282,
-  "generated": "2026-08-26T01:31:23.160053",
+  "total": 283,
+  "generated": "2026-08-26T06:59:15.100367",
   "channels": [
     {
       "name": "CCTV-1",
@@ -57,7 +57,7 @@
       "urls": [
         "http://123.118.55.165:45237/tsfile/live/0016_2.m3u8?key=txiptv&playlive=1&authid=0"
       ],
-      "latency": 7791,
+      "latency": 612,
       "codec": "h264",
       "category": "📺央视频道"
     },
@@ -310,7 +310,7 @@
       "urls": [
         "http://123.118.55.165:45237/tsfile/live/0113_1.m3u8?key=txiptv&playlive=1&authid=0"
       ],
-      "latency": 7408,
+      "latency": 422,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -351,11 +351,20 @@
       "category": "📡卫视频道"
     },
     {
+      "name": "江西卫视",
+      "urls": [
+        "http://123.118.53.84:45237/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0"
+      ],
+      "latency": 608,
+      "codec": "h264",
+      "category": "📡卫视频道"
+    },
+    {
       "name": "辽宁卫视",
       "urls": [
         "http://123.118.53.84:45237/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0"
       ],
-      "latency": 7005,
+      "latency": 407,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -364,7 +373,7 @@
       "urls": [
         "http://123.118.53.84:45237/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0"
       ],
-      "latency": 6011,
+      "latency": 407,
       "codec": "h264",
       "category": "📡卫视频道"
     },

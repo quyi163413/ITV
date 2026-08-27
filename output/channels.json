@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 281,
-  "generated": "2026-08-26T19:54:23.670881",
+  "total": 282,
+  "generated": "2026-08-27T08:22:42.390796",
   "channels": [
     {
       "name": "CCTV-1",
@@ -46,18 +46,19 @@
     {
       "name": "CCTV-5",
       "urls": [
+        "https://myip.pdtvhd.com/Sports/streams/CCTV5pul.m3u8",
         "http://gmxw.7766.org:808/hls/93/index.m3u8"
       ],
-      "latency": 1061,
+      "latency": 847,
       "codec": "h264",
       "category": "📺央视频道"
     },
     {
       "name": "CCTV-5+",
       "urls": [
-        "http://45.192.97.170:8880/play/6.m3u8"
+        "https://myip.pdtvhd.com/Sports/streams/CCTV5pul.m3u8"
       ],
-      "latency": 50,
+      "latency": 1224,
       "codec": "h264",
       "category": "📺央视频道"
     },
@@ -870,7 +871,7 @@
       "urls": [
         "http://hzcm-live.media.hugd.com/1e6b554b9ab74513958c0e1ffe664d22/9acaa7634309494cb29a85eb12136607.m3u8?auth_key=2272900830-9a2389b8bf4e49d580d4ad807423d326-0-ea78a5c7a678c436263582d368f5009e"
       ],
-      "latency": 1512,
+      "latency": 1370,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -879,7 +880,7 @@
       "urls": [
         "http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865"
       ],
-      "latency": 588,
+      "latency": 691,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -888,7 +889,7 @@
       "urls": [
         "http://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887"
       ],
-      "latency": 869,
+      "latency": 693,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1113,7 +1114,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed"
       ],
-      "latency": 964,
+      "latency": 1970,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1140,7 +1141,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8"
       ],
-      "latency": 901,
+      "latency": 1935,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1241,7 +1242,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8"
       ],
-      "latency": 1410,
+      "latency": 2412,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1250,7 +1251,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8"
       ],
-      "latency": 5213,
+      "latency": 1370,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1448,16 +1449,7 @@
       "urls": [
         "https://live.gdtv.ah.cn/live/newsTV.m3u8"
       ],
-      "latency": 2153,
-      "codec": "h264",
-      "category": "☘️安徽频道"
-    },
-    {
-      "name": "宿州科教 [Not 24/7]",
-      "urls": [
-        "http://live.ahsz.tv/video/s10001-kxjy/index.m3u8"
-      ],
-      "latency": 1294,
+      "latency": 4449,
       "codec": "h264",
       "category": "☘️安徽频道"
     },
@@ -1602,6 +1594,15 @@
         "https://m3u8channel-yj.yunxya.com/nmip-media/channellive/channel101140/playlist.m3u8"
       ],
       "latency": 1886,
+      "codec": "h264",
+      "category": "☘️四川频道"
+    },
+    {
+      "name": "雅安新闻综合",
+      "urls": [
+        "https://play.yunxya.com/channellive/xinwen.m3u8"
+      ],
+      "latency": 5808,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -1792,6 +1793,15 @@
         "https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&tpid=1516989100&type=0"
       ],
       "latency": 3999,
+      "codec": "h264",
+      "category": "☘️山西频道"
+    },
+    {
+      "name": "怀仁综合",
+      "urls": [
+        "https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8"
+      ],
+      "latency": 1887,
       "codec": "h264",
       "category": "☘️山西频道"
     },

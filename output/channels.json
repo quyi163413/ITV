@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 254,
-  "generated": "2026-08-30T11:36:11.499823",
+  "total": 258,
+  "generated": "2026-08-30T16:22:42.859588",
   "channels": [
     {
       "name": "CCTV-1",
@@ -65,7 +65,8 @@
       "name": "CCTV-6",
       "urls": [
         "http://69.30.245.50/live/cctv6.m3u8",
-        "http://198.204.240.250:82/live/cctv6.m3u8"
+        "http://198.204.240.250:82/live/cctv6.m3u8",
+        "http://111.59.24.227:8181/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1&authid=0"
       ],
       "latency": 433,
       "codec": "h264",
@@ -316,6 +317,15 @@
       "category": "📡卫视频道"
     },
     {
+      "name": "江西卫视",
+      "urls": [
+        "http://111.59.24.227:8181/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0"
+      ],
+      "latency": 512,
+      "codec": "h264",
+      "category": "📡卫视频道"
+    },
+    {
       "name": "辽宁卫视",
       "urls": [
         "http://111.59.24.227:8181/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0"
@@ -339,6 +349,15 @@
         "http://119.39.9.8:9901/tsfile/live/0118_1.m3u8"
       ],
       "latency": 575,
+      "codec": "h264",
+      "category": "📡卫视频道"
+    },
+    {
+      "name": "天津卫视",
+      "urls": [
+        "http://111.59.24.227:8181/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0"
+      ],
+      "latency": 533,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -564,7 +583,7 @@
       "urls": [
         "http://183.64.174.171:40123/ch1.m3u8?zzhongqd"
       ],
-      "latency": 5175,
+      "latency": 1408,
       "codec": "h264",
       "category": "☘️重庆频道"
     },
@@ -899,11 +918,29 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "餘姚姚江文化 [Not 24/7]",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8"
+      ],
+      "latency": 2628,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "中国蓝新闻",
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8"
       ],
       "latency": 738,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "上虞1新闻综合 [Not 24/7]",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8"
+      ],
+      "latency": 4068,
       "codec": "h264",
       "category": "☘️浙江频道"
     },

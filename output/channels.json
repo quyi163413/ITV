@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 240,
-  "generated": "2026-08-31T22:42:03.526793",
+  "total": 243,
+  "generated": "2026-09-01T04:18:27.513745",
   "channels": [
     {
       "name": "CCTV-1",
@@ -761,7 +761,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8"
       ],
-      "latency": 5668,
+      "latency": 3053,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -771,6 +771,15 @@
         "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8"
       ],
       "latency": 919,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "文成综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed"
+      ],
+      "latency": 473,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -996,6 +1005,24 @@
         "https://live.gdtv.ah.cn/live/newsTV.m3u8"
       ],
       "latency": 2158,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
+      "name": "宿州科教 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-kxjy/index.m3u8"
+      ],
+      "latency": 1023,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
+      "name": "宿州新闻综合 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-szzh/index.m3u8"
+      ],
+      "latency": 1818,
       "codec": "h264",
       "category": "☘️安徽频道"
     },

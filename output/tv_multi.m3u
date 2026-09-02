@@ -63,8 +63,6 @@ https://event.pull.hebtv.com:443/live/live101.m3u8
 http://111.59.139.82:11888/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="📡卫视频道",江西卫视
 http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="📡卫视频道",山西卫视
-http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
 #EXTINF:-1 group-title="📡卫视频道",深圳卫视
 http://38.64.72.148:80/hls/modn/list/4007/playlist.m3u8
 #EXTINF:-1 group-title="📡卫视频道",西藏卫视
@@ -189,8 +187,6 @@ http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
 http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed
 #EXTINF:-1 group-title="☘️浙江频道",平湖民生休闲
 http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",平湖新闻综合
-http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed
 #EXTINF:-1 group-title="☘️浙江频道",兰溪新闻综合
 http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",餘姚姚江文化 [Not 24/7]
@@ -241,6 +237,8 @@ https://live-auth.51kandianshi.com/szgd/csztv5.m3u8
 https://live-auth.51kandianshi.com/szgd/csztv2.m3u8
 #EXTINF:-1 group-title="☘️江苏频道",镇江二套社会民生
 http://zjtv-wshls.homecdn.com/live/2aa16.m3u8
+#EXTINF:-1 group-title="☘️江苏频道",镇江新闻综合
+http://cm-wshls.homecdn.com/live/2aa50.m3u8
 #EXTINF:-1 group-title="☘️安徽频道",安徽导视
 http://dspdhls.appcoo.com:8888/live/dspd/index.m3u8
 #EXTINF:-1 group-title="☘️安徽频道",固镇新闻
@@ -332,7 +330,7 @@ https://play.yunxya.com/channellive/xinwen.m3u8
 #EXTINF:-1 group-title="☘️四川频道",青川综合
 http://qcfile.qcrmt.com/nmip-media/channellive/channel100933/playlist.m3u8
 #EXTINF:-1 group-title="☘️四川频道",河综合
-https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
+http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8 # https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
 #EXTINF:-1 group-title="☘️贵州频道",贵州省兴义市万峰林
 https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
 #EXTINF:-1 group-title="☘️云南频道",丽江古城万古楼遥望玉龙雪山
@@ -403,12 +401,10 @@ http://218.84.12.186:8002/hls/main/playlist.m3u8?zxinjd
 http://60.222.246.220:19433/hls1.m3u8
 #EXTINF:-1 group-title="☘️山西频道",太谷新闻综合
 https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&amp;amp;tpid=1516989100&amp;amp;type=0
-#EXTINF:-1 group-title="☘️山西频道",山西卫视
-http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
-#EXTINF:-1 group-title="☘️山西频道",怀仁综合
-https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8
 #EXTINF:-1 group-title="☘️山西频道",长子综合
 https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd
+#EXTINF:-1 group-title="☘️山西频道",平遥新闻综合
+https://tntgjhjb.live.sxmty.com/live/hls/3a4585ac11ec4e1bb07b419101b370c3/baf63e2b313440c2a25d7859f9b73b05-1.m3u8?zshanxd
 #EXTINF:-1 group-title="☘️山西频道",汾西综合
 https://qmmqvzoz.live.sxmty.com/live/hls/f24f8a390c084386a564074c9260100c/be3fdf07606145739ab2c4b80fe0136a.m3u8?zshanxd
 #EXTINF:-1 group-title="☘️辽宁频道",乌镇西市河
@@ -483,6 +479,8 @@ https://stream.hrbtv.net/zxpd/sd/live.m3u8
 https://ls.qingting.fm/live/4972/64k.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江新闻
 https://ls.qingting.fm/live/4974/64k.m3u8
+#EXTINF:-1 group-title="☘️黑龙江频道",河公共
+http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
 #EXTINF:-1 group-title="☘️河北频道",任丘综合
 https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8
 #EXTINF:-1 group-title="☘️河北频道",平泉综合

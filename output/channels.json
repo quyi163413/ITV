@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 306,
-  "generated": "2026-09-02T10:58:07.384005",
+  "total": 309,
+  "generated": "2026-09-02T16:17:51.426093",
   "channels": [
     {
       "name": "CCTV-1",
@@ -1145,6 +1145,24 @@
       "category": "☘️安徽频道"
     },
     {
+      "name": "宿州新闻综合 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-szzh/index.m3u8"
+      ],
+      "latency": 755,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
+      "name": "宿州公共",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-ggpd/index.m3u8"
+      ],
+      "latency": 1958,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
       "name": "七台河新闻综合",
       "urls": [
         "http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8"
@@ -1444,8 +1462,7 @@
     {
       "name": "河综合",
       "urls": [
-        "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8",
-        "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
+        "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
       ],
       "latency": 661,
       "codec": "h264",
@@ -2613,6 +2630,15 @@
       "latency": 1218,
       "codec": "h264",
       "category": "🌊港·澳·台"
+    },
+    {
+      "name": "宿州公共 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-ggpd/index.m3u8"
+      ],
+      "latency": 1263,
+      "codec": "h264",
+      "category": "☘️安徽频道"
     },
     {
       "name": "九台",

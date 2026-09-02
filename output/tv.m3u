@@ -63,6 +63,8 @@ https://event.pull.hebtv.com:443/live/live101.m3u8
 http://111.59.139.82:11888/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="📡卫视频道",江西卫视
 http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="📡卫视频道",山西卫视
+http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
 #EXTINF:-1 group-title="📡卫视频道",深圳卫视
 http://38.64.72.148:80/hls/modn/list/4007/playlist.m3u8
 #EXTINF:-1 group-title="📡卫视频道",西藏卫视
@@ -253,8 +255,6 @@ http://zbbf2.ahbztv.com/live/416.m3u8?zanhd
 https://live.gdtv.ah.cn/live/newsTV.m3u8
 #EXTINF:-1 group-title="☘️安徽频道",宿州科教 [Not 24/7]
 http://live.ahsz.tv/video/s10001-kxjy/index.m3u8
-#EXTINF:-1 group-title="☘️安徽频道",宿州新闻综合 [Not 24/7]
-http://live.ahsz.tv/video/s10001-szzh/index.m3u8
 #EXTINF:-1 group-title="☘️安徽频道",七台河新闻综合
 http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8
 #EXTINF:-1 group-title="☘️安徽频道",亳州农村
@@ -401,6 +401,10 @@ http://218.84.12.186:8002/hls/main/playlist.m3u8?zxinjd
 http://60.222.246.220:19433/hls1.m3u8
 #EXTINF:-1 group-title="☘️山西频道",太谷新闻综合
 https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&amp;amp;tpid=1516989100&amp;amp;type=0
+#EXTINF:-1 group-title="☘️山西频道",山西卫视
+http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
+#EXTINF:-1 group-title="☘️山西频道",怀仁综合
+https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8
 #EXTINF:-1 group-title="☘️山西频道",长子综合
 https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd
 #EXTINF:-1 group-title="☘️山西频道",平遥新闻综合

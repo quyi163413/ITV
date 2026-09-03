@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 285,
-  "generated": "2026-09-03T10:57:33.043757",
+  "total": 287,
+  "generated": "2026-09-03T16:07:03.371771",
   "channels": [
     {
       "name": "CCTV-1",
@@ -290,7 +290,7 @@
       "urls": [
         "http://119.39.9.8:9901/tsfile/live/0118_1.m3u8"
       ],
-      "latency": 765,
+      "latency": 579,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -752,7 +752,7 @@
       "urls": [
         "https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8"
       ],
-      "latency": 6169,
+      "latency": 2506,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -779,7 +779,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8"
       ],
-      "latency": 4507,
+      "latency": 555,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -825,6 +825,15 @@
         "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?cWlkPSZzPTg3OWMwYmMyZDMzYTFhZGY3NDQxMjgyYTg1MmUzNTY0JmVzPTE3MDY2Nzc4NzMmdXVpZD0yMjdiY2MzNGNiNGY0MThlYjRiY2IxYzcwNmZjODNkMS02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl"
       ],
       "latency": 1543,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "餘姚姚江文化 [Not 24/7]",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8"
+      ],
+      "latency": 1932,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1094,7 +1103,7 @@
       "urls": [
         "http://live.ahsz.tv/video/s10001-kxjy/index.m3u8"
       ],
-      "latency": 1331,
+      "latency": 1015,
       "codec": "h264",
       "category": "☘️安徽频道"
     },
@@ -1644,7 +1653,7 @@
       "urls": [
         "https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8"
       ],
-      "latency": 1914,
+      "latency": 1692,
       "codec": "h264",
       "category": "☘️山西频道"
     },
@@ -1654,6 +1663,15 @@
         "https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd"
       ],
       "latency": 1387,
+      "codec": "h264",
+      "category": "☘️山西频道"
+    },
+    {
+      "name": "平遥新闻综合",
+      "urls": [
+        "https://tntgjhjb.live.sxmty.com/live/hls/3a4585ac11ec4e1bb07b419101b370c3/baf63e2b313440c2a25d7859f9b73b05-1.m3u8?zshanxd"
+      ],
+      "latency": 1597,
       "codec": "h264",
       "category": "☘️山西频道"
     },

@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 380
+# 原始频道总数: 381
 # Demo匹配成功: 287
-# 丢弃数量: 93
+# 丢弃数量: 94
 
 1989年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8
 Trace Sports,https://lightning-tracesport-samsungau.amagi.tv/playlist1080p.m3u8
@@ -54,6 +54,7 @@ Dragon TV International,https://restream.pdtvhd.com/memfs/0b1b95c9-3543-4af9-9fd
 雪乡梦幻家园,https://gcalic.v.myalicdn.com/gc/mdjxxmhjyxj_1/index.m3u8
 乌镇蓝印花布,https://gcalic.v.myalicdn.com/gc/zjwzlyhb_1/index.m3u8
 倩女幽魂妖魔道,http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8
+春晚2026,https://v.lzcdn28.com/20260217/8616_1de9f6e5/index.m3u8
 Dali TV,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
 Nei Monggol TV 2 Mongolian Culture Channel [Not 24/7],http://play1-qk.nmtv.cn/live/1769652109096027.m3u8
 月牙泉,https://gcalic.v.myalicdn.com/gc/dhyyqsm_1/index.m3u8

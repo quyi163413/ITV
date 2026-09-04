@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "total": 317,
-  "generated": "2026-09-04T16:03:43.710001",
+  "generated": "2026-09-04T20:33:33.558316",
   "channels": [
     {
       "name": "CCTV-1",
@@ -325,7 +325,7 @@
       "urls": [
         "http://119.39.9.8:9901/tsfile/live/0118_1.m3u8"
       ],
-      "latency": 579,
+      "latency": 610,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -897,7 +897,7 @@
       "urls": [
         "https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8"
       ],
-      "latency": 2506,
+      "latency": 2304,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -924,7 +924,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8"
       ],
-      "latency": 555,
+      "latency": 2580,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1335,11 +1335,11 @@
       "category": "☘️安徽频道"
     },
     {
-      "name": "宿州科教 [Not 24/7]",
+      "name": "广德生活",
       "urls": [
-        "http://live.ahsz.tv/video/s10001-kxjy/index.m3u8"
+        "https://live.gdtv.ah.cn/live/newsTV.m3u8"
       ],
-      "latency": 1015,
+      "latency": 2907,
       "codec": "h264",
       "category": "☘️安徽频道"
     },
@@ -1827,7 +1827,7 @@
       "urls": [
         "https://tntgjhjb.live.sxmty.com/live/hls/3a4585ac11ec4e1bb07b419101b370c3/baf63e2b313440c2a25d7859f9b73b05-1.m3u8?zshanxd"
       ],
-      "latency": 1597,
+      "latency": 1604,
       "codec": "h264",
       "category": "☘️山西频道"
     },

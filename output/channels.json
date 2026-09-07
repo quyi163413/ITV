@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 322,
-  "generated": "2026-09-06T20:14:12.583223",
+  "total": 328,
+  "generated": "2026-09-07T03:43:09.303323",
   "channels": [
     {
       "name": "CCTV-1",
@@ -830,6 +830,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "萧山新闻综合 [Not 24/7]",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8"
+      ],
+      "latency": 1186,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "苍南新闻综合",
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8"
@@ -1138,6 +1147,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "上虞新闻综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed"
+      ],
+      "latency": 4724,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "上虞新商都",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8"
@@ -1152,6 +1170,15 @@
         "http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8"
       ],
       "latency": 1565,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "嵊州综合 [Not 24/7]",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8"
+      ],
+      "latency": 3030,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1395,6 +1422,33 @@
         "https://live.gdtv.ah.cn/live/newsTV.m3u8"
       ],
       "latency": 4268,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
+      "name": "宿州科教 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-kxjy/index.m3u8"
+      ],
+      "latency": 928,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
+      "name": "宿州新闻综合 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-szzh/index.m3u8"
+      ],
+      "latency": 1346,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
+      "name": "宿州公共 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-ggpd/index.m3u8"
+      ],
+      "latency": 1272,
       "codec": "h264",
       "category": "☘️安徽频道"
     },

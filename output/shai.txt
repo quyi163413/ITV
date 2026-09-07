@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 422
-# Demo匹配成功: 322
-# 丢弃数量: 100
+# 原始频道总数: 429
+# Demo匹配成功: 328
+# 丢弃数量: 101
 
 1989年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8
 1988年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5216575810935394655_hlsb.m3u8
@@ -23,6 +23,7 @@ China Travel,https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287
 Arirang,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
 余杭未来E频道,http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
 Hebei TV,https://restream.pdtvhd.com/memfs/1db8c005-9365-4b32-94a4-3736987b5646.m3u8
+上虞1新闻综合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8
 春晚2025,https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8
 WionNews,https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
 CNA,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
@@ -46,6 +47,7 @@ Trace Sports,https://lightning-tracesport-samsungau.amagi.tv/playlist1080p.m3u8
 舒兰新闻,http://stream8.jlntv.cn/shulan/sd/live.m3u8?zjild
 倩女幽魂妖魔道,http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8
 倩女幽魂道道道,http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8
+Guangxi Variety & Travel Channel,http://111.59.24.227:8181/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
 Kangba TV,http://110.185.237.164:8888/hls/30/index.m3u8
 倩女幽魂人间道,http://jsmov2.a.yximgs.com/bs3/video-hls/5250634317044855747_hlsb.m3u8
 五彩池,https://gcalic.v.myalicdn.com/gc/hlwcc_1/index.m3u8
@@ -102,4 +104,3 @@ Harbin Movie Channel,https://stream.hrbtv.net/yspd/playlist.m3u8
 RT Español,https://rt-esp.rttv.com/dvr/rtesp/playlist_4500Kb.m3u8
 RT Balkan,https://rt-srb.rttv.com/dvr/rtbalkan/playlist_4500Kb.m3u8
 新昌新聞綜合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8
-Guangxi Variety & Travel Channel,http://111.59.24.227:8181/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0

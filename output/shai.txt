@@ -1,6 +1,6 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 416
-# Demo匹配成功: 312
+# 原始频道总数: 418
+# Demo匹配成功: 314
 # 丢弃数量: 104
 
 CNA,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8

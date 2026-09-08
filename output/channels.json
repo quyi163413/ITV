@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 312,
-  "generated": "2026-09-08T03:47:40.146596",
+  "total": 314,
+  "generated": "2026-09-08T10:56:31.144340",
   "channels": [
     {
       "name": "CCTV-1",
@@ -163,6 +163,15 @@
         "http://74.91.26.218:82/live/cctv17hd.m3u8"
       ],
       "latency": 372,
+      "codec": "h264",
+      "category": "📺央视频道"
+    },
+    {
+      "name": "老故事",
+      "urls": [
+        "http://8.138.7.223/tv/cwjd.php"
+      ],
+      "latency": 2768,
       "codec": "h264",
       "category": "📺央视频道"
     },
@@ -1344,6 +1353,15 @@
         "http://zjtv-wshls.homecdn.com/live/2aa16.m3u8"
       ],
       "latency": 1387,
+      "codec": "h264",
+      "category": "☘️江苏频道"
+    },
+    {
+      "name": "镇江新闻综合",
+      "urls": [
+        "http://cm-wshls.homecdn.com/live/2aa50.m3u8"
+      ],
+      "latency": 1326,
       "codec": "h264",
       "category": "☘️江苏频道"
     },

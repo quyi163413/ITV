@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 311,
-  "generated": "2026-09-07T21:21:15.738730",
+  "total": 312,
+  "generated": "2026-09-08T03:47:40.146596",
   "channels": [
     {
       "name": "CCTV-1",
@@ -1145,7 +1145,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed"
       ],
-      "latency": 4724,
+      "latency": 1361,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1172,7 +1172,7 @@
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8"
       ],
-      "latency": 3030,
+      "latency": 2020,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1411,6 +1411,15 @@
       "category": "☘️安徽频道"
     },
     {
+      "name": "宿州新闻综合 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-szzh/index.m3u8"
+      ],
+      "latency": 645,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
       "name": "七台河新闻综合",
       "urls": [
         "http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8"
@@ -1638,7 +1647,8 @@
     {
       "name": "河综合",
       "urls": [
-        "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
+        "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8",
+        "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
       ],
       "latency": 1108,
       "codec": "h264",

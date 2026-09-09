@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 334,
-  "generated": "2026-09-09T11:01:38.094885",
+  "total": 336,
+  "generated": "2026-09-09T16:15:31.809792",
   "channels": [
     {
       "name": "CCTV-1",
@@ -1163,11 +1163,29 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "云和新闻综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8"
+      ],
+      "latency": 5212,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "中国蓝新闻",
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8"
       ],
       "latency": 502,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "东阳影视生活",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXdongyang1/720p.m3u8"
+      ],
+      "latency": 4342,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1194,7 +1212,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8"
       ],
-      "latency": 5004,
+      "latency": 4398,
       "codec": "h264",
       "category": "☘️浙江频道"
     },

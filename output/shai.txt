@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 442
-# Demo匹配成功: 340
-# 丢弃数量: 102
+# 原始频道总数: 446
+# Demo匹配成功: 341
+# 丢弃数量: 105
 
 Supreme Master TV,https://lbs-us1.suprememastertv.com/720p.m3u8
 Newsmax,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
@@ -50,6 +50,7 @@ Chifeng Comprehensive News Chanel,http://play1-qk.nmtv.cn/live/1735546697341033.
 玛纳斯,http://218.84.127.245:1026/hls/main1/playlist.m3u8?zxinjd
 余杭综合频道,http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed
 Xinjiang TV 3,http://110.153.180.106:55555/out_2/index.m3u8
+余杭未来E频道,http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
 舒兰新闻,http://stream8.jlntv.cn/shulan/sd/live.m3u8?zjild
 Xinjiang TV 2,http://110.153.180.106:55555/out_3/index.m3u8
 Dragon TV International,https://restream.pdtvhd.com/memfs/0b1b95c9-3543-4af9-9fdb-cf45f1602f17.m3u8
@@ -101,7 +102,9 @@ TVB Plus,http://r.jdshipin.com/Nr5jq
 RT DE,https://rt-ger.rttv.com/dvr/rtdeutsch/playlist_4500Kb.m3u8
 RT Doc-Русский,https://rt-doc.rttv.com/dvr/rtdru/rtdru1080.m3u8
 Astro AOD,http://php.jdshipin.com/TVOD/iptv.php?id=aod
+蕭山生活頻道 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
 兵团五师双河影,https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd
 上虞經濟文化 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8
-余杭未来E频道,http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
+萧山新闻综合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8
 象山新闻综合,http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8
+餘姚姚江文化 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8

@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 337,
-  "generated": "2026-09-10T10:59:00.383476",
+  "total": 340,
+  "generated": "2026-09-10T16:07:12.098008",
   "channels": [
     {
       "name": "CCTV-1",
@@ -168,7 +168,7 @@
       "urls": [
         "http://8.138.7.223/tv/cwjd.php"
       ],
-      "latency": 2916,
+      "latency": 3887,
       "codec": "h264",
       "category": "📺央视频道"
     },
@@ -562,6 +562,15 @@
       "category": "☘️天津频道"
     },
     {
+      "name": "萬州三峽移民",
+      "urls": [
+        "http://123.146.162.24:8017/c2F0hmi/1000/live.m3u8"
+      ],
+      "latency": 802,
+      "codec": "h264",
+      "category": "☘️重庆频道"
+    },
+    {
       "name": "江津新闻综合",
       "urls": [
         "http://222.179.155.21:1935/ch1.m3u8"
@@ -575,7 +584,7 @@
       "urls": [
         "http://183.64.174.171:40123/ch1.m3u8?zzhongqd"
       ],
-      "latency": 1334,
+      "latency": 1368,
       "codec": "h264",
       "category": "☘️重庆频道"
     },
@@ -981,6 +990,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "普陀电视台",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8"
+      ],
+      "latency": 3942,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "新昌生活",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8"
@@ -1098,6 +1116,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "余姚综合",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
+      ],
+      "latency": 554,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "余姚新闻综合",
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8",
@@ -1149,7 +1176,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed"
       ],
-      "latency": 4099,
+      "latency": 1607,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1338,7 +1365,7 @@
       "urls": [
         "http://cm-wshls.homecdn.com/live/2aa50.m3u8"
       ],
-      "latency": 1570,
+      "latency": 2077,
       "codec": "h264",
       "category": "☘️江苏频道"
     },
@@ -1419,7 +1446,7 @@
       "urls": [
         "http://live.ahsz.tv/video/s10001-szzh/index.m3u8"
       ],
-      "latency": 1334,
+      "latency": 2240,
       "codec": "h264",
       "category": "☘️安徽频道"
     },

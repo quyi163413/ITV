@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 318,
-  "generated": "2026-09-16T04:03:39.788209",
+  "total": 319,
+  "generated": "2026-09-16T11:09:58.628673",
   "channels": [
     {
       "name": "CCTV-1",
@@ -963,6 +963,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "平湖新闻综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed"
+      ],
+      "latency": 1726,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "嵊泗综合",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXshengsi1/720p.m3u8"
@@ -1554,7 +1563,7 @@
       "urls": [
         "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel105549/playlist.m3u8"
       ],
-      "latency": 1458,
+      "latency": 1538,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -1590,7 +1599,7 @@
       "urls": [
         "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel101257/playlist.m3u8"
       ],
-      "latency": 1322,
+      "latency": 1553,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -1599,7 +1608,7 @@
       "urls": [
         "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel100999/playlist.m3u8"
       ],
-      "latency": 1358,
+      "latency": 1547,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -1608,7 +1617,7 @@
       "urls": [
         "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel104601/playlist.m3u8"
       ],
-      "latency": 1776,
+      "latency": 1011,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -2285,7 +2294,7 @@
       "urls": [
         "https://jwcdnqx.hebyun.com.cn/live/xtcsshpd/1500k/tzwj_video.m3u8"
       ],
-      "latency": 1656,
+      "latency": 1743,
       "codec": "h264",
       "category": "☘️河北频道"
     },
@@ -2752,6 +2761,15 @@
       "category": "☘️云南频道"
     },
     {
+      "name": "四川峨眉山远眺贡嘎雪山",
+      "urls": [
+        "https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8"
+      ],
+      "latency": 1211,
+      "codec": "h264",
+      "category": "☘️四川频道"
+    },
+    {
       "name": "云南大理崇圣寺三塔中景",
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8"
@@ -2759,6 +2777,15 @@
       "latency": 1226,
       "codec": "h264",
       "category": "☘️云南频道"
+    },
+    {
+      "name": "四川峨眉山远眺万佛顶",
+      "urls": [
+        "https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8"
+      ],
+      "latency": 1261,
+      "codec": "h264",
+      "category": "☘️四川频道"
     },
     {
       "name": "四川峨眉山普贤菩萨铜像",
@@ -2867,24 +2894,6 @@
       "latency": 2541,
       "codec": "h264",
       "category": "🌊港·澳·台"
-    },
-    {
-      "name": "四川峨眉山远眺万佛顶",
-      "urls": [
-        "https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8"
-      ],
-      "latency": 1261,
-      "codec": "h264",
-      "category": "☘️四川频道"
-    },
-    {
-      "name": "四川峨眉山远眺贡嘎雪山",
-      "urls": [
-        "https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8"
-      ],
-      "latency": 1211,
-      "codec": "h264",
-      "category": "☘️四川频道"
     }
   ]
 }

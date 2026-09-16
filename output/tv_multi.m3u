@@ -16,7 +16,7 @@ http://198.204.240.250:82/live/cctv6.m3u8 # http://69.30.245.50/live/cctv6.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-7
 http://74.91.26.218:82/live/cctv7hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-8
-http://192.151.150.154/live/cctv8k.m3u8 # http://74.91.26.218:82/live/cctv8hd.m3u8
+http://74.91.26.218:82/live/cctv8hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-9
 http://45.192.97.170:8880/play/10.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-10
@@ -177,6 +177,8 @@ https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8
 https://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",诸暨新闻综合
 https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8
+#EXTINF:-1 group-title="☘️浙江频道",龙游新闻综合
+https://l.cztvcloud.com/channels/lantian/SXlongyou1/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",龙泉新闻综合
 http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",青田电视台
@@ -379,8 +381,8 @@ http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8
 http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8 # https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
 #EXTINF:-1 group-title="☘️贵州频道",贵州省兴义市万峰林
 https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
-#EXTINF:-1 group-title="☘️云南频道",云南丽江玉龙雪山
-https://gcalic.v.myalicdn.com/gc/ylxs11_1/index.m3u8
+#EXTINF:-1 group-title="☘️云南频道",丽江古城万古楼遥望玉龙雪山
+https://gcalic.v.myalicdn.com/gc/ljgcwglytylxs_1/index.m3u8
 #EXTINF:-1 group-title="☘️云南频道",云南丽江玉龙雪山草甸
 https://gcalic.v.myalicdn.com/gc/hkylxs06_1/index.m3u8
 #EXTINF:-1 group-title="☘️云南频道",云南丽江蓝月谷
@@ -517,6 +519,8 @@ https://ls.qingting.fm/live/4972/64k.m3u8
 https://ls.qingting.fm/live/4974/64k.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",河公共
 http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
+#EXTINF:-1 group-title="☘️河北频道",任丘综合
+https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8
 #EXTINF:-1 group-title="☘️河北频道",平泉综合
 https://jwcdnqx.hebyun.com.cn/live/pqzh/1500k/tzwj_video.m3u8
 #EXTINF:-1 group-title="☘️河北频道",昌黎综合

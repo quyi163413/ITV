@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 329,
-  "generated": "2026-09-19T15:41:28.234622",
+  "total": 330,
+  "generated": "2026-09-19T20:19:57.755628",
   "channels": [
     {
       "name": "CCTV-1",
@@ -876,7 +876,7 @@
       "urls": [
         "https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8"
       ],
-      "latency": 5793,
+      "latency": 2296,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -913,6 +913,15 @@
         "http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8"
       ],
       "latency": 487,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "普陀电视台",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8"
+      ],
+      "latency": 509,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -2391,7 +2400,7 @@
       "urls": [
         "https://jwcdnqx.hebyun.com.cn/live/xtcsshpd/1500k/tzwj_video.m3u8"
       ],
-      "latency": 1587,
+      "latency": 1360,
       "codec": "h264",
       "category": "☘️河北频道"
     },
@@ -2784,15 +2793,6 @@
       "category": "☘️广西频道"
     },
     {
-      "name": "四川峨眉山远眺贡嘎雪山",
-      "urls": [
-        "https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8"
-      ],
-      "latency": 761,
-      "codec": "h264",
-      "category": "☘️四川频道"
-    },
-    {
       "name": "浙江 Ⅰ 绍兴综合",
       "urls": [
         "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8"
@@ -2800,6 +2800,15 @@
       "latency": 761,
       "codec": "h264",
       "category": "☘️浙江频道"
+    },
+    {
+      "name": "四川峨眉山远眺贡嘎雪山",
+      "urls": [
+        "https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8"
+      ],
+      "latency": 761,
+      "codec": "h264",
+      "category": "☘️四川频道"
     },
     {
       "name": "港台电视 32",

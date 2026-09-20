@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 326,
-  "generated": "2026-09-20T15:46:45.285575",
+  "total": 330,
+  "generated": "2026-09-20T20:35:28.626984",
   "channels": [
     {
       "name": "CCTV-1",
@@ -895,7 +895,7 @@
       "urls": [
         "https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8"
       ],
-      "latency": 2296,
+      "latency": 2706,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1257,7 +1257,7 @@
       "urls": [
         "https://live.wjyanghu.com/live/CH2.m3u8"
       ],
-      "latency": 1330,
+      "latency": 1249,
       "codec": "h264",
       "category": "☘️江苏频道"
     },
@@ -1623,6 +1623,15 @@
       "category": "☘️四川频道"
     },
     {
+      "name": "剑阁综合",
+      "urls": [
+        "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel105549/playlist.m3u8"
+      ],
+      "latency": 1568,
+      "codec": "h264",
+      "category": "☘️四川频道"
+    },
+    {
       "name": "名山综合",
       "urls": [
         "https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8"
@@ -1646,6 +1655,33 @@
         "https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8"
       ],
       "latency": 548,
+      "codec": "h264",
+      "category": "☘️四川频道"
+    },
+    {
+      "name": "广元公共",
+      "urls": [
+        "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel101257/playlist.m3u8"
+      ],
+      "latency": 1312,
+      "codec": "h264",
+      "category": "☘️四川频道"
+    },
+    {
+      "name": "广元综合",
+      "urls": [
+        "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel100999/playlist.m3u8"
+      ],
+      "latency": 1286,
+      "codec": "h264",
+      "category": "☘️四川频道"
+    },
+    {
+      "name": "朝天综合",
+      "urls": [
+        "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel104601/playlist.m3u8"
+      ],
+      "latency": 505,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -2376,7 +2412,7 @@
       "urls": [
         "https://jwcdnqx.hebyun.com.cn/live/xtcsshpd/1500k/tzwj_video.m3u8"
       ],
-      "latency": 1360,
+      "latency": 1853,
       "codec": "h264",
       "category": "☘️河北频道"
     },

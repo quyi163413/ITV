@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 431
-# Demo匹配成功: 325
-# 丢弃数量: 106
+# 原始频道总数: 429
+# Demo匹配成功: 324
+# 丢弃数量: 105
 
 TVB News,http://r.jdshipin.com/CkuBd
 Supreme Master TV,https://lbs-us1.suprememastertv.com/720p.m3u8
@@ -29,6 +29,7 @@ CGTN Global Biz,https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2
 CGTN Documentary,https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
 兴隆综合,https://jwcdnqx.hebyun.com.cn/live/xlzh/1500k/tzwj_video.m3u8
 泰山玉皇顶,https://gcalic.v.myalicdn.com/gc/taishan06_1/index.m3u8
+乌镇全景,https://gcalic.v.myalicdn.com/gc/zjwzblt_1/index.m3u8
 泰山主峰,https://gcalic.v.myalicdn.com/gc/taishan01_1/index.m3u8
 泰山十八盘,https://gcalic.v.myalicdn.com/gc/taishan05_1/index.m3u8
 泰山望人松,https://gcalic.v.myalicdn.com/gc/taishan02_1/index.m3u8
@@ -87,7 +88,6 @@ Hunan TV,http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9
 Nei Monggol TV [Not 24/7],http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
 Siping TV,http://stream2.jlntv.cn/sptv/sd/live.m3u8?_upt=f27750421743154598
 FZTV3,http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8
-春晚2026,https://v.lzcdn28.com/20260217/8616_1de9f6e5/index.m3u8
 钱江都市,https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 Guangzhou TV,https://tencentplaybusiness.gztv.com/live/zonghes.m3u8
 春晚2024,https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
@@ -108,4 +108,3 @@ Lanzhou Culture & Tourism Channel,https://liveplus.lzr.com.cn/wlpd/HD/live.m3u8
 倩女幽魂妖魔道,http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8
 上虞1新闻综合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8
 Anhui TV,https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8
-乌镇全景,https://gcalic.v.myalicdn.com/gc/zjwzblt_1/index.m3u8

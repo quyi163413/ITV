@@ -1,9 +1,10 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 397
-# Demo匹配成功: 303
-# 丢弃数量: 94
+# 原始频道总数: 396
+# Demo匹配成功: 301
+# 丢弃数量: 95
 
 Supreme Master TV,https://lbs-us1.suprememastertv.com/720p.m3u8
+TVB Plus,http://r.jdshipin.com/Nr5jq
 1989年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8
 亚洲武侠,http://php.jdshipin.com/TVOD/iptv.php?id=yzwx
 1987年春晚,https://txmov2.a.kwimgs.com/bs3/video-hls/5195746663405928031_hlsb.m3u8
@@ -94,6 +95,6 @@ Chifeng Comprehensive News Chanel,http://play1-qk.nmtv.cn/live/1735546697341033.
 RT Balkan,https://rt-srb.rttv.com/dvr/rtbalkan/playlist_4500Kb.m3u8
 辽新闻综合 [Geo-blocked],https://stream2.jlntv.cn/liaoyuan1/sd/live.m3u8
 Lanzhou Comprehensive News Channel,https://liveplus.lzr.com.cn/xwzh/HD/live.m3u8
+RT DE,https://rt-ger.rttv.com/dvr/rtdeutsch/playlist_4500Kb.m3u8
 RT Doc-Русский,https://rt-doc.rttv.com/dvr/rtdru/rtdru1080.m3u8
 Guangzhou TV,https://tencentplaybusiness.gztv.com/live/zonghes.m3u8
-TVB Plus,http://r.jdshipin.com/Nr5jq

@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 305,
-  "generated": "2026-10-04T21:06:12.203463",
+  "total": 306,
+  "generated": "2026-10-05T04:50:15.722777",
   "channels": [
     {
       "name": "CCTV-1",
@@ -1196,6 +1196,15 @@
       "category": "☘️安徽频道"
     },
     {
+      "name": "广德生活",
+      "urls": [
+        "https://live.gdtv.ah.cn/live/newsTV.m3u8"
+      ],
+      "latency": 3445,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
       "name": "宿州科教 [Not 24/7]",
       "urls": [
         "http://live.ahsz.tv/video/s10001-kxjy/index.m3u8"
@@ -1549,7 +1558,8 @@
     {
       "name": "河综合",
       "urls": [
-        "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
+        "http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8",
+        "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8"
       ],
       "latency": 1190,
       "codec": "h264",

@@ -28,6 +28,7 @@ CGTN英语,https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
 湖南卫视,https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8
 黑龙江卫视,http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
 重庆卫视,http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
+东方卫视,http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 河北,https://event.pull.hebtv.com:443/live/live101.m3u8
 河南卫视,http://111.59.139.82:11888/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
 江苏卫视,http://8.138.7.223/tv/jsws4k.php

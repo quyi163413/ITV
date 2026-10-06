@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 309,
-  "generated": "2026-10-06T05:37:21.496287",
+  "total": 310,
+  "generated": "2026-10-06T13:04:38.140836",
   "channels": [
     {
       "name": "CCTV-1",
@@ -249,6 +249,15 @@
         "http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8"
       ],
       "latency": 4588,
+      "codec": "h264",
+      "category": "📡卫视频道"
+    },
+    {
+      "name": "东方卫视",
+      "urls": [
+        "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
+      ],
+      "latency": 884,
       "codec": "h264",
       "category": "📡卫视频道"
     },

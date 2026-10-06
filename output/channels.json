@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 307,
-  "generated": "2026-10-05T23:57:16.228412",
+  "total": 309,
+  "generated": "2026-10-06T05:37:21.496287",
   "channels": [
     {
       "name": "CCTV-1",
@@ -249,15 +249,6 @@
         "http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8"
       ],
       "latency": 4588,
-      "codec": "h264",
-      "category": "📡卫视频道"
-    },
-    {
-      "name": "东方卫视",
-      "urls": [
-        "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
-      ],
-      "latency": 884,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -997,6 +988,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "上虞3新商都 [Not 24/7]",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8"
+      ],
+      "latency": 4326,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "上虞文化影院",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8"
@@ -1237,6 +1237,15 @@
         "https://live.gdtv.ah.cn/live/newsTV.m3u8"
       ],
       "latency": 3282,
+      "codec": "h264",
+      "category": "☘️安徽频道"
+    },
+    {
+      "name": "宿州科教 [Not 24/7]",
+      "urls": [
+        "http://live.ahsz.tv/video/s10001-kxjy/index.m3u8"
+      ],
+      "latency": 1100,
       "codec": "h264",
       "category": "☘️安徽频道"
     },
@@ -1498,6 +1507,15 @@
         "http://tvfile.jyrmt.cn/nmip-media/channellive/channel104452/playlist.m3u8"
       ],
       "latency": 2243,
+      "codec": "h264",
+      "category": "☘️四川频道"
+    },
+    {
+      "name": "剑阁综合",
+      "urls": [
+        "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel105549/playlist.m3u8"
+      ],
+      "latency": 1521,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -2377,6 +2395,15 @@
       "category": "☘️安徽频道"
     },
     {
+      "name": "港台电视 32",
+      "urls": [
+        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32"
+      ],
+      "latency": 427,
+      "codec": "h264",
+      "category": "🌊港·澳·台"
+    },
+    {
       "name": "浙江钱江都市",
       "urls": [
         "http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8"
@@ -2558,6 +2585,15 @@
       "category": "☘️安徽频道"
     },
     {
+      "name": "港台电视 31",
+      "urls": [
+        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk31"
+      ],
+      "latency": 762,
+      "codec": "h264",
+      "category": "🌊港·澳·台"
+    },
+    {
       "name": "白城新闻综合 [Geo-blocked]",
       "urls": [
         "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8"
@@ -2601,6 +2637,15 @@
       "latency": 849,
       "codec": "h264",
       "category": "☘️山东频道"
+    },
+    {
+      "name": "凤凰资讯台",
+      "urls": [
+        "http://php.jdshipin.com/TVOD/iptv.php?id=fhzx"
+      ],
+      "latency": 849,
+      "codec": "h264",
+      "category": "🌊港·澳·台"
     },
     {
       "name": "丽江古城大研花巷观景",
@@ -2693,6 +2738,15 @@
       "category": "☘️山东频道"
     },
     {
+      "name": "凤凰香港台",
+      "urls": [
+        "http://php.jdshipin.com/TVOD/iptv.php?id=fhhk"
+      ],
+      "latency": 1151,
+      "codec": "h264",
+      "category": "🌊港·澳·台"
+    },
+    {
       "name": "九台",
       "urls": [
         "http://stream10.jlntv.cn/jiutaitv/sd/live.m3u8?zjild"
@@ -2743,42 +2797,6 @@
         "http://live.zohi.tv/video/s10001-fztv-4/index.m3u8"
       ],
       "latency": 2986,
-      "codec": "h264",
-      "category": "🌊港·澳·台"
-    },
-    {
-      "name": "凤凰资讯台",
-      "urls": [
-        "http://php.jdshipin.com/TVOD/iptv.php?id=fhzx"
-      ],
-      "latency": 849,
-      "codec": "h264",
-      "category": "🌊港·澳·台"
-    },
-    {
-      "name": "凤凰香港台",
-      "urls": [
-        "http://php.jdshipin.com/TVOD/iptv.php?id=fhhk"
-      ],
-      "latency": 1151,
-      "codec": "h264",
-      "category": "🌊港·澳·台"
-    },
-    {
-      "name": "港台电视 31",
-      "urls": [
-        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk31"
-      ],
-      "latency": 762,
-      "codec": "h264",
-      "category": "🌊港·澳·台"
-    },
-    {
-      "name": "港台电视 32",
-      "urls": [
-        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32"
-      ],
-      "latency": 427,
       "codec": "h264",
       "category": "🌊港·澳·台"
     }

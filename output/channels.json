@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "total": 309,
-  "generated": "2026-10-09T05:24:30.276270",
+  "generated": "2026-10-09T12:54:24.386333",
   "channels": [
     {
       "name": "CCTV-1",
@@ -276,15 +276,6 @@
         "http://111.59.139.82:11888/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0"
       ],
       "latency": 757,
-      "codec": "h264",
-      "category": "📡卫视频道"
-    },
-    {
-      "name": "江苏卫视",
-      "urls": [
-        "http://8.138.7.223/tv/jsws4k.php"
-      ],
-      "latency": 2498,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -566,15 +557,6 @@
         "http://r.jdshipin.com/LiYdg"
       ],
       "latency": 373,
-      "codec": "h264",
-      "category": "☘️广东频道"
-    },
-    {
-      "name": "广东大湾区",
-      "urls": [
-        "http://222.128.55.152:9080/live/dwq.m3u8"
-      ],
-      "latency": 1194,
       "codec": "h264",
       "category": "☘️广东频道"
     },
@@ -1515,7 +1497,7 @@
       "urls": [
         "http://nn.7x9d.cn/地方台8563/海南.php?id=wlpd"
       ],
-      "latency": 5068,
+      "latency": 6004,
       "codec": "h264",
       "category": "☘️海南频道"
     },
@@ -2034,6 +2016,15 @@
       "category": "☘️吉林频道"
     },
     {
+      "name": "农安新闻综合 [Geo-blocked]",
+      "urls": [
+        "https://stream2.jlntv.cn/naxw/sd/live.m3u8"
+      ],
+      "latency": 1343,
+      "codec": "h264",
+      "category": "☘️吉林频道"
+    },
+    {
       "name": "前郭综合 [Geo-blocked]",
       "urls": [
         "https://stream2.jlntv.cn/qg/sd/live.m3u8"
@@ -2448,6 +2439,25 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "浙江经济",
+      "urls": [
+        "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
+        "http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8"
+      ],
+      "latency": 437,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "浙江教科影院",
+      "urls": [
+        "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
+      ],
+      "latency": 447,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "丽江古城大研花巷观景",
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/ljgcdyhxgjt_1/index.m3u8"
@@ -2520,16 +2530,6 @@
       "category": "☘️浙江频道"
     },
     {
-      "name": "浙江经济",
-      "urls": [
-        "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
-        "http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8"
-      ],
-      "latency": 437,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
       "name": "四川峨眉山普贤菩萨铜像",
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8"
@@ -2548,6 +2548,15 @@
       "category": "☘️四川频道"
     },
     {
+      "name": "浙江民生休闲",
+      "urls": [
+        "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8"
+      ],
+      "latency": 828,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "云南丽江冰川",
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/hkylxs05_1/index.m3u8"
@@ -2555,6 +2564,15 @@
       "latency": 829,
       "codec": "h264",
       "category": "☘️云南频道"
+    },
+    {
+      "name": "浙江教科影视",
+      "urls": [
+        "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
+      ],
+      "latency": 835,
+      "codec": "h264",
+      "category": "☘️浙江频道"
     },
     {
       "name": "云南丽江印象实景",
@@ -2638,6 +2656,15 @@
       "category": "☘️安徽频道"
     },
     {
+      "name": "福州广电视台新闻综合频道",
+      "urls": [
+        "http://live.zohi.tv/video/s10001-fztv-1/index.m3u8"
+      ],
+      "latency": 1239,
+      "codec": "h264",
+      "category": "🌊港·澳·台"
+    },
+    {
       "name": "云南丽江玉龙雪山",
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/ylxs11_1/index.m3u8"
@@ -2692,15 +2719,6 @@
       "category": "☘️吉林频道"
     },
     {
-      "name": "白城新闻综合 [Geo-blocked]",
-      "urls": [
-        "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8"
-      ],
-      "latency": 1686,
-      "codec": "h264",
-      "category": "☘️吉林频道"
-    },
-    {
       "name": "望乡台",
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/hlwxt_1/index.m3u8"
@@ -2708,6 +2726,15 @@
       "latency": 1850,
       "codec": "h264",
       "category": "🌊港·澳·台"
+    },
+    {
+      "name": "浙江 Ⅰ 绍兴影视",
+      "urls": [
+        "http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8"
+      ],
+      "latency": 1931,
+      "codec": "h264",
+      "category": "☘️浙江频道"
     },
     {
       "name": "白山新闻综合 [Geo-blocked]",
@@ -2728,6 +2755,15 @@
       "category": "☘️山东频道"
     },
     {
+      "name": "福州电视台少儿频道",
+      "urls": [
+        "http://live.zohi.tv/video/s10001-fztv-4/index.m3u8"
+      ],
+      "latency": 2082,
+      "codec": "h264",
+      "category": "🌊港·澳·台"
+    },
+    {
       "name": "陕西洋县国宝朱鹮02",
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8"
@@ -2746,33 +2782,6 @@
       "category": "☘️浙江频道"
     },
     {
-      "name": "浙江 Ⅰ 绍兴影视",
-      "urls": [
-        "http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8"
-      ],
-      "latency": 1931,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "浙江民生休闲",
-      "urls": [
-        "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8"
-      ],
-      "latency": 828,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "浙江教科影视",
-      "urls": [
-        "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
-      ],
-      "latency": 835,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
       "name": "福州广电视台都市生活频道",
       "urls": [
         "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8"
@@ -2782,22 +2791,13 @@
       "category": "🌊港·澳·台"
     },
     {
-      "name": "福州广电视台新闻综合频道",
+      "name": "白城新闻综合 [Geo-blocked]",
       "urls": [
-        "http://live.zohi.tv/video/s10001-fztv-1/index.m3u8"
+        "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8"
       ],
-      "latency": 1239,
+      "latency": 1686,
       "codec": "h264",
-      "category": "🌊港·澳·台"
-    },
-    {
-      "name": "浙江教科影院",
-      "urls": [
-        "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
-      ],
-      "latency": 447,
-      "codec": "h264",
-      "category": "☘️浙江频道"
+      "category": "☘️吉林频道"
     }
   ]
 }

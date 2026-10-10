@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 309,
-  "generated": "2026-10-10T12:13:43.889320",
+  "total": 315,
+  "generated": "2026-10-10T21:24:57.544919",
   "channels": [
     {
       "name": "CCTV-1",
@@ -294,7 +294,7 @@
       "urls": [
         "http://nn.7x9d.cn/地方台8563/海南.php?id=ssws"
       ],
-      "latency": 5900,
+      "latency": 4301,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -863,6 +863,24 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "青田电视台",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8"
+      ],
+      "latency": 2013,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "遂昌综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8?zzhed"
+      ],
+      "latency": 449,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "象山综合",
       "urls": [
         "http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39"
@@ -926,6 +944,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "文成新闻综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8"
+      ],
+      "latency": 430,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "庆元综合",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8"
@@ -962,11 +989,11 @@
       "category": "☘️浙江频道"
     },
     {
-      "name": "余杭未来E频道",
+      "name": "余杭未来E",
       "urls": [
-        "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed"
+        "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8"
       ],
-      "latency": 3510,
+      "latency": 1136,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -982,9 +1009,10 @@
     {
       "name": "余姚新闻综合",
       "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8",
         "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
       ],
-      "latency": 4914,
+      "latency": 402,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -994,6 +1022,15 @@
         "https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8"
       ],
       "latency": 4494,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "云和新闻综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8"
+      ],
+      "latency": 4797,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1287,15 +1324,6 @@
       "category": "☘️安徽频道"
     },
     {
-      "name": "亳州农村",
-      "urls": [
-        "http://zbbf2.ahbztv.com/live/418.m3u8"
-      ],
-      "latency": 3326,
-      "codec": "h264",
-      "category": "☘️安徽频道"
-    },
-    {
       "name": "三明新闻综合",
       "urls": [
         "https://ls.qingting.fm/live/5022100/64k.m3u8"
@@ -1337,6 +1365,15 @@
         "http://59.175.226.142:280/gb28181/xwzh.m3u8?zhubd"
       ],
       "latency": 1628,
+      "codec": "h264",
+      "category": "☘️湖北频道"
+    },
+    {
+      "name": "荆门新闻综合",
+      "urls": [
+        "https://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=3e28e7271664278691"
+      ],
+      "latency": 1923,
       "codec": "h264",
       "category": "☘️湖北频道"
     },
@@ -1490,6 +1527,15 @@
         "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel105549/playlist.m3u8"
       ],
       "latency": 1920,
+      "codec": "h264",
+      "category": "☘️四川频道"
+    },
+    {
+      "name": "名山综合",
+      "urls": [
+        "https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8"
+      ],
+      "latency": 2762,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -2115,6 +2161,15 @@
       "latency": 1286,
       "codec": "h264",
       "category": "☘️黑龙江频道"
+    },
+    {
+      "name": "任丘综合",
+      "urls": [
+        "https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8"
+      ],
+      "latency": 1860,
+      "codec": "h264",
+      "category": "☘️河北频道"
     },
     {
       "name": "平泉综合",

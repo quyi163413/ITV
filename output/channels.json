@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "total": 316,
-  "generated": "2026-10-11T21:43:51.656863",
+  "generated": "2026-10-12T05:08:53.033484",
   "channels": [
     {
       "name": "CCTV-1",
@@ -929,7 +929,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8"
       ],
-      "latency": 3913,
+      "latency": 2957,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -956,7 +956,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8"
       ],
-      "latency": 3773,
+      "latency": 2725,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -997,11 +997,20 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "平湖民生休闲",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8"
+      ],
+      "latency": 3527,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "平湖新闻综合",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed"
       ],
-      "latency": 4451,
+      "latency": 3104,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1336,16 +1345,7 @@
       "urls": [
         "https://live.gdtv.ah.cn/live/newsTV.m3u8"
       ],
-      "latency": 1666,
-      "codec": "h264",
-      "category": "☘️安徽频道"
-    },
-    {
-      "name": "宿州新闻综合 [Not 24/7]",
-      "urls": [
-        "http://live.ahsz.tv/video/s10001-szzh/index.m3u8"
-      ],
-      "latency": 854,
+      "latency": 3486,
       "codec": "h264",
       "category": "☘️安徽频道"
     },
@@ -1417,7 +1417,7 @@
       "urls": [
         "https://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=3e28e7271664278691"
       ],
-      "latency": 1106,
+      "latency": 3884,
       "codec": "h264",
       "category": "☘️湖北频道"
     },
@@ -1516,7 +1516,7 @@
       "urls": [
         "http://nn.7x9d.cn/地方台8563/海南.php?id=wlpd"
       ],
-      "latency": 2919,
+      "latency": 5440,
       "codec": "h264",
       "category": "☘️海南频道"
     },
@@ -1579,7 +1579,7 @@
       "urls": [
         "https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8"
       ],
-      "latency": 1909,
+      "latency": 1674,
       "codec": "h264",
       "category": "☘️四川频道"
     },

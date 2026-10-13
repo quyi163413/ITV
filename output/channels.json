@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 319,
-  "generated": "2026-10-13T00:24:21.008319",
+  "total": 315,
+  "generated": "2026-10-13T13:53:32.186033",
   "channels": [
     {
       "name": "CCTV-1",
@@ -270,15 +270,6 @@
       "category": "📡卫视频道"
     },
     {
-      "name": "东方卫视",
-      "urls": [
-        "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
-      ],
-      "latency": 1415,
-      "codec": "h264",
-      "category": "📡卫视频道"
-    },
-    {
       "name": "河北",
       "urls": [
         "https://event.pull.hebtv.com:443/live/live101.m3u8"
@@ -396,6 +387,15 @@
       "category": "📡卫视频道"
     },
     {
+      "name": "Bread TV面包台",
+      "urls": [
+        "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8"
+      ],
+      "latency": 1007,
+      "codec": "h264",
+      "category": "📡卫视频道"
+    },
+    {
       "name": "大立电视台",
       "urls": [
         "http://www.dalitv.com.tw:4568/live/dali/index.m3u8"
@@ -432,11 +432,11 @@
       "category": "📡卫视频道"
     },
     {
-      "name": "翡翠台",
+      "name": "TVB翡翠台",
       "urls": [
-        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4"
+        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct3"
       ],
-      "latency": 1211,
+      "latency": 296,
       "codec": "hevc",
       "category": "📡卫视频道"
     },
@@ -807,11 +807,11 @@
       "category": "☘️浙江频道"
     },
     {
-      "name": "蕭山生活頻道 [Not 24/7]",
+      "name": "萧山生活",
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8"
       ],
-      "latency": 479,
+      "latency": 1001,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -910,7 +910,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8"
       ],
-      "latency": 2957,
+      "latency": 1743,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -928,7 +928,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8"
       ],
-      "latency": 2725,
+      "latency": 2371,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -973,7 +973,7 @@
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed"
       ],
-      "latency": 3104,
+      "latency": 1878,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1336,7 +1336,7 @@
       "urls": [
         "https://live.gdtv.ah.cn/live/newsTV.m3u8"
       ],
-      "latency": 3486,
+      "latency": 3807,
       "codec": "h264",
       "category": "☘️安徽频道"
     },
@@ -1444,7 +1444,7 @@
       "urls": [
         "https://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=3e28e7271664278691"
       ],
-      "latency": 3884,
+      "latency": 2534,
       "codec": "h264",
       "category": "☘️湖北频道"
     },
@@ -1593,20 +1593,11 @@
       "category": "☘️四川频道"
     },
     {
-      "name": "剑阁综合",
-      "urls": [
-        "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel105549/playlist.m3u8"
-      ],
-      "latency": 1328,
-      "codec": "h264",
-      "category": "☘️四川频道"
-    },
-    {
       "name": "名山综合",
       "urls": [
         "https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8"
       ],
-      "latency": 1674,
+      "latency": 2726,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -1625,33 +1616,6 @@
         "https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8"
       ],
       "latency": 520,
-      "codec": "h264",
-      "category": "☘️四川频道"
-    },
-    {
-      "name": "广元公共",
-      "urls": [
-        "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel101257/playlist.m3u8"
-      ],
-      "latency": 1086,
-      "codec": "h264",
-      "category": "☘️四川频道"
-    },
-    {
-      "name": "广元综合",
-      "urls": [
-        "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel100999/playlist.m3u8"
-      ],
-      "latency": 444,
-      "codec": "h264",
-      "category": "☘️四川频道"
-    },
-    {
-      "name": "朝天综合",
-      "urls": [
-        "https://m3u8.channel.dzsm.com/nmip-media/channellive/channel104601/playlist.m3u8"
-      ],
-      "latency": 441,
       "codec": "h264",
       "category": "☘️四川频道"
     },
@@ -2360,12 +2324,12 @@
       "category": "☘️河北频道"
     },
     {
-      "name": "华丽翡翠台",
+      "name": "翡翠台",
       "urls": [
-        "http://php.jdshipin.com/TVOD/iptv.php?id=huali2"
+        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4"
       ],
-      "latency": 1463,
-      "codec": "h264",
+      "latency": 1211,
+      "codec": "hevc",
       "category": "🌊港·澳·台"
     },
     {
@@ -2450,20 +2414,20 @@
       "category": "🌊港·澳·台"
     },
     {
-      "name": "TVB翡翠台",
-      "urls": [
-        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct3"
-      ],
-      "latency": 296,
-      "codec": "hevc",
-      "category": "🌊港·澳·台"
-    },
-    {
       "name": "三立戏剧",
       "urls": [
         "http://61.221.215.25:8800/hls/41/index.m3u8"
       ],
       "latency": 582,
+      "codec": "h264",
+      "category": "🌊港·澳·台"
+    },
+    {
+      "name": "华丽翡翠台",
+      "urls": [
+        "http://php.jdshipin.com/TVOD/iptv.php?id=huali2"
+      ],
+      "latency": 1463,
       "codec": "h264",
       "category": "🌊港·澳·台"
     },
@@ -2491,6 +2455,33 @@
         "http://php.jdshipin.com:8880/TVOD/iptv.php?id=asam"
       ],
       "latency": 380,
+      "codec": "h264",
+      "category": "🌊港·澳·台"
+    },
+    {
+      "name": "港台电视 32",
+      "urls": [
+        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32"
+      ],
+      "latency": 241,
+      "codec": "h264",
+      "category": "🌊港·澳·台"
+    },
+    {
+      "name": "港台电视 31",
+      "urls": [
+        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk31"
+      ],
+      "latency": 247,
+      "codec": "h264",
+      "category": "🌊港·澳·台"
+    },
+    {
+      "name": "凤凰香港台",
+      "urls": [
+        "http://php.jdshipin.com/TVOD/iptv.php?id=fhhk"
+      ],
+      "latency": 272,
       "codec": "h264",
       "category": "🌊港·澳·台"
     },
@@ -2861,33 +2852,6 @@
         "http://live.zohi.tv/video/s10001-fztv-4/index.m3u8"
       ],
       "latency": 3163,
-      "codec": "h264",
-      "category": "🌊港·澳·台"
-    },
-    {
-      "name": "凤凰香港台",
-      "urls": [
-        "http://php.jdshipin.com/TVOD/iptv.php?id=fhhk"
-      ],
-      "latency": 272,
-      "codec": "h264",
-      "category": "🌊港·澳·台"
-    },
-    {
-      "name": "港台电视 31",
-      "urls": [
-        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk31"
-      ],
-      "latency": 247,
-      "codec": "h264",
-      "category": "🌊港·澳·台"
-    },
-    {
-      "name": "港台电视 32",
-      "urls": [
-        "http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32"
-      ],
-      "latency": 241,
       "codec": "h264",
       "category": "🌊港·澳·台"
     }

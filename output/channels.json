@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 314,
-  "generated": "2026-10-14T16:53:52.933935",
+  "total": 316,
+  "generated": "2026-10-14T21:27:34.470694",
   "channels": [
     {
       "name": "CCTV-1",
@@ -324,7 +324,7 @@
       "urls": [
         "http://nn.7x9d.cn/地方台8563/海南.php?id=ssws"
       ],
-      "latency": 6762,
+      "latency": 3462,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -519,11 +519,11 @@
       "category": "☘️北京频道"
     },
     {
-      "name": "辉南新闻综合",
+      "name": "武义新闻综合",
       "urls": [
-        "http://stream5.jlntv.cn/hn/sd/live.m3u8"
+        "http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8"
       ],
-      "latency": 553,
+      "latency": 401,
       "codec": "h264",
       "category": "☘️上海频道"
     },
@@ -911,6 +911,15 @@
       "category": "☘️浙江频道"
     },
     {
+      "name": "新昌生活",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8"
+      ],
+      "latency": 758,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
       "name": "新昌新闻综合",
       "urls": [
         "https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8"
@@ -952,6 +961,15 @@
         "http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8"
       ],
       "latency": 1579,
+      "codec": "h264",
+      "category": "☘️浙江频道"
+    },
+    {
+      "name": "平湖新闻综合",
+      "urls": [
+        "http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed"
+      ],
+      "latency": 939,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -2004,11 +2022,11 @@
       "category": "☘️吉林频道"
     },
     {
-      "name": "辉南新闻",
+      "name": "辉南新闻综合",
       "urls": [
-        "http://stream5.jlntv.cn/hn/sd/live.m3u8?zjild"
+        "http://stream5.jlntv.cn/hn/sd/live.m3u8"
       ],
-      "latency": 572,
+      "latency": 553,
       "codec": "h264",
       "category": "☘️吉林频道"
     },
@@ -2607,6 +2625,15 @@
       "category": "☘️云南频道"
     },
     {
+      "name": "四川峨眉山远眺万佛顶",
+      "urls": [
+        "https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8"
+      ],
+      "latency": 641,
+      "codec": "h264",
+      "category": "☘️四川频道"
+    },
+    {
       "name": "云南丽江冰川",
       "urls": [
         "https://gcalic.v.myalicdn.com/gc/hkylxs05_1/index.m3u8"
@@ -2623,6 +2650,15 @@
       "latency": 676,
       "codec": "h264",
       "category": "☘️云南频道"
+    },
+    {
+      "name": "四川峨眉山远眺贡嘎雪山",
+      "urls": [
+        "https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8"
+      ],
+      "latency": 725,
+      "codec": "h264",
+      "category": "☘️四川频道"
     },
     {
       "name": "浙江舟山东极岛",
@@ -2831,24 +2867,6 @@
       "latency": 1994,
       "codec": "h264",
       "category": "☘️吉林频道"
-    },
-    {
-      "name": "四川峨眉山远眺万佛顶",
-      "urls": [
-        "https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8"
-      ],
-      "latency": 641,
-      "codec": "h264",
-      "category": "☘️四川频道"
-    },
-    {
-      "name": "四川峨眉山远眺贡嘎雪山",
-      "urls": [
-        "https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8"
-      ],
-      "latency": 725,
-      "codec": "h264",
-      "category": "☘️四川频道"
     }
   ]
 }
